@@ -1,0 +1,18 @@
+body{margin:0;font:17px/1.55 system-ui,sans-serif;color:#1d2433;background:#f5f6f8}
+.top{display:flex;align-items:center;gap:16px;padding:12px 20px;background:#fff;border-bottom:1px solid #dde2ea;
+position:sticky;top:0}
+.top nav{display:flex;gap:14px;margin-left:auto;flex-wrap:wrap}.top a{color:#1d4ed8;text-decoration:none}
+main{max-width:860px;margin:0 auto;padding:8px 20px 40px}
+h1{font-size:34px;line-height:1.2;margin:32px 0 12px}h2{font-size:24px;margin:40px 0 10px}
+.lead{font-size:19px}.quiet{color:#6b7383}
+.button{display:inline-block;background:#1d4ed8;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;
+font-weight:600}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+figure{margin:0}figure img{width:100%;border:1px solid #dde2ea;border-radius:12px;background:#fff}
+figcaption{font-size:14px;color:#5b6475;margin-top:6px}
+.one{margin:16px 0}.one img{max-width:100%}
+.points{padding-left:20px}.points li{margin-bottom:12px}
+pre{background:#fff;border:1px solid #dde2ea;border-radius:10px;padding:12px;overflow:auto;font-size:13px}
+code{font:14px ui-monospace,monospace}
+footer{text-align:center;color:#8a93a3;padding:24px;font-size:14px}footer a{color:inherit}
+@media (max-width:600px){.shots{grid-template-columns:1fr}h1{font-size:28px}}

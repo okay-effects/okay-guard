@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>okay-guard — see and control what an AI agent does through MCP</title>
+<meta name="description" content="A guard between an AI agent and its MCP servers: every call seen, your rules applied, a call stopped for you to decide; agents made and tested; on your machine or in the cloud.">
+<link rel="stylesheet" href="site.css"></head>
+<body>
+<header class="top"><b>okay-guard</b><nav><a href="demo.html">Demo</a><a href="#use">Use</a><a href="#cloud">Cloud</a>
+<a href="#studio">Studio</a></nav></header>
+<main>
+<section class="hero">
+  <h1>See and control what an AI agent does</h1>
+  <p class="lead">An agent works through MCP servers — payments, mail, files, code. <b>okay-guard</b> stands between them:
+  every call is seen, your rules decide what passes, what is blocked and what waits for you — and you decide on your
+  phone, where the call stands.</p>
+  <p><a class="button" href="demo.html">Try it in the browser</a> <span class="quiet">— a simulated payments
+  server and a scripted agent; nothing to install, no key.</span></p>
+</section>
+
+<section class="shots">
+  <figure><img src="img/phone-waiting.png" alt="A call waiting for a person's decision, on a phone"><figcaption>A call a
+  rule stopped: Approve, Refuse, or change its arguments.</figcaption></figure>
+  <figure><img src="img/phone-tests.png" alt="A test that failed after a rule changed"><figcaption>Tests replayed
+  against a changed rule: what broke, and why.</figcaption></figure>
+</section>
+
+<section>
+  <h2>What it does</h2>
+  <ul class="points">
+    <li><b>Every call, seen.</b> The run reads like a conversation: the task, what the model says, each tool's call with
+    its arguments, what the rules decided, what came back, how long it took. Secrets are masked before anything is
+    recorded.</li>
+    <li><b>Rules, in words.</b> <i>Ask for <code>create_refund</code> when <code>amount</code> &gt; 20000.</i>
+    <i>Block <code>delete_*</code>.</i> The first that matches decides — pass, ask, block — made from what happened,
+    one tap on a call.</li>
+    <li><b>You decide.</b> A call that waits is a card where it stands: approve it, refuse it with a reason the agent is
+    told, or change its arguments first. No answer in time: the agent is told it is not done.</li>
+    <li><b>Agents, made and tested.</b> An agent is data — a model, its instructions, its servers, its rules. A test is a
+    task, what a person says, tools stubbed, checks on what happened; its model's replies kept and replayed, so a
+    change of the rules is tried against what the agent did — with no model and no key. Headless, for CI.</li>
+  </ul>
+</section>
+
+<section id="use">
+  <h2>On your machine</h2>
+  <p>Node 18+. Put the guard where the server's command was — in Claude Code, Claude Desktop, any MCP client over
+  stdio:</p>
+<pre>{ "mcpServers": { "stripe": { "command": "node",
+    "args": ["/path/to/okay-guard.js", "--rules", "/path/to/rules.json", "--open",
+             "--", "npx", "-y", "@stripe/mcp", "--api-key=${STRIPE_KEY}"] } } }</pre>
+  <p>Download <a href="download/okay-guard.js">okay-guard.js</a> and <a href="download/page.js">page.js</a> into one
+  folder. The page opens at 127.0.0.1 with a token of its own; <code>--lan</code> offers it to your phone on the same
+  Wi-Fi.</p>
+<pre>node okay-guard.js --open                 # the studio: agents, their servers, rules, tests
+node okay-guard.js test                   # every test, headless: exit 1 if one fails</pre>
+</section>
+
+<section id="cloud">
+  <h2>In the cloud</h2>
+  <p>Nothing installed: a Cloudflare Worker, each guard a Durable Object, in front of a remote MCP server. Give your
+  agent — Claude.ai's connectors, ChatGPT, Cursor — the guard's address instead of the server's; watch and decide in
+  the guard's page, on your phone.</p>
+  <figure class="one"><img src="img/cloud-agent.png" alt="The guard's MCP address and its server"></figure>
+</section>
+
+<section id="studio">
+  <h2>How it is made</h2>
+  <p>Scala 3 and Scala.js, on algebraic effects: the guard is a program over its own effects — the wire, the journal,
+  the rules, a person, the clock — and every place it runs (Node, a Durable Object, this very page in the demo) is
+  only their handlers. A call waiting for you is the program's continuation, kept until you answer.</p>
+  <figure class="one"><img src="img/desktop-tests.png" alt="The studio on a desktop: tests and rules"></figure>
+</section>
+</main>
+<footer>okay-guard — <a href="https://github.com/okay-effects">okay-effects</a></footer>
+</body></html>
