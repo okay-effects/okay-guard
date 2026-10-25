@@ -1,6 +1,7 @@
 body{margin:0;font:17px/1.55 system-ui,sans-serif;color:#1d2433;background:#f5f6f8}
 .top{display:flex;align-items:center;gap:16px;padding:12px 20px;background:#fff;border-bottom:1px solid #dde2ea;
 position:sticky;top:0}
+.brand{display:flex;align-items:center;gap:8px}
 .top nav{display:flex;gap:14px;margin-left:auto;flex-wrap:wrap}.top a{color:#1d4ed8;text-decoration:none}
 main{max-width:860px;margin:0 auto;padding:8px 20px 40px}
 h1{font-size:34px;line-height:1.2;margin:32px 0 12px}h2{font-size:24px;margin:40px 0 10px}

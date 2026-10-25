@@ -13434,7 +13434,7 @@ function $p_Lokay_guard_node_Page__act__T__T2($thiz, body) {
   throw new $c_s_MatchError(x69);
 }
 function $ps_Lokay_guard_node_Page__reply$1__sjs_js_Dynamic__I__T__T__V(res$1, status, kind, body) {
-  res$1.writeHead(status, $m_sjs_js_special_package$().g7($m_sr_ScalaRunTime$().D(new ($d_T2.r().C)([new $c_T2("Content-Type", kind), new $c_T2("Cache-Control", "no-store"), new $c_T2("X-Content-Type-Options", "nosniff"), new $c_T2("Referrer-Policy", "no-referrer"), new $c_T2("Content-Security-Policy", "default-src 'self'; style-src 'self' 'unsafe-inline'")]))));
+  res$1.writeHead(status, $m_sjs_js_special_package$().g7($m_sr_ScalaRunTime$().D(new ($d_T2.r().C)([new $c_T2("Content-Type", kind), new $c_T2("Cache-Control", "no-store"), new $c_T2("X-Content-Type-Options", "nosniff"), new $c_T2("Referrer-Policy", "no-referrer"), new $c_T2("Content-Security-Policy", "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:")]))));
   res$1.end(body);
 }
 /** @constructor */
@@ -13468,7 +13468,7 @@ function $c_Lokay_guard_node_Page(token, o) {
   this.qd = 2000;
   this.og = ($m_scm_ArrayBuffer$(), $ct_scm_ArrayBuffer__(new $c_scm_ArrayBuffer()));
   this.mt = new $c_scm_LinkedHashMap();
-  this.ty = $m_sc_StringOps$().BH((("<!doctype html>\n       |<html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n       |<title>okay-guard</title></head>\n       |<body><div id=\"app\"></div><script src=\"/page.js?t=" + token) + "\"></script></body></html>\n       |"), 124);
+  this.ty = $m_sc_StringOps$().BH((("<!doctype html>\n       |<html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n       |<title>okay-guard</title><link rel=\"icon\" href=\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233b5bdb'/%3E%3Cstop offset='1' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M32 4 L54 12 V30 C54 44 44 54 32 60 C20 54 10 44 10 30 V12 Z' fill='url%28%23g%29'/%3E%3Cpath d='M21 32 L29 40 L44 24' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E\"></head>\n       |<body><div id=\"app\"></div><script src=\"/page.js?t=" + token) + "\"></script></body></html>\n       |"), 124);
 }
 $p = $c_Lokay_guard_node_Page.prototype = new $h_O();
 $p.constructor = $c_Lokay_guard_node_Page;
