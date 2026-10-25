@@ -49,8 +49,8 @@
 <pre>{ "mcpServers": { "stripe": { "command": "node",
     "args": ["/path/to/okay-guard.js", "--rules", "/path/to/rules.json", "--open",
              "--", "npx", "-y", "@stripe/mcp", "--api-key=${STRIPE_KEY}"] } } }</pre>
-  <p>Download <a href="download/okay-guard.js">okay-guard.js</a> and <a href="download/page.js">page.js</a> into one
-  folder. The page opens at 127.0.0.1 with a token of its own; <code>--lan</code> offers it to your phone on the same
+  <p>Download <a href="download/okay-guard.zip">okay-guard.zip</a> and unzip it: the guard and its page's modules,
+  in one folder. The page opens at 127.0.0.1 with a token of its own; <code>--lan</code> offers it to your phone on the same
   Wi-Fi.</p>
 <pre>node okay-guard.js --open                 # the studio: agents, their servers, rules, tests
 node okay-guard.js test                   # every test, headless: exit 1 if one fails</pre>
@@ -58,10 +58,10 @@ node okay-guard.js test                   # every test, headless: exit 1 if one 
 
 <section id="cloud">
   <h2>In the cloud</h2>
-  <p>Nothing installed: a Cloudflare Worker, each guard a Durable Object, in front of a remote MCP server. Give your
-  agent — Claude.ai's connectors, ChatGPT, Cursor — the guard's address instead of the server's; watch and decide in
-  the guard's page, on your phone.</p>
-  <figure class="one"><img src="img/cloud-agent.png" alt="The guard's MCP address and its server"></figure>
+  <p>Nothing installed, nothing kept in the cloud: <a href="https://okay-guard.sergey-scherbina.workers.dev/">open the
+  studio</a>, give your agent — Claude Code, Claude.ai's connectors, Cursor — the MCP address it shows, and watch and
+  decide in the page, on your phone too. Your agents, rules and policies stay in your browser; the Worker only passes
+  messages, and only while the page is open.</p>
 </section>
 
 <section id="studio">
