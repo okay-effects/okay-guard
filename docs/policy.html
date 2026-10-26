@@ -126,6 +126,7 @@ allow shop.order
    and (not has(coupon) or coupon starts &quot;VIP&quot;)</pre>
 <h2 id="facts-and-state">Facts and state</h2>
 <p>A <code>state</code> is a value okay-guard keeps between calls, per <code>minute</code>, <code>hour</code> or <code>day</code>. A rule changes it with <code>then</code>, only when the call goes ahead. A <code>count</code> rule decides nothing: it only changes state for every call that goes ahead.</p>
+<p>The state is kept where the studio is: in your browser's storage on the site, in the workspace's <code>state/</code> on your machine (<code>state/&lt;agent&gt;.json</code>; <code>state/outside.json</code> for an agent on stdio). A page reloaded or the guard started again keeps the day's sums and the minute's counts; a window that has passed starts again from the initial value.</p>
 <pre><span class="file">budget.policy</span>policy budget
 
 type User
