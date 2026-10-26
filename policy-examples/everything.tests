@@ -1,0 +1,9 @@
+tests for everything
+
+test "anything else goes"
+  when agent calls read_file(path: "/a")
+  expect allow
+
+test "but not this"
+  when agent calls delete_file(path: "/a")
+  expect deny "nothing is deleted"

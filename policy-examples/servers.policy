@@ -1,0 +1,22 @@
+policy servers
+
+type User
+
+call github.get_file(repo: Text, path: Text)
+call github.create_pull_request(repo: Text, title: Text)
+call github.delete_repo(repo: Text)
+call fs.read(path: Text)
+call fs.write(path: Text)
+
+allow github.get_file
+  when repo starts "my-org/"
+
+ask github.create_pull_request
+  because "a pull request: you decide"
+
+deny github.delete_repo
+  because "never"
+
+allow fs.read
+allow fs.write
+  when path starts "/workspace/" and not (path ends ".env")

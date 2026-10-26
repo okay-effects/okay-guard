@@ -1,0 +1,11 @@
+tests for facts
+
+test "within the balance"
+  given available(agent) = 10000
+  when agent calls payments.create_refund(charge: "ch_1", amount: 4200)
+  expect allow
+
+test "over the balance"
+  given available(agent) = 1000
+  when agent calls payments.create_refund(charge: "ch_1", amount: 4200)
+  expect deny "more than the balance"

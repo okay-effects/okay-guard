@@ -1,0 +1,13 @@
+tests for shop
+
+test "a usual order"
+  when agent calls shop.order(items: [{sku: "a", qty: 2, price: 10.00}], shipping: {country: "PL"}, dry_run: false)
+  expect allow
+
+test "too many of one item"
+  when agent calls shop.order(items: [{sku: "a", qty: 50, price: 10.00}], shipping: {country: "PL"}, dry_run: false)
+  expect deny
+
+test "a dry run is always fine"
+  when agent calls shop.order(items: [{sku: "a", qty: 50, price: 10.00}], shipping: {country: "US"}, dry_run: true)
+  expect allow

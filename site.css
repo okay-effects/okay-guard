@@ -33,3 +33,13 @@ footer .more{margin-left:auto;color:#1d4ed8;font-weight:600}
 .top nav{order:3;width:100%;margin-left:0;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
 .top nav::-webkit-scrollbar{display:none}
 .steps li{padding-left:52px}.steps li::before{left:12px}}
+.doc h3{font-size:19px;margin:28px 0 8px}
+.doc section{margin-bottom:8px}
+.doc pre{font-size:13.5px;line-height:1.5}
+.ref{border-collapse:collapse;width:100%;margin:8px 0 16px;background:#fff;border:1px solid #dde2ea;border-radius:10px;
+display:block;overflow-x:auto}
+.ref td{padding:8px 12px;border-bottom:1px solid #eef1f5;vertical-align:top}.ref tr:last-child td{border-bottom:0}
+.ref td:first-child{white-space:nowrap}
+.note{background:#fff8e6;border:1px solid #f1d58a;border-radius:10px;padding:10px 14px}
+.files a{display:inline-block;margin:4px 10px 4px 0}
+pre .file{display:block;color:#8a93a3;font-size:12px;margin-bottom:6px}

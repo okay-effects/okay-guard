@@ -1,0 +1,25 @@
+policy budget
+
+type User
+
+state refunded(user: User): Int per day = 0
+state calls(user: User): Int per minute = 0
+
+call create_refund(charge: Text, amount: Int)
+call list_charges()
+
+deny *
+  when calls(caller) >= 30
+  because "too many calls: wait a minute"
+
+allow list_charges
+
+allow create_refund
+  when amount > 0 and refunded(caller) + amount <= 20000
+  then refunded(caller) += amount
+
+ask create_refund
+  when amount > 0 and amount <= 100000
+  because "over 200 € refunded today: you decide"
+
+count * then calls(caller) += 1

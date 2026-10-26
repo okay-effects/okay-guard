@@ -1,0 +1,16 @@
+policy shop
+
+type User
+type Item = { sku: Text, qty: Int, price: Dec, note?: Text }
+type Address = { country: Text, zip?: Text }
+
+call shop.order(items: List[Item], shipping: Address, coupon?: Text, dry_run: Bool)
+
+allow shop.order
+  when dry_run
+
+allow shop.order
+  when count(items) <= 20
+   and every i in items: (i.qty <= 10 and i.price <= 500.00)
+   and shipping.country in ["DE", "PL"]
+   and (not has(coupon) or coupon starts "VIP")

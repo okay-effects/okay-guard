@@ -1,0 +1,19 @@
+policy refunds
+
+type User
+
+call list_charges()
+call create_refund(charge: Text, amount: Int)
+call delete_customer(customer: Text)
+
+allow list_charges
+
+allow create_refund
+  when amount <= 20000
+
+ask create_refund
+  when amount <= 100000
+  because "more than 200 €: you decide"
+
+deny delete_customer
+  because "nothing is deleted from here"

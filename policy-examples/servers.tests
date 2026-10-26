@@ -1,0 +1,21 @@
+tests for servers
+
+test "our repositories are readable"
+  when agent calls github.get_file(repo: "my-org/app", path: "README.md")
+  expect allow
+
+test "another organisation's are not"
+  when agent calls github.get_file(repo: "other/app", path: "README.md")
+  expect deny
+
+test "deny beats allow"
+  when agent calls github.delete_repo(repo: "my-org/app")
+  expect deny "never"
+
+test "a secret file is not written"
+  when agent calls fs.write(path: "/workspace/.env")
+  expect deny
+
+test "a pull request is asked"
+  when agent calls github.create_pull_request(repo: "my-org/app", title: "Fix")
+  expect ask "a pull request: you decide"

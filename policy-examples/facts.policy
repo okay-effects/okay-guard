@@ -1,0 +1,17 @@
+policy facts
+
+type User
+
+fact available(u: User): Int from mcp payments.get_balance() at "available"
+
+call payments.get_balance()
+call payments.create_refund(charge: Text, amount: Int)
+
+allow payments.get_balance
+
+deny payments.create_refund
+  when amount > available(caller)
+  because "more than the balance"
+
+allow payments.create_refund
+  when amount > 0

@@ -1,0 +1,11 @@
+policy everything
+
+type User
+
+call read_file(path: Text)
+call delete_file(path: Text)
+
+allow *
+
+deny delete_file
+  because "nothing is deleted"

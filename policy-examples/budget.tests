@@ -1,0 +1,16 @@
+tests for budget
+
+test "within the day's budget"
+  given refunded(agent) = 5000
+  when agent calls create_refund(charge: "ch_1", amount: 4200)
+  expect allow
+
+test "over the day's budget: asked"
+  given refunded(agent) = 15000
+  when agent calls create_refund(charge: "ch_2", amount: 15000)
+  expect ask "over 200 € refunded today: you decide"
+
+test "too many calls"
+  given calls(agent) = 30
+  when agent calls list_charges()
+  expect deny "too many calls: wait a minute"
