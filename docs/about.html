@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>okay-guard — About</title><link rel="icon" href="../logo.svg">
+<link rel="stylesheet" href="../site.css"></head>
+<body>
+<header class="top"><a class="brand" href="../index.html"><img src="../logo.svg" alt="" width="26" height="26">okay-guard</a>
+<nav><a href="start.html">Getting started</a><a href="policy.html">The policy language</a><a href="journal.html">The journal</a><a href="machine.html">On your machine</a><a href="about.html" class="here">About</a></nav>
+<a class="button small" href="../app.html">Open the studio</a></header>
+<main class="doc">
+<h1 id="about">About</h1>
+<p>okay-guard is written in Scala 3 and Scala.js on <a href="https://okay-effects.github.io/">okay-effects</a>, a family of algebraic effect libraries.</p>
+<p>The guard is a program over its own effects: the wire, the journal, the policy, a person, the clock. Every place it runs only handles those effects:</p>
+<ul class="points"><li>your browser (this studio);</li><li>a Cloudflare Worker that passes messages between your agent and the page;</li><li>your machine, on Node or the JVM.</li></ul>
+<p>A call waiting for you is the program's continuation, kept as data until you answer.</p>
+<p>The policy language is <a href="https://github.com/okay-effects/okay-proof">okay-proof</a>'s okay-policy. Every decision by a rule is a theorem of its kernel, with a certificate anyone can check again.</p>
+<h2 id="built-on-okay-effects">Built on okay-effects</h2>
+<p>okay-effects makes what a program does explicit and controllable:</p>
+<ul class="points"><li><b>types</b> say what a program may do;</li><li><b>handlers</b> say how it is done;</li><li><b>interceptors</b> put each action through a point of control, and audit it.</li></ul>
+<p>okay-guard is that idea applied to AI agents: every action an agent takes goes through a policy, a person if needed, and a journal.</p>
+<ul class="points"><li>The site: <a href="https://okay-effects.github.io/">okay-effects.github.io</a></li><li>The code: <a href="https://github.com/okay-effects">github.com/okay-effects</a></li></ul>
+<h2 id="need-more">Need more?</h2>
+<p>Need okay-guard fitted to your services, a policy written for your domain, or effects in your own Scala or JVM system? <a href="https://okay-effects.github.io/#author">Need more?</a> Contact the author.</p>
+</main>
+<footer><div class="bar">
+  Built on <a href="https://github.com/okay-effects" target="_blank" rel="noopener noreferrer">okay-effects</a> —
+  algebraic effects for Scala
+  <a class="more" href="https://okay-effects.github.io/#author" target="_blank" rel="noopener noreferrer">Need more?</a>
+</div></footer>
+</body></html>
