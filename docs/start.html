@@ -15,7 +15,10 @@
 <h2 id="1-connect-your-agent">1. Connect your agent</h2>
 <p>Open <b>Tools</b>. The studio shows an MCP address for the chosen agent. Give it to your agent:</p>
 <pre>claude mcp add --transport http okay-guard &lt;the address&gt;</pre>
-<p>In Claude Desktop or Claude.ai, add a custom connector with the same address. Keep the studio's page open while the agent works: its calls are decided in the page.</p>
+<p>In other agents:</p>
+<table class="ref"><tr><th>agent</th><th>how</th></tr><tr><td><b>Codex</b> (CLI, IDE)</td><td><code>codex mcp add okay-guard --url &lt;the address&gt;</code>, or in <code>~/.codex/config.toml</code>: a table <code>[mcp_servers.okay-guard]</code> with <code>url = &quot;&lt;the address&gt;&quot;</code>. <code>codex mcp list</code> shows it; <code>/mcp</code> in Codex shows its tools</td></tr><tr><td><b>Claude.ai, Claude Desktop</b></td><td>Settings → Connectors → Add custom connector: the address</td></tr><tr><td><b>ChatGPT</b></td><td>Settings → Apps &amp; Connectors → Advanced settings: turn on Developer mode; then Create a connector with the address, no authentication, and turn it on in a chat</td></tr><tr><td><b>Cursor, VS Code, others</b></td><td>an MCP server over HTTP (Streamable HTTP): the address</td></tr></table>
+<p>ChatGPT and Claude.ai work in the cloud: they reach the address of the studio on the site (<code>https://okay-guard.okay-effects.workers.dev/m/…/mcp</code>), not one on your machine (<code>http://127.0.0.1:…</code>). Codex, Claude Code and Cursor run on your computer and reach either.</p>
+<p>Keep the studio's page open while the agent works: its calls are decided in the page. To take an agent away again: <code>claude mcp remove okay-guard</code>, in Codex its <code>remove</code> (<code>codex mcp --help</code>) or <code>enabled = false</code> in its table, or remove the connector in the app's settings.</p>
 <p>The first agent works with a <i>simulated</i> payments server, so nothing real can happen. Try the prompt the studio suggests (<b>Copy the prompt</b>).</p>
 <h2 id="2-watch-and-decide">2. Watch and decide</h2>
 <p>Open <b>Run</b>. Each call shows its tool, its arguments and the decision. A call the policy asks about waits on its card: <b>Approve</b>, <b>Refuse</b>, or <b>Change</b> its arguments first. If no one answers in time, the agent is told it is not done.</p>
