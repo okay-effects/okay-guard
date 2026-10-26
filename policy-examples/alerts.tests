@@ -1,0 +1,13 @@
+tests for alerts
+
+test "a small refund goes ahead"
+  when agent calls create_refund(charge: "ch_1", amount: 4200)
+  expect allow
+
+test "a big one is asked"
+  when agent calls create_refund(charge: "ch_3", amount: 30000)
+  expect ask "more than 200 €: you decide"
+
+test "nothing is deleted"
+  when agent calls delete_customer(customer: "cus_9")
+  expect deny "nothing is deleted from here"

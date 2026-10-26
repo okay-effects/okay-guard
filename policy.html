@@ -7,7 +7,7 @@ what waits for a person, what is never done — each decision proved, explained 
 <body>
 <header class="top"><a class="brand" href="index.html"><img src="logo.svg" alt="" width="26" height="26">okay-guard</a>
 <nav><a href="#start">Start</a><a href="#decide">How it decides</a><a href="#write">Writing rules</a>
-<a href="#state">Facts and state</a><a href="#tests">Tests</a><a href="#recipes">Recipes</a>
+<a href="#state">Facts and state</a><a href="#webhooks">Webhooks</a><a href="#tests">Tests</a><a href="#recipes">Recipes</a>
 <a href="#reference">Reference</a></nav>
 <a class="button small" href="app.html">Open the studio</a></header>
 <main class="doc">
@@ -41,7 +41,7 @@ allow create_refund
   when amount &lt;= 20000
 
 ask create_refund
-  when amount &lt;= 100000
+  when amount &gt; 20000 and amount &lt;= 100000
   because "more than 200 €: you decide"
 
 deny delete_customer
@@ -70,16 +70,17 @@ deny delete_customer
   <p>For each call, okay-guard takes the rules whose target matches the call, and checks their conditions. Then:</p>
   <ol class="steps">
     <li>If a <code>deny</code> applies, the call is <b>denied</b>.</li>
-    <li>Otherwise, if an <code>allow</code> applies, the call is <b>allowed</b>.</li>
     <li>Otherwise, if an <code>ask</code> applies, a <b>person is asked</b>.</li>
-    <li>Otherwise the call is <b>denied</b>: nothing is allowed without a rule that allows it.</li>
+    <li>Otherwise, if an <code>allow</code> applies, the call is <b>allowed</b>.</li>
+    <li>Otherwise the policy's <b>default</b> decides: <code>default allow</code>, <code>default ask</code> or
+    <code>default deny</code>. A policy with no <code>default</code> denies: nothing is allowed without a rule that
+    allows it.</li>
   </ol>
-  <p>The order of the rules in the text does not matter. A <code>deny</code> always wins, so a later
-  <code>allow</code> cannot open what a <code>deny</code> closed. A rule with no <code>when</code> always
+  <p>The order of the rules in the text does not matter. A <code>deny</code> always wins, so no
+  <code>allow</code> can open what a <code>deny</code> closed; an <code>ask</code> wins over an <code>allow</code>. A rule with no <code>when</code> always
   applies.</p>
-  <p class="note"><b>Watch out:</b> an <code>allow</code> beats an <code>ask</code>. With <code>allow
-  create_refund</code> and no condition, an <code>ask create_refund</code> never asks. Give the <code>allow</code>
-  the condition under which no person is needed, as <code>amount &lt;= 20000</code> above.</p>
+  <p>So a broad <code>allow</code> and a narrow <code>ask</code> go together: <code>allow github.*</code> lets the
+  agent use GitHub, and <code>ask github.create_pull_request</code> still stops a pull request for a person.</p>
   <h3>Targets: a tool, a server, every call</h3>
   <p>A rule's target is one tool (<code>create_refund</code>), every tool of a server (<code>github.*</code>), or
   every call (<code>*</code>). A tool written with its server's name, <code>github.get_file</code>, is that server's
@@ -95,7 +96,8 @@ call github.delete_repo(repo: Text)
 call fs.read(path: Text)
 call fs.write(path: Text)
 
-allow github.get_file
+-- GitHub for our organisation; a pull request for a person; a repository never deleted
+allow github.*
   when repo starts "my-org/"
 
 ask github.create_pull_request
@@ -107,9 +109,12 @@ deny github.delete_repo
 allow fs.read
 allow fs.write
   when path starts "/workspace/" and not (path ends ".env")</pre>
-  <h3>Allow everything, deny some</h3>
-  <p>The default is to deny. To allow everything except a few things, allow <code>*</code> and deny the rest. A
-  <code>deny</code> still wins.</p>
+  <h3>Deny everything, allow some — or allow everything, deny some</h3>
+  <p>With no <code>default</code>, a policy denies what no rule allows: list what may be done. For the other way
+  round, say <code>default allow</code> and list what may not: a <code>deny</code> still wins and an
+  <code>ask</code> still asks — the default decides only when no rule applies. A tool the policy never declares — a server's new tool — is decided by the rules for
+  every call (<code>*</code>, with <code>tool</code> its name) and by the default; its arguments are not read,
+  so a condition on them does not hold. Declare a tool with <code>call</code> to decide on its arguments.</p>
   <pre data-file="everything.policy"><span class="file">everything.policy</span>policy everything
 
 type User
@@ -117,9 +122,14 @@ type User
 call read_file(path: Text)
 call delete_file(path: Text)
 
-allow *
+-- what no rule decides is allowed; a deny still wins, an ask still asks
+default allow
 
-deny delete_file
+ask read_file
+  when path starts "/secrets/"
+  because "a secret: you decide"
+
+deny * when tool starts "delete_"
   because "nothing is deleted"</pre>
 </section>
 
@@ -211,7 +221,7 @@ allow create_refund
   then refunded(caller) += amount
 
 ask create_refund
-  when amount &gt; 0 and amount &lt;= 100000
+  when amount &gt; 0 and amount &lt;= 100000 and refunded(caller) + amount &gt; 20000
   because "over 200 € refunded today: you decide"
 
 count * then calls(caller) += 1</pre>
@@ -238,6 +248,54 @@ allow payments.create_refund
   when amount &gt; 0</pre>
   <p>A fact that cannot be found (the tool fails, the path leads nowhere) is unknown, and a condition on an unknown
   fact fails. An unknown fact never allows a call.</p>
+</section>
+
+<section id="webhooks">
+  <h2>Webhooks</h2>
+  <p>A webhook is an address okay-guard sends a message to when something happens: a channel in Slack, your security
+  system, your own service. The policy declares its webhooks and says when each is told — on a rule, or by
+  criteria.</p>
+  <pre data-file="alerts.policy"><span class="file">alerts.policy</span>policy alerts
+
+type User
+
+-- where the alerts go: an address, or the variable that holds it (Slack's address is a secret)
+webhook security = env "SECURITY_WEBHOOK"
+webhook ops = env "OPS_WEBHOOK"
+
+call create_refund(charge: Text, amount: Int)
+call delete_customer(customer: Text)
+
+default allow
+
+ask create_refund
+  when amount &gt; 20000
+  because "more than 200 €: you decide"
+
+-- on the rule itself: whenever it decides
+deny delete_customer
+  because "nothing is deleted from here"
+  notify security
+
+-- by criteria: an outcome, a target, a condition
+notify ops on refused create_refund
+notify ops on timed out create_refund
+notify security on ask create_refund
+  when amount &gt; 100000</pre>
+  <ul class="points">
+    <li><b><code>webhook name = "https://…"</code></b> declares an address; <b><code>webhook name = env
+    "VAR"</code></b> takes it from a variable on the machine that runs okay-guard, so the address (often a secret) is
+    not in the policy.</li>
+    <li><b><code>notify name</code> on a rule</b>: told whenever that rule decides a call.</li>
+    <li><b><code>notify name on <i>outcome</i> <i>target</i> when …</code></b>: told when a call of the target ends
+    so. The outcomes are <code>allow</code>, <code>ask</code>, <code>deny</code>, and what became of an ask:
+    <code>approved</code>, <code>refused</code>, <code>timed out</code>.</li>
+  </ul>
+  <p>Each webhook gets the call's record from the journal, as JSON: the call, the decision and why, what a person
+  said, what came back; and a line of text at the top (<code>"text"</code>), so a Slack channel shows it as it is.
+  Sent when the call has ended. On your machine any address is reached, tried three times; from the studio in a
+  browser only an address that accepts calls from a page (Slack's does not) — run the guard on your machine for
+  those.</p>
 </section>
 
 <section id="tests">
@@ -299,11 +357,14 @@ ask create_refund
 <section id="recipes">
   <h2>Recipes</h2>
   <table class="ref">
-    <tr><td>Only reading</td><td><code>allow get_*</code> for each reading tool, nothing else: every other call is
-      denied by default.</td></tr>
-    <tr><td>Everything but deleting</td><td><code>allow *</code> and <code>deny delete_*</code>.</td></tr>
-    <tr><td>A person for big amounts</td><td><code>allow pay when amount &lt;= 100</code> and <code>ask pay when amount
-      &lt;= 5000</code>: above 5000, denied.</td></tr>
+    <tr><td>Only reading</td><td><code>allow * when tool starts "get_"</code>, no default: every other call is
+      denied.</td></tr>
+    <tr><td>Everything but deleting</td><td><code>default allow</code> and <code>deny * when tool starts
+      "delete_"</code>.</td></tr>
+    <tr><td>Tell security of every denial</td><td><code>notify security on deny *</code>, with <code>webhook
+      security = env "SECURITY_WEBHOOK"</code>.</td></tr>
+    <tr><td>A person for big amounts</td><td><code>allow pay</code> and <code>ask pay when amount &gt; 100</code>;
+      <code>deny pay when amount &gt; 5000</code>.</td></tr>
     <tr><td>A daily budget</td><td>a <code>state … per day</code> and <code>then spent(caller) += amount</code>, as in
       <a href="#state">the budget</a>.</td></tr>
     <tr><td>A rate limit</td><td><code>deny * when calls(caller) &gt;= 30</code> with <code>count * then
@@ -318,7 +379,7 @@ ask create_refund
 <section id="reference">
   <h2>Reference</h2>
 <pre>policy    ::= "policy" name decl*
-decl      ::= type | record | fact | state | call | rule | count
+decl      ::= type | record | fact | state | call | rule | count | default | webhook | notify
 type      ::= "type" Name
 record    ::= "type" Name "=" "{" field ("," field)* "}"
 fact      ::= "fact" name "(" params ")" (":" sort)? ("from" source)?
@@ -327,6 +388,11 @@ state     ::= "state" name "(" params ")" ":" sort ("per" ("minute" | "hour" | "
 call      ::= "call" [server "."] tool "(" params ")"
 param     ::= name "?"? ":" sort
 rule      ::= ("allow" | "ask" | "deny") target ("when" cond)? ("then" update ("," update)*)? ("because" text)?
+              ("notify" name ("," name)*)?
+default   ::= "default" ("allow" | "ask" | "deny")                 -- at most one; none: deny
+webhook   ::= "webhook" name "=" (text | "env" text)
+notify    ::= "notify" name ("," name)* "on" outcome target ("when" cond)?
+outcome   ::= "allow" | "ask" | "deny" | "approved" | "refused" | "timed" "out"
 count     ::= "count" target ("when" cond)? "then" update ("," update)*
 target    ::= tool | server "." tool | server ".*" | "*"
 cond      ::= cond "and" cond | cond "or" cond | "not" cond | "(" cond ")" | atom
@@ -341,6 +407,8 @@ tests     ::= "tests" "for" name test*
 test      ::= "test" text ("given" given ("," given)*)? "when" name "calls" tool "(" args ")"
               "expect" ("allow" | "ask" | "deny") text?
 given     ::= name "(" exprs ")" ("=" literal)? | "not" name "(" exprs ")"</pre>
+  <p>The variables of a rule for every call (<code>*</code>, <code>server.*</code>) are <code>caller</code> and
+  <code>tool</code>: <code>deny * when tool starts "delete_"</code>.</p>
   <p>Names of types start with a capital letter; names of facts, states and arguments with a small one. The
   variables of a rule are <code>caller</code>, <code>tool</code> and the call's arguments. A tool whose name is not
   a plain word is written in quotes: <code>call "list-files"(path: Text)</code>.</p>

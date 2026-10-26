@@ -1,0 +1,27 @@
+policy alerts
+
+type User
+
+-- where the alerts go: an address, or the variable that holds it (Slack's address is a secret)
+webhook security = env "SECURITY_WEBHOOK"
+webhook ops = env "OPS_WEBHOOK"
+
+call create_refund(charge: Text, amount: Int)
+call delete_customer(customer: Text)
+
+default allow
+
+ask create_refund
+  when amount > 20000
+  because "more than 200 €: you decide"
+
+-- on the rule itself: whenever it decides
+deny delete_customer
+  because "nothing is deleted from here"
+  notify security
+
+-- by criteria: an outcome, a target, a condition
+notify ops on refused create_refund
+notify ops on timed out create_refund
+notify security on ask create_refund
+  when amount > 100000

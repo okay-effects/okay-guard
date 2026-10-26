@@ -5,7 +5,12 @@ type User
 call read_file(path: Text)
 call delete_file(path: Text)
 
-allow *
+-- what no rule decides is allowed; a deny still wins, an ask still asks
+default allow
 
-deny delete_file
+ask read_file
+  when path starts "/secrets/"
+  because "a secret: you decide"
+
+deny * when tool starts "delete_"
   because "nothing is deleted"

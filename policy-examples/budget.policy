@@ -19,7 +19,7 @@ allow create_refund
   then refunded(caller) += amount
 
 ask create_refund
-  when amount > 0 and amount <= 100000
+  when amount > 0 and amount <= 100000 and refunded(caller) + amount > 20000
   because "over 200 € refunded today: you decide"
 
 count * then calls(caller) += 1

@@ -12,7 +12,7 @@ allow create_refund
   when amount <= 20000
 
 ask create_refund
-  when amount <= 100000
+  when amount > 20000 and amount <= 100000
   because "more than 200 €: you decide"
 
 deny delete_customer

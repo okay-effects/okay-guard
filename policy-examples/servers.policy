@@ -8,7 +8,8 @@ call github.delete_repo(repo: Text)
 call fs.read(path: Text)
 call fs.write(path: Text)
 
-allow github.get_file
+-- GitHub for our organisation; a pull request for a person; a repository never deleted
+allow github.*
   when repo starts "my-org/"
 
 ask github.create_pull_request

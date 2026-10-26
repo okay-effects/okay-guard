@@ -4,6 +4,18 @@ test "anything else goes"
   when agent calls read_file(path: "/a")
   expect allow
 
-test "but not this"
+test "a secret is asked"
+  when agent calls read_file(path: "/secrets/key")
+  expect ask "a secret: you decide"
+
+test "nothing is deleted, declared or not"
   when agent calls delete_file(path: "/a")
   expect deny "nothing is deleted"
+
+test "a tool the policy never named"
+  when agent calls delete_customer(customer: "x")
+  expect deny "nothing is deleted"
+
+test "another tool it never named"
+  when agent calls list_customers()
+  expect allow

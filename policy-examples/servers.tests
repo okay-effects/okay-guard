@@ -19,3 +19,7 @@ test "a secret file is not written"
 test "a pull request is asked"
   when agent calls github.create_pull_request(repo: "my-org/app", title: "Fix")
   expect ask "a pull request: you decide"
+
+test "a GitHub tool never declared: its arguments are not read, so a condition on them does not hold"
+  when agent calls github.list_issues(repo: "my-org/app")
+  expect deny
