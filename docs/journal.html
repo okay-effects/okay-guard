@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>okay-guard — The journal</title><link rel="icon" href="../logo.svg">
+<link rel="stylesheet" href="../site.css"></head>
+<body>
+<header class="top"><a class="brand" href="../index.html"><img src="../logo.svg" alt="" width="26" height="26">okay-guard</a>
+<nav><a href="start.html">Getting started</a><a href="policy.html">The policy language</a><a href="journal.html" class="here">The journal</a><a href="machine.html">On your machine</a></nav>
+<a class="button small" href="../app.html">Open the studio</a></header>
+<main class="doc">
+<h1 id="the-journal">The journal</h1>
+<p>Every call your agent makes is recorded, with what the policy decided and why. The journal is kept where the studio is: in your browser on the site, in the workspace's <code>journal/</code> on your machine.</p>
+<h2 id="a-record">A record</h2>
+<p>One record a call, when the call has ended:</p>
+<ul class="points"><li><b>the action:</b> the service, the operation, who called it, and its arguments, with secrets masked;</li><li><b>the policy:</b> its name and the hash of its text. The text itself is kept beside the journal, so a record can be read against the policy that decided it;</li><li><b>the decision and why:</b> - by a rule: the rule and the values it met (<code>amount = 30000</code>), and the rules tried before it; - by default: the default, and why each rule did not apply; - by the policy language: its reasons, the facts it used and the certificate of the theorem;</li><li><b>a person's verdict:</b> approved, refused or timed out; how long it took; the arguments if changed;</li><li><b>the outcome:</b> what the service answered, and how long it took;</li><li><b>the webhooks</b> it was sent to.</li></ul>
+<p>Each record carries the hash of the one before. A record changed or taken out breaks the chain, and the check says where.</p>
+<h2 id="in-the-studio">In the studio</h2>
+<p><b>Log</b> shows every message as it went. Its journal section has:</p>
+<ul class="points"><li><b>Download (JSON lines)</b>: one record a line, for scripts and <code>jq</code>;</li><li><b>Download (CSV)</b>: a row a call, for a spreadsheet;</li><li><b>Check the chain</b>: is the journal whole?</li></ul>
+<p><b>Tests → Replay the journal</b> decides every recorded call again by the policy as it is now.</p>
+<h2 id="on-your-machine">On your machine</h2>
+<p>The journal is <code>~/.okay-guard/journal/&lt;day&gt;.jsonl</code>, a file a day; the policies' texts are in <code>journal/policies/</code>. <code>--keep 90</code> removes the days older than 90.</p>
+<pre>okay-guard journal --since 7d                       # the records, a line each
+okay-guard journal --decision block --agent shop    # only some
+okay-guard journal --csv &gt; journal.csv              # for a spreadsheet; --json for scripts
+okay-guard journal --verify                         # the chain whole, every policy found
+okay-guard journal replay --policy new.policy       # what the new policy would change; exit 1 if anything</pre>
+<h2 id="webhooks">Webhooks</h2>
+<p>A policy may send a call's record to a webhook: on a rule (<code>notify security</code>), or on an outcome (<code>notify ops on refused create_refund</code>). See <a href="policy.html#webhooks">webhooks</a>. The record is sent as JSON, with a <code>text</code> line on top that a Slack channel shows as it is.</p>
+</main>
+<footer><div class="bar">
+  Built on <a href="https://github.com/okay-effects" target="_blank" rel="noopener noreferrer">okay-effects</a> —
+  algebraic effects for Scala
+  <a class="more" href="https://okay-effects.github.io/#author" target="_blank" rel="noopener noreferrer">Need more?</a>
+</div></footer>
+</body></html>

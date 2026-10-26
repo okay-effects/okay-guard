@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>okay-guard — Getting started</title><link rel="icon" href="../logo.svg">
+<link rel="stylesheet" href="../site.css"></head>
+<body>
+<header class="top"><a class="brand" href="../index.html"><img src="../logo.svg" alt="" width="26" height="26">okay-guard</a>
+<nav><a href="start.html" class="here">Getting started</a><a href="policy.html">The policy language</a><a href="journal.html">The journal</a><a href="machine.html">On your machine</a></nav>
+<a class="button small" href="../app.html">Open the studio</a></header>
+<main class="doc">
+<h1 id="getting-started">Getting started</h1>
+<p>okay-guard stands between an AI agent and the services it works with. The services are MCP servers and REST APIs. You see every call the agent makes. Your policy decides what passes, what is blocked and what waits for a person, and you decide where the call stands. Every call is recorded with its decision and why.</p>
+<p>The agent is yours: Claude Code, Claude Desktop, Claude.ai, Cursor, any MCP client. The studio runs no model of its own and asks for no key.</p>
+<h2 id="the-studio-s-places">The studio's places</h2>
+<table class="ref"><tr><th>place</th><th>what it is</th></tr><tr><td><b>Tools</b></td><td>how your agent connects (its address), and the servers and APIs it reaches</td></tr><tr><td><b>Rules</b></td><td>the policy: its rules as cards, what happens when no rule applies, its whole text</td></tr><tr><td><b>Tests</b></td><td>the policy's tests, made of your agent's calls; the journal decided again</td></tr><tr><td><b>Run</b></td><td>your agent's calls as they happen, each with its decision; a call that waits for you</td></tr><tr><td><b>Log</b></td><td>every message, raw; the audit journal, downloaded or checked</td></tr><tr><td><b>Docs</b></td><td>these pages</td></tr></table>
+<h2 id="1-connect-your-agent">1. Connect your agent</h2>
+<p>Open <b>Tools</b>. The studio shows an MCP address for the chosen agent. Give it to your agent:</p>
+<pre>claude mcp add --transport http okay-guard &lt;the address&gt;</pre>
+<p>In Claude Desktop or Claude.ai, add a custom connector with the same address. Keep the studio's page open while the agent works: its calls are decided in the page.</p>
+<p>The first agent works with a <i>simulated</i> payments server, so nothing real can happen. Try the prompt the studio suggests (<b>Copy the prompt</b>).</p>
+<h2 id="2-watch-and-decide">2. Watch and decide</h2>
+<p>Open <b>Run</b>. Each call shows its tool, its arguments and the decision. A call the policy asks about waits on its card: <b>Approve</b>, <b>Refuse</b>, or <b>Change</b> its arguments first. If no one answers in time, the agent is told it is not done.</p>
+<h2 id="3-write-the-policy">3. Write the policy</h2>
+<p>Use <b>Make a rule</b> on a call's card, or open <b>Rules</b>:</p>
+<ul class="points"><li>each rule is a card; <b>Remove</b> takes it out;</li><li><b>When no rule applies</b> says what happens then: allow, ask a person, or deny;</li><li><b>A new rule</b> writes a rule from a form;</li><li><b>Its text</b> is the whole policy, in the <a href="policy.html">policy language</a>.</li></ul>
+<h2 id="4-add-the-tools-you-need">4. Add the tools you need</h2>
+<p>In <b>Tools</b>, add an MCP server by its URL, or a REST API by its OpenAPI: its operations become your agent's tools, and each call is decided by the policy before it is made. <b>Servers to try</b> has DeepWiki and Swagger's pet store; no key is needed.</p>
+<h2 id="5-test-it">5. Test it</h2>
+<p>In <b>Tests</b>, <b>Make tests of the calls seen</b> turns your agent's calls into tests: each call and the decision it got. They run at every change of the policy. <b>Replay the journal</b> decides every recorded call again by the policy as it is now, and shows what would change. See <a href="policy.html#tests">tests</a>.</p>
+<h2 id="6-take-it-to-your-machine">6. Take it to your machine</h2>
+<p>In <b>Tools</b>, <b>Export a copy</b> saves the agents, their servers and their policies in one file. Run okay-guard on your machine and <b>Import a copy</b> there: the same policy decides, and every server is reachable. See <a href="machine.html">on your machine</a>.</p>
+</main>
+<footer><div class="bar">
+  Built on <a href="https://github.com/okay-effects" target="_blank" rel="noopener noreferrer">okay-effects</a> —
+  algebraic effects for Scala
+  <a class="more" href="https://okay-effects.github.io/#author" target="_blank" rel="noopener noreferrer">Need more?</a>
+</div></footer>
+</body></html>

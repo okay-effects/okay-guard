@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>okay-guard — The policy language</title><link rel="icon" href="../logo.svg">
+<link rel="stylesheet" href="../site.css"></head>
+<body>
+<header class="top"><a class="brand" href="../index.html"><img src="../logo.svg" alt="" width="26" height="26">okay-guard</a>
+<nav><a href="start.html">Getting started</a><a href="policy.html" class="here">The policy language</a><a href="journal.html">The journal</a><a href="machine.html">On your machine</a></nav>
+<a class="button small" href="../app.html">Open the studio</a></header>
+<main class="doc">
+<h1 id="the-policy-language">The policy language</h1>
+<p>A policy says what an AI agent may do with its services: what goes ahead, what waits for a person, and what is never done. okay-guard checks every call against it before the call reaches the service.</p>
+<p>The language is small. It has declarations of what can be known, and rules about what is allowed. It is typed: a misspelt argument or a comparison of a text with a number is an error in the editor, before anything runs. Every decision is explained in the journal, and a decision by a rule is a theorem with a certificate anyone can check again.</p>
+<p>All the examples below are real files, checked by okay-guard with their tests.</p>
+<h2 id="a-first-policy">A first policy</h2>
+<p>An agent handles refunds. It may look at charges and make small refunds. A person decides on a big refund. It never deletes a customer.</p>
+<pre><span class="file">first.policy</span>policy refunds
+
+type User
+
+call list_charges()
+call create_refund(charge: Text, amount: Int)
+call delete_customer(customer: Text)
+
+allow list_charges
+
+allow create_refund
+  when amount &lt;= 20000
+
+ask create_refund
+  when amount &gt; 20000 and amount &lt;= 100000
+  because &quot;more than 200 €: you decide&quot;
+
+deny delete_customer
+  because &quot;nothing is deleted from here&quot;</pre>
+<ul class="points"><li><code>policy refunds</code> names the policy.</li><li><code>type User</code> declares who calls. Every rule may use <code>caller</code>, the agent that calls.</li><li><code>call</code> declares a tool and the types of its arguments. A rule may only use the arguments its tool has.</li><li><code>allow</code>, <code>ask</code>, <code>deny</code> are the rules. <code>when</code> is the condition; <code>because</code> is the reason the agent and the person are told.</li></ul>
+<p>In the studio the policy is in <b>Rules</b>. On your machine it is a file, <code>refunds.policy</code>, with its tests in <code>refunds.tests</code>: <code>okay-guard check refunds.policy</code> runs them.</p>
+<h2 id="how-a-call-is-decided">How a call is decided</h2>
+<p>For each call, okay-guard takes the rules whose target matches the call and checks their conditions. Then:</p>
+<ol class="points"><li>If a <code>deny</code> applies, the call is <b>denied</b>.</li><li>Otherwise, if an <code>ask</code> applies, a <b>person is asked</b>.</li><li>Otherwise, if an <code>allow</code> applies, the call is <b>allowed</b>.</li><li>Otherwise the policy's <b>default</b> decides: <code>default allow</code>, <code>default ask</code> or <code>default deny</code>. A policy with no <code>default</code> denies.</li></ol>
+<p>The order of the rules in the text does not matter. A <code>deny</code> always wins, and an <code>ask</code> wins over an <code>allow</code>. So a broad <code>allow</code> and a narrow <code>ask</code> go together: <code>allow github.*</code> lets the agent use GitHub, and <code>ask github.create_pull_request</code> still stops a pull request for a person.</p>
+<h3 id="targets-a-tool-a-service-every-call">Targets: a tool, a service, every call</h3>
+<p>A rule's target is one tool (<code>create_refund</code>), every tool of a server (<code>github.*</code>), or every call (<code>*</code>). A tool written with its server's name, <code>github.get_file</code>, is that server's tool only: one policy can hold rules for several servers.</p>
+<pre><span class="file">servers.policy</span>policy servers
+
+type User
+
+call github.get_file(repo: Text, path: Text)
+call github.create_pull_request(repo: Text, title: Text)
+call github.delete_repo(repo: Text)
+call fs.read(path: Text)
+call fs.write(path: Text)
+
+-- GitHub for our organisation; a pull request for a person; a repository never deleted
+allow github.*
+  when repo starts &quot;my-org/&quot;
+
+ask github.create_pull_request
+  because &quot;a pull request: you decide&quot;
+
+deny github.delete_repo
+  because &quot;never&quot;
+
+allow fs.read
+allow fs.write
+  when path starts &quot;/workspace/&quot; and not (path ends &quot;.env&quot;)</pre>
+<h3 id="deny-everything-or-allow-everything">Deny everything, or allow everything</h3>
+<p>With no <code>default</code>, a policy denies what no rule allows: list what may be done. For the other way round, say <code>default allow</code> and list what may not. A <code>deny</code> still wins and an <code>ask</code> still asks.</p>
+<p>A tool the policy never declares, such as a server's new tool, is decided by the rules for every call (<code>*</code>, with <code>tool</code> its name) and by the default. Its arguments are not read, so a condition on them does not hold: declare the tool with <code>call</code> to decide on its arguments.</p>
+<pre><span class="file">everything.policy</span>policy everything
+
+type User
+
+call read_file(path: Text)
+call delete_file(path: Text)
+
+-- what no rule decides is allowed; a deny still wins, an ask still asks
+default allow
+
+ask read_file
+  when path starts &quot;/secrets/&quot;
+  because &quot;a secret: you decide&quot;
+
+deny * when tool starts &quot;delete_&quot;
+  because &quot;nothing is deleted&quot;</pre>
+<h3 id="rest-apis">REST APIs</h3>
+<p>An agent can call a REST API through okay-guard: add it in <b>Tools</b> by its OpenAPI. Its operations become the agent's tools, named by their <code>operationId</code>, and the policy decides each call before it is made.</p>
+<pre><span class="file">petstore.policy</span>-- an agent at a REST API: Swagger's pet store, added in the studio by its OpenAPI (Servers to try: petstore);
+-- its operations are the agent's tools, named by the server: petstore.findPetsByStatus, petstore.addPet, …
+policy petstore
+
+type User
+
+call petstore.addPet(name: Text)
+call petstore.deletePet(petId: Int)
+
+-- reading goes ahead: no rule for it
+default allow
+
+ask petstore.addPet
+  because &quot;a new pet: you decide&quot;
+
+deny petstore.deletePet
+  because &quot;no pet is deleted from here&quot;</pre>
+<h2 id="writing-rules">Writing rules</h2>
+<h3 id="types">Types</h3>
+<table class="ref"><tr><th>type</th><th>what it is</th></tr><tr><td><code>Int</code></td><td>whole numbers: amounts in cents, counts</td></tr><tr><td><code>Dec</code></td><td>exact decimals, for money: <code>500.00</code></td></tr><tr><td><code>Text</code></td><td>text: <code>&quot;eur&quot;</code></td></tr><tr><td><code>Bool</code></td><td>true or false; a condition by itself: <code>dry_run</code>, <code>not force</code></td></tr><tr><td><code>User</code>, <code>Account</code></td><td>an entity type the policy declares; its values are names</td></tr><tr><td><code>type Item = { sku: Text, qty: Int }</code></td><td>a record, for an argument that is a JSON object</td></tr><tr><td><code>List[Item]</code></td><td>a list, for an argument that is a JSON array</td></tr></table>
+<p>An optional argument is declared with <code>?</code>: <code>coupon?: Text</code>.</p>
+<h3 id="conditions">Conditions</h3>
+<table class="ref"><tr><th>condition</th><th>what it says</th></tr><tr><td><code>amount &lt;= 20000</code></td><td>a comparison: <code>= != &lt; &lt;= &gt; &gt;=</code></td></tr><tr><td><code>a and b</code>, <code>a or b</code>, <code>not a</code></td><td>combined</td></tr><tr><td><code>currency in [&quot;eur&quot;, &quot;usd&quot;]</code></td><td>one of a list</td></tr><tr><td><code>path starts &quot;/workspace/&quot;</code></td><td>texts: <code>starts</code>, <code>ends</code>, <code>contains</code></td></tr><tr><td><code>amount + fee &lt;= 100</code></td><td>sums; a product by a number only</td></tr><tr><td><code>has(coupon)</code></td><td>an optional argument is there</td></tr><tr><td><code>shipping.country</code></td><td>a record's field</td></tr><tr><td><code>count(items) &lt;= 20</code></td><td>a list's length</td></tr><tr><td><code>every i in items: (i.qty &lt;= 10)</code></td><td>each element of a list; <code>some</code> for one of them</td></tr></table>
+<p>A missing argument makes the condition that uses it fail, so a missing argument can deny or ask but never allow.</p>
+<pre><span class="file">shop.policy</span>policy shop
+
+type User
+type Item = { sku: Text, qty: Int, price: Dec, note?: Text }
+type Address = { country: Text, zip?: Text }
+
+call shop.order(items: List[Item], shipping: Address, coupon?: Text, dry_run: Bool)
+
+allow shop.order
+  when dry_run
+
+allow shop.order
+  when count(items) &lt;= 20
+   and every i in items: (i.qty &lt;= 10 and i.price &lt;= 500.00)
+   and shipping.country in [&quot;DE&quot;, &quot;PL&quot;]
+   and (not has(coupon) or coupon starts &quot;VIP&quot;)</pre>
+<h2 id="facts-and-state">Facts and state</h2>
+<p>A <code>state</code> is a value okay-guard keeps between calls, per <code>minute</code>, <code>hour</code> or <code>day</code>. A rule changes it with <code>then</code>, only when the call goes ahead. A <code>count</code> rule decides nothing: it only changes state for every call that goes ahead.</p>
+<pre><span class="file">budget.policy</span>policy budget
+
+type User
+
+state refunded(user: User): Int per day = 0
+state calls(user: User): Int per minute = 0
+
+call create_refund(charge: Text, amount: Int)
+call list_charges()
+
+deny *
+  when calls(caller) &gt;= 30
+  because &quot;too many calls: wait a minute&quot;
+
+allow list_charges
+
+allow create_refund
+  when amount &gt; 0 and refunded(caller) + amount &lt;= 20000
+  then refunded(caller) += amount
+
+ask create_refund
+  when amount &gt; 0 and amount &lt;= 100000 and refunded(caller) + amount &gt; 20000
+  because &quot;over 200 € refunded today: you decide&quot;
+
+count * then calls(caller) += 1</pre>
+<p>A <code>fact</code> is something the policy needs that is not in the call. <code>from mcp</code> makes okay-guard ask a tool of the agent's server itself, before it decides; <code>at</code> is the path to the value in the answer. A fact that cannot be found is unknown, and an unknown fact never allows a call.</p>
+<pre><span class="file">facts.policy</span>policy facts
+
+type User
+
+fact available(u: User): Int from mcp payments.get_balance() at &quot;available&quot;
+
+call payments.get_balance()
+call payments.create_refund(charge: Text, amount: Int)
+
+allow payments.get_balance
+
+deny payments.create_refund
+  when amount &gt; available(caller)
+  because &quot;more than the balance&quot;
+
+allow payments.create_refund
+  when amount &gt; 0</pre>
+<h2 id="webhooks">Webhooks</h2>
+<p>A webhook is an address okay-guard sends a message to when something happens: a Slack channel, your security system, your own service.</p>
+<pre><span class="file">alerts.policy</span>policy alerts
+
+type User
+
+-- where the alerts go: an address, or the variable that holds it (Slack's address is a secret)
+webhook security = env &quot;SECURITY_WEBHOOK&quot;
+webhook ops = env &quot;OPS_WEBHOOK&quot;
+
+call create_refund(charge: Text, amount: Int)
+call delete_customer(customer: Text)
+
+default allow
+
+ask create_refund
+  when amount &gt; 20000
+  because &quot;more than 200 €: you decide&quot;
+
+-- on the rule itself: whenever it decides
+deny delete_customer
+  because &quot;nothing is deleted from here&quot;
+  notify security
+
+-- by criteria: an outcome, a target, a condition
+notify ops on refused create_refund
+notify ops on timed out create_refund
+notify security on ask create_refund
+  when amount &gt; 100000</pre>
+<ul class="points"><li><code>webhook name = &quot;https://…&quot;</code> declares an address; <code>webhook name = env &quot;VAR&quot;</code> takes it from a variable on the machine, so the address (often a secret) is not in the policy.</li><li><code>notify name</code> on a rule: told whenever that rule decides a call.</li><li><code>notify name on outcome target when …</code>: told when a call ends so. The outcomes are <code>allow</code>, <code>ask</code>, <code>deny</code>, and what became of an ask: <code>approved</code>, <code>refused</code>, <code>timed out</code>.</li></ul>
+<p>Each webhook gets the call's record from the <a href="journal.html">journal</a> as JSON, with a line of text on top.</p>
+<h2 id="tests">Tests</h2>
+<p>A policy's tests are a file of their own, beside it. Each test is a call and the decision it must get; <code>given</code> sets facts and state.</p>
+<pre><span class="file">first.tests</span>tests for refunds
+
+test &quot;a small refund goes ahead&quot;
+  when agent calls create_refund(charge: &quot;ch_1&quot;, amount: 4200)
+  expect allow
+
+test &quot;a big one waits for a person&quot;
+  when agent calls create_refund(charge: &quot;ch_2&quot;, amount: 30000)
+  expect ask &quot;more than 200 €: you decide&quot;
+
+test &quot;a huge one is denied: no rule allows it&quot;
+  when agent calls create_refund(charge: &quot;ch_3&quot;, amount: 500000)
+  expect deny
+
+test &quot;nothing is deleted&quot;
+  when agent calls delete_customer(customer: &quot;cus_9&quot;)
+  expect deny &quot;nothing is deleted from here&quot;</pre>
+<p>In the studio, <b>Tests</b> makes them of your agent's calls and runs them at every change of the policy. <b>Replay the journal</b> decides every recorded call again by the policy as it is now. On your machine:</p>
+<pre>okay-guard check refunds.policy                         # the tests; exit 1 if one fails
+okay-guard journal replay --policy refunds.policy       # the journal decided again; exit 1 if anything changes</pre>
+<h2 id="errors">Errors</h2>
+<p>A policy that does not compile is not used, and the error says where:</p>
+<pre>8:8: an unknown name amout
+11:15: Text &gt; Int: different sorts</pre>
+<h2 id="reference">Reference</h2>
+<pre>policy    ::= &quot;policy&quot; name decl*
+decl      ::= type | record | fact | state | call | rule | count | default | webhook | notify
+type      ::= &quot;type&quot; Name
+record    ::= &quot;type&quot; Name &quot;=&quot; &quot;{&quot; field (&quot;,&quot; field)* &quot;}&quot;
+fact      ::= &quot;fact&quot; name &quot;(&quot; params &quot;)&quot; (&quot;:&quot; sort)? (&quot;from&quot; source)?
+source    ::= name | &quot;mcp&quot; [server &quot;.&quot;] tool &quot;(&quot; args &quot;)&quot; &quot;at&quot; text
+state     ::= &quot;state&quot; name &quot;(&quot; params &quot;)&quot; &quot;:&quot; sort (&quot;per&quot; (&quot;minute&quot; | &quot;hour&quot; | &quot;day&quot;))? &quot;=&quot; literal
+call      ::= &quot;call&quot; [server &quot;.&quot;] tool &quot;(&quot; params &quot;)&quot;
+param     ::= name &quot;?&quot;? &quot;:&quot; sort
+rule      ::= (&quot;allow&quot; | &quot;ask&quot; | &quot;deny&quot;) target (&quot;when&quot; cond)? (&quot;then&quot; update (&quot;,&quot; update)*)? (&quot;because&quot; text)?
+              (&quot;notify&quot; name (&quot;,&quot; name)*)?
+count     ::= &quot;count&quot; target (&quot;when&quot; cond)? &quot;then&quot; update (&quot;,&quot; update)*
+default   ::= &quot;default&quot; (&quot;allow&quot; | &quot;ask&quot; | &quot;deny&quot;)
+webhook   ::= &quot;webhook&quot; name &quot;=&quot; (text | &quot;env&quot; text)
+notify    ::= &quot;notify&quot; name (&quot;,&quot; name)* &quot;on&quot; outcome target (&quot;when&quot; cond)?
+target    ::= tool | server &quot;.&quot; tool | server &quot;.*&quot; | &quot;*&quot;
+cond      ::= cond &quot;and&quot; cond | cond &quot;or&quot; cond | &quot;not&quot; cond | &quot;(&quot; cond &quot;)&quot; | atom
+atom      ::= expr cmp expr | expr &quot;in&quot; &quot;[&quot; exprs &quot;]&quot; | expr (&quot;starts&quot; | &quot;ends&quot; | &quot;contains&quot;) expr
+            | &quot;has&quot; &quot;(&quot; path &quot;)&quot; | (&quot;every&quot; | &quot;some&quot;) name &quot;in&quot; path &quot;:&quot; cond | name &quot;(&quot; exprs &quot;)&quot; | path
+expr      ::= expr (&quot;+&quot; | &quot;-&quot;) expr | expr &quot;*&quot; literal | &quot;(&quot; expr &quot;)&quot; | literal | path | name &quot;(&quot; exprs &quot;)&quot;
+update    ::= name &quot;(&quot; exprs &quot;)&quot; (&quot;=&quot; | &quot;+=&quot; | &quot;-=&quot;) expr
+sort      ::= &quot;Int&quot; | &quot;Dec&quot; | &quot;Text&quot; | &quot;Bool&quot; | Name | &quot;List&quot; &quot;[&quot; sort &quot;]&quot;
+
+tests     ::= &quot;tests&quot; &quot;for&quot; name test*
+test      ::= &quot;test&quot; text (&quot;given&quot; given (&quot;,&quot; given)*)? &quot;when&quot; name &quot;calls&quot; tool &quot;(&quot; args &quot;)&quot;
+              &quot;expect&quot; (&quot;allow&quot; | &quot;ask&quot; | &quot;deny&quot;) text?</pre>
+<p>Names of types start with a capital letter; names of facts, states and arguments with a small one. The variables of a rule are <code>caller</code>, <code>tool</code> and the call's arguments. A tool whose name is not a plain word is written in quotes: <code>call &quot;list-files&quot;(path: Text)</code>. <code>--</code> starts a comment.</p>
+<p>The language is <a href="https://github.com/okay-effects/okay-proof">okay-proof</a>'s okay-policy: its full specification, the logic underneath and the kernel that checks every decision are there.</p>
+</main>
+<footer><div class="bar">
+  Built on <a href="https://github.com/okay-effects" target="_blank" rel="noopener noreferrer">okay-effects</a> —
+  algebraic effects for Scala
+  <a class="more" href="https://okay-effects.github.io/#author" target="_blank" rel="noopener noreferrer">Need more?</a>
+</div></footer>
+</body></html>
