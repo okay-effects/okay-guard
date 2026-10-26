@@ -13,10 +13,12 @@
   every call is seen, your rules decide what passes, what is blocked and what waits for you — and you decide on your
   phone, where the call stands.</p>
   <p><a class="button" href="app.html">Connect your agent</a>
-  <span class="quiet">— the studio, here: give your agent (Claude Code, Claude.ai, Cursor) the MCP address it shows,
-  try the prompt it suggests, and watch every call meet your rules. Nothing to install, no key; kept in your browser.
-  The same studio at <a href="https://okay-guard.sergey-scherbina.workers.dev/">okay-guard.sergey-scherbina.workers.dev</a>
-  — each address its own browser storage (a copy moves it).</span></p>
+  <span class="quiet">— the studio, here, for anyone: give your agent (Claude Code, Claude.ai, Cursor) the MCP address
+  it shows, add the remote MCP servers it should use, try the prompt it suggests, watch every call meet your policy.
+  Nothing to install, no key, no account; everything kept in your browser, servers called straight from it.</span></p>
+  <p><a class="button" href="#use">Or run it on your machine</a>
+  <span class="quiet">— the same studio from <a href="download/okay-guard.zip">okay-guard.zip</a>: any server, the policy
+  you made here taken along with a copy.</span></p>
   <p><a href="demo.html">Or watch a scripted agent in the browser</a></p>
 </section>
 
@@ -46,16 +48,19 @@
 
 <section id="use">
   <h2>On your machine</h2>
-  <p>Node 18+. Put the guard where the server's command was — in Claude Code, Claude Desktop, any MCP client over
-  stdio:</p>
+  <p>Node 18+. Download <a href="download/okay-guard.zip">okay-guard.zip</a>, unzip it, and open the studio — the same
+  as here, its page at 127.0.0.1 with a token of its own:</p>
+<pre>node okay-guard.js --open                 # the studio: agents, servers, rules, policies, tests
+node okay-guard.js test                   # every test, headless: exit 1 if one fails
+node okay-guard.js check policy.json      # a policy checked by its cases, no model, no server</pre>
+  <p>Made and tried here first? <b>Agent → Export a copy</b> on the site, <b>Import a copy</b> on your machine: the
+  agent, its servers, its rules and its policy come along. Your agent then connects to the address the machine's studio
+  shows (<code>http://127.0.0.1:…/m/…/mcp</code>), and every server is reachable — those a browser may not call too.</p>
+  <p>Or put the guard where a server's command was — in Claude Code, Claude Desktop, any MCP client over stdio:</p>
 <pre>{ "mcpServers": { "stripe": { "command": "node",
-    "args": ["/path/to/okay-guard.js", "--rules", "/path/to/rules.json", "--open",
+    "args": ["/path/to/okay-guard.js", "--rules", "/path/to/policy.json", "--open",
              "--", "npx", "-y", "@stripe/mcp", "--api-key=${STRIPE_KEY}"] } } }</pre>
-  <p>Download <a href="download/okay-guard.zip">okay-guard.zip</a> and unzip it: the guard and its page's modules,
-  in one folder. The page opens at 127.0.0.1 with a token of its own; <code>--lan</code> offers it to your phone on the same
-  Wi-Fi.</p>
-<pre>node okay-guard.js --open                 # the studio: agents, their servers, rules, tests
-node okay-guard.js test                   # every test, headless: exit 1 if one fails</pre>
+  <p><code>--lan</code> offers the page to your phone on the same Wi-Fi.</p>
 </section>
 
 <section id="cloud">
