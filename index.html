@@ -45,9 +45,9 @@ deciding, a call stopped for you to decide. Try it in the browser, then run it o
     it met, or the policy's proof and the facts it used; what a person said; what came back. Each record is chained
     to the one before, so a change shows. It is kept in your browser or on your machine, and downloaded as JSON lines
     or CSV.</li>
-    <li><b>Tested before it is trusted.</b> A test is a task with checks on what happened. A run is kept and
-    replayed, so a changed policy is tried against what the agent really did, with no model and no key. You can also
-    run the tests headless, for CI.</li>
+    <li><b>Tested before it is trusted.</b> A test is a call your agent made and the decision the policy must give
+    it — made with one press from what really happened. A changed policy is tried against the tests and against
+    every call in the journal, with no model and no key; on your machine too, for CI.</li>
   </ul>
 </section>
 
@@ -57,7 +57,8 @@ deciding, a call stopped for you to decide. Try it in the browser, then run it o
     <li><b>Look.</b> Read this page and <a href="demo.html">watch the demo</a>. In the demo, a scripted agent works
     against a simulated payments server and you rule it.</li>
     <li><b>Open the studio.</b> <a href="app.html">Open it here</a>. It starts with an agent on a <i>simulated</i>
-    payments server, so nothing real can happen yet. The studio shows the agent's MCP address.</li>
+    payments server, so nothing real can happen yet. It opens on <b>Tools</b>, which shows your agent's MCP address.
+    The studio runs no model of its own and asks for no key: the agent is yours.</li>
     <li><b>Connect your agent.</b> Give that address to the agent on your computer, such as Claude Code:
 <pre>claude mcp add --transport http okay-guard https://okay-guard…/m/…/mcp</pre>
     The studio shows the exact command; press <b>Copy the command</b>. Claude Desktop, Claude.ai and Cursor take the
@@ -68,13 +69,15 @@ deciding, a call stopped for you to decide. Try it in the browser, then run it o
     <li><b>Write your policy.</b> Use <b>Make a rule</b> on any call's card, or open <b>Rules</b>. For state and facts,
     choose <b>Write it in the policy language</b> (<a href="policy.html">the language, explained</a>). The studio checks the policy and shows each error where it
     is.</li>
-    <li><b>Connect the MCP server or the REST API you need.</b> Under <b>Agent</b>, add an MCP server by its URL
+    <li><b>Connect the MCP server or the REST API you need.</b> Under <b>Tools</b>, add an MCP server by its URL
     (<b>Add the server</b>), or a REST API by its OpenAPI (<b>Add the API</b>): its operations become your agent's
     tools, each call decided by your policy before it is made. Or pick one from <b>Servers to try</b>: DeepWiki,
     Swagger's pet store; no key needed. The page calls them straight from your browser.</li>
-    <li><b>Refine it.</b> Run again and watch what your policy lets through. Turn a good run into a test with <b>Make
-    a test</b>, so the next change of the policy is checked against it.</li>
-    <li><b>Take it home.</b> In <b>Agent</b>, choose <b>Export a copy</b>. This saves the agent, its servers, its
+    <li><b>Refine it.</b> Let your agent work and watch what your policy lets through in <b>Run</b>. Turn its calls into
+    tests: <b>Make a test</b> on a call, or <b>Make tests of the calls seen</b> in <b>Tests</b>. Every change of the
+    policy runs them, and <b>Replay the journal</b> shows what the changed policy would do to every call
+    recorded.</li>
+    <li><b>Take it home.</b> In <b>Tools</b>, choose <b>Export a copy</b>. This saves the agent, its servers, its
     policy and its tests in one file. Then <a href="#local">run okay-guard on your machine</a> and choose <b>Import a
     copy</b> there. The same policy now decides on your machine. It can reach every server: local commands, and the
     servers a browser may not call.</li>
@@ -92,15 +95,15 @@ deciding, a call stopped for you to decide. Try it in the browser, then run it o
     <code>java -jar okay-guard.jar --open</code>.</li>
   </ul>
 <pre>node okay-guard.js --open                 # the studio: Import a copy, then connect your agent
-node okay-guard.js test                   # every test, headless: exit 1 if one fails (CI)
-node okay-guard.js check policy.json      # a policy checked by its cases, no model, no server
+node okay-guard.js check x.policy         # the policy's tests (x.tests beside it): exit 1 if one fails
 node okay-guard.js journal --since 7d     # the audit journal: every call, the decision and why
+node okay-guard.js journal replay --policy x.policy   # the journal decided again: what would change
 node okay-guard.js journal --csv &gt; j.csv   # for a spreadsheet; --verify checks its chain</pre>
   <p>Your agent connects to the address the local studio shows (<code>http://127.0.0.1:…/m/…/mcp</code>). Or put the
   guard where a server's command was, in any MCP client over stdio. The policy you downloaded from <b>Rules</b>
   decides each call:</p>
 <pre>{ "mcpServers": { "stripe": { "command": "node",
-    "args": ["/path/to/okay-guard.js", "--rules", "/path/to/policy.json", "--open",
+    "args": ["/path/to/okay-guard.js", "--rules", "/path/to/x.policy", "--open",
              "--", "npx", "-y", "@stripe/mcp", "--api-key=${STRIPE_KEY}"] } } }</pre>
   <p>On Java, use <code>"command": "java", "args": ["-jar", "/path/to/okay-guard.jar", …]</code>. Add
   <code>--lan</code> to open the page on your phone on the same Wi-Fi.</p>

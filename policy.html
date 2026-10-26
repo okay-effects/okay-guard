@@ -110,7 +110,7 @@ allow fs.read
 allow fs.write
   when path starts "/workspace/" and not (path ends ".env")</pre>
   <h3>REST APIs</h3>
-  <p>An agent can call a REST API through okay-guard as well: add it in the studio by its OpenAPI (Agent → A REST API,
+  <p>An agent can call a REST API through okay-guard as well: add it in the studio by its OpenAPI (Tools → A REST API,
   or the pet store in Servers to try). Its operations become the agent's tools, named by their
   <code>operationId</code>, and the policy decides each call before it is made as an HTTP request.</p>
   <pre data-file="petstore.policy"><span class="file">petstore.policy</span>-- an agent at a REST API: Swagger's pet store, added in the studio by its OpenAPI (Servers to try: petstore);
@@ -357,6 +357,10 @@ test "too many calls"
   given calls(agent) = 30
   when agent calls list_charges()
   expect deny "too many calls: wait a minute"</pre>
+  <p>In the studio, tests are made of your agent's calls: <b>Make a test</b> on a call in Run, or <b>Make tests of
+  the calls seen</b> in Tests; each expects the decision the call got. <b>Replay the journal</b> decides every
+  recorded call again by the policy as it is now and shows what would change; on your machine,
+  <code>okay-guard journal replay --policy refunds.policy</code> (exit 1 if anything changes).</p>
   <p>In the studio, the tests run as you edit the policy. On your machine, <code>okay-guard check
   refunds.policy</code> runs them and exits with 1 if one fails, for CI.</p>
   <h3>Errors</h3>
