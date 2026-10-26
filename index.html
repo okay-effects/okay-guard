@@ -1,87 +1,116 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>okay-guard — see and control what an AI agent does through MCP</title><link rel="icon" href="logo.svg">
-<meta name="description" content="A guard between an AI agent and its MCP servers: every call seen, your rules applied, a call stopped for you to decide; agents made and tested; on your machine or in the cloud.">
+<meta name="description" content="A guard between an AI agent and its MCP servers: every call seen, your policy
+deciding, a call stopped for you to decide. Try it in the browser, then run it on your machine with your policy.">
 <link rel="stylesheet" href="site.css"></head>
 <body>
-<header class="top"><b class="brand"><img src="logo.svg" alt="" width="26" height="26">okay-guard</b><nav><a href="demo.html">Demo</a><a href="#use">Use</a><a href="#cloud">Cloud</a>
-<a href="#studio">Studio</a></nav></header>
+<header class="top"><a class="brand" href="#"><img src="logo.svg" alt="" width="26" height="26">okay-guard</a>
+<nav><a href="#what">What it does</a><a href="#steps">How to start</a><a href="#local">On your machine</a>
+<a href="demo.html">Demo</a></nav>
+<a class="button small" href="app.html">Open the studio</a></header>
 <main>
 <section class="hero">
   <h1>See and control what an AI agent does</h1>
-  <p class="lead">An agent works through MCP servers — payments, mail, files, code. <b>okay-guard</b> stands between them:
-  every call is seen, your rules decide what passes, what is blocked and what waits for you — and you decide on your
-  phone, where the call stands.</p>
-  <p><a class="button" href="app.html">Connect your agent</a>
-  <span class="quiet">— the studio, here, for anyone: give your agent (Claude Code, Claude.ai, Cursor) the MCP address
-  it shows, add the remote MCP servers it should use, try the prompt it suggests, watch every call meet your policy.
-  Nothing to install, no key, no account; everything kept in your browser, servers called straight from it.</span></p>
-  <p><a class="button" href="#use">Or run it on your machine</a>
-  <span class="quiet">— the same studio from <a href="download/okay-guard.zip">okay-guard.zip</a> (Node) or
-  <a href="download/okay-guard.jar">okay-guard.jar</a> (Java): any server, the policy
-  you made here taken along with a copy.</span></p>
-  <p><a href="demo.html">Or watch a scripted agent in the browser</a></p>
+  <p class="lead">An agent works through MCP servers: payments, mail, files, code. <b>okay-guard</b> stands between
+  them. You see every call. Your policy decides what passes, what is blocked and what waits for you. You decide on
+  your phone, right where the call stands.</p>
+  <p class="cta"><a class="button big" href="app.html">Open the studio</a>
+  <a class="button ghost" href="demo.html">Watch the demo</a></p>
+  <p class="quiet">The studio runs here, in your browser. There is nothing to install and no account. Your agents and
+  policies stay in your browser. When it all works, take your policy to your own machine.</p>
 </section>
 
 <section class="shots">
-  <figure><img src="img/phone-waiting.png" alt="A call waiting for a person's decision, on a phone"><figcaption>A call a
-  rule stopped: Approve, Refuse, or change its arguments.</figcaption></figure>
+  <figure><img src="img/phone-waiting.png" alt="A call waiting for a person's decision, on a phone"><figcaption>A call
+  the policy stopped: Approve, Refuse, or change its arguments.</figcaption></figure>
   <figure><img src="img/phone-tests.png" alt="A test that failed after a rule changed"><figcaption>Tests replayed
   against a changed rule: what broke, and why.</figcaption></figure>
 </section>
 
-<section>
+<section id="what">
   <h2>What it does</h2>
   <ul class="points">
-    <li><b>Every call, seen.</b> The run reads like a conversation: the task, what the model says, each tool's call with
-    its arguments, what the rules decided, what came back, how long it took. Secrets are masked before anything is
+    <li><b>Every call, seen.</b> A run reads like a conversation. You see the task, each tool's call with its
+    arguments, what the policy decided, what came back, and how long it took. Secrets are masked before anything is
     recorded.</li>
-    <li><b>Rules, in words.</b> <i>Ask for <code>create_refund</code> when <code>amount</code> &gt; 20000.</i>
-    <i>Block <code>delete_*</code>.</i> The first that matches decides — pass, ask, block — made from what happened,
-    one tap on a call.</li>
-    <li><b>You decide.</b> A call that waits is a card where it stands: approve it, refuse it with a reason the agent is
-    told, or change its arguments first. No answer in time: the agent is told it is not done.</li>
-    <li><b>Agents, made and tested.</b> An agent is data — a model, its instructions, its servers, its rules. A test is a
-    task, what a person says, tools stubbed, checks on what happened; its model's replies kept and replayed, so a
-    change of the rules is tried against what the agent did — with no model and no key. Headless, for CI.</li>
+    <li><b>A policy, in words.</b> <i>Ask for <code>create_refund</code> when <code>amount</code> &gt; 20000.</i>
+    <i>Block <code>delete_*</code>.</i> The first rule that matches decides: pass, ask or block. You make a rule from a
+    real call with one tap. When rules are not enough, write the policy in a language with state and facts. Every
+    decision it makes comes with a certificate.</li>
+    <li><b>You decide.</b> A call that waits is a card in the run. Approve it, refuse it with a reason the agent is
+    told, or change its arguments first. If nobody answers in time, the agent is told it is not done.</li>
+    <li><b>Tested before it is trusted.</b> A test is a task with checks on what happened. A run is kept and
+    replayed, so a changed policy is tried against what the agent really did, with no model and no key. You can also
+    run the tests headless, for CI.</li>
   </ul>
 </section>
 
-<section id="use">
+<section id="steps">
+  <h2>How to start: from a first look to your own machine</h2>
+  <ol class="steps">
+    <li><b>Look.</b> Read this page and <a href="demo.html">watch the demo</a>. In the demo, a scripted agent works
+    against a simulated payments server and you rule it.</li>
+    <li><b>Open the studio.</b> <a href="app.html">Open it here</a>. It starts with an agent on a <i>simulated</i>
+    payments server, so nothing real can happen yet. The studio shows the agent's MCP address.</li>
+    <li><b>Connect your agent.</b> Give that address to the agent on your computer, such as Claude Code:
+<pre>claude mcp add --transport http okay-guard https://okay-guard…/m/…/mcp</pre>
+    The studio shows the exact command; press <b>Copy the command</b>. Claude Desktop, Claude.ai and Cursor take the
+    same address. Keep the studio's page open while the agent works.</li>
+    <li><b>Try it.</b> Give your agent the prompt the studio suggests (<b>Copy the prompt</b>). Its calls appear in
+    <b>Run</b>. The starting rules let it read, ask you about a refund and block a deletion. Approve or refuse, from
+    this page or from your phone (<b>Open on your phone</b>).</li>
+    <li><b>Write your policy.</b> Use <b>Make a rule</b> on any call's card, or open <b>Rules</b>. For state and facts,
+    choose <b>Write it in the policy language</b>. The studio checks the policy and shows each error where it
+    is.</li>
+    <li><b>Connect the MCP server you need.</b> Under <b>Agent</b>, add a server by its URL with <b>Add the
+    server</b>, or pick one from <b>Servers to try</b> (DeepWiki needs no key). The page calls it straight from your
+    browser.</li>
+    <li><b>Refine it.</b> Run again and watch what your policy lets through. Turn a good run into a test with <b>Make
+    a test</b>, so the next change of the policy is checked against it.</li>
+    <li><b>Take it home.</b> In <b>Agent</b>, choose <b>Export a copy</b>. This saves the agent, its servers, its
+    policy and its tests in one file. Then <a href="#local">run okay-guard on your machine</a> and choose <b>Import a
+    copy</b> there. The same policy now decides on your machine. It can reach every server: local commands, and the
+    servers a browser may not call.</li>
+  </ol>
+  <p class="cta"><a class="button" href="app.html">Open the studio</a></p>
+</section>
+
+<section id="local">
   <h2>On your machine</h2>
-  <p>Node 18+: download <a href="download/okay-guard.zip">okay-guard.zip</a> and unzip it. Or Java 17+: download
-  <a href="download/okay-guard.jar">okay-guard.jar</a>, one file, the page inside. The same program on both; open the
-  studio — the same as here, its page at 127.0.0.1 with a token of its own:</p>
-<pre>node okay-guard.js --open                 # the studio: agents, servers, rules, policies, tests
-java -jar okay-guard.jar --open           # the same, on the JVM
-node okay-guard.js test                   # every test, headless: exit 1 if one fails
+  <p>It is the same studio and the same policy. The page runs at 127.0.0.1, with a token of its own. Choose one:</p>
+  <ul class="points">
+    <li><b>Node 18+:</b> <a href="download/okay-guard.zip">okay-guard.zip</a>. Unzip it, then run
+    <code>node okay-guard.js --open</code>.</li>
+    <li><b>Java 17+:</b> <a href="download/okay-guard.jar">okay-guard.jar</a>, one file. Run
+    <code>java -jar okay-guard.jar --open</code>.</li>
+  </ul>
+<pre>node okay-guard.js --open                 # the studio: Import a copy, then connect your agent
+node okay-guard.js test                   # every test, headless: exit 1 if one fails (CI)
 node okay-guard.js check policy.json      # a policy checked by its cases, no model, no server</pre>
-  <p>Made and tried here first? <b>Agent → Export a copy</b> on the site, <b>Import a copy</b> on your machine: the
-  agent, its servers, its rules and its policy come along. Your agent then connects to the address the machine's studio
-  shows (<code>http://127.0.0.1:…/m/…/mcp</code>), and every server is reachable — those a browser may not call too.</p>
-  <p>Or put the guard where a server's command was — in Claude Code, Claude Desktop, any MCP client over stdio:</p>
+  <p>Your agent connects to the address the local studio shows (<code>http://127.0.0.1:…/m/…/mcp</code>). Or put the
+  guard where a server's command was, in any MCP client over stdio. The policy you downloaded from <b>Rules</b>
+  decides each call:</p>
 <pre>{ "mcpServers": { "stripe": { "command": "node",
     "args": ["/path/to/okay-guard.js", "--rules", "/path/to/policy.json", "--open",
              "--", "npx", "-y", "@stripe/mcp", "--api-key=${STRIPE_KEY}"] } } }</pre>
-  <p>On the JVM: <code>"command": "java", "args": ["-jar", "/path/to/okay-guard.jar", …]</code>.</p>
-  <p><code>--lan</code> offers the page to your phone on the same Wi-Fi.</p>
+  <p>On Java, use <code>"command": "java", "args": ["-jar", "/path/to/okay-guard.jar", …]</code>. Add
+  <code>--lan</code> to open the page on your phone on the same Wi-Fi.</p>
 </section>
 
-<section id="cloud">
-  <h2>In the cloud</h2>
-  <p>Nothing installed, nothing kept in the cloud: <a href="app.html">open the
-  studio</a>, give your agent — Claude Code, Claude.ai's connectors, Cursor — the MCP address it shows, and watch and
-  decide in the page, on your phone too. Your agents, rules and policies stay in your browser; the Worker only passes
-  messages, and only while the page is open.</p>
-</section>
-
-<section id="studio">
-  <h2>How it is made</h2>
-  <p>Scala 3 and Scala.js, on algebraic effects: the guard is a program over its own effects — the wire, the journal,
-  the rules, a person, the clock — and every place it runs (Node, a Durable Object, this very page in the demo) is
-  only their handlers. A call waiting for you is the program's continuation, kept until you answer.</p>
-  <figure class="one"><img src="img/desktop-run.png" alt="The studio on a desktop: a run as a conversation, the rules in force beside it"></figure>
+<section id="built">
+  <h2>How it is built</h2>
+  <p>okay-guard is written in Scala 3 and Scala.js, on algebraic effects. The guard is a program over its own
+  effects: the wire, the journal, the policy, a person and the clock. Each place it runs only handles those effects.
+  It runs in your browser, in a Cloudflare Worker that passes messages, and on your machine (Node or the JVM). A call
+  waiting for you is the program's continuation, kept until you answer.</p>
+  <figure class="one"><img src="img/desktop-run.png" alt="The studio on a desktop: a run as a conversation, the rules
+  in force beside it"></figure>
 </section>
 </main>
-<footer>okay-guard — <a href="https://github.com/okay-effects">okay-effects</a></footer>
+<footer><div class="bar">
+  Built on <a href="https://github.com/okay-effects" target="_blank" rel="noopener noreferrer">okay-effects</a> —
+  algebraic effects for Scala
+  <a class="more" href="https://okay-effects.github.io/#author" target="_blank" rel="noopener noreferrer">Need more?</a>
+</div></footer>
 </body></html>
