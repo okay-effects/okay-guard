@@ -40,6 +40,10 @@ deciding, a call stopped for you to decide. Try it in the browser, then run it o
     decision it makes comes with a certificate.</li>
     <li><b>You decide.</b> A call that waits is a card in the run. Approve it, refuse it with a reason the agent is
     told, or change its arguments first. If nobody answers in time, the agent is told it is not done.</li>
+    <li><b>An audit journal.</b> Every call is recorded with the policy's decision and why: the rule and the values
+    it met, or the policy's proof and the facts it used; what a person said; what came back. Each record is chained
+    to the one before, so a change shows. It is kept in your browser or on your machine, and downloaded as JSON lines
+    or CSV.</li>
     <li><b>Tested before it is trusted.</b> A test is a task with checks on what happened. A run is kept and
     replayed, so a changed policy is tried against what the agent really did, with no model and no key. You can also
     run the tests headless, for CI.</li>
@@ -87,7 +91,9 @@ deciding, a call stopped for you to decide. Try it in the browser, then run it o
   </ul>
 <pre>node okay-guard.js --open                 # the studio: Import a copy, then connect your agent
 node okay-guard.js test                   # every test, headless: exit 1 if one fails (CI)
-node okay-guard.js check policy.json      # a policy checked by its cases, no model, no server</pre>
+node okay-guard.js check policy.json      # a policy checked by its cases, no model, no server
+node okay-guard.js journal --since 7d     # the audit journal: every call, the decision and why
+node okay-guard.js journal --csv &gt; j.csv   # for a spreadsheet; --verify checks its chain</pre>
   <p>Your agent connects to the address the local studio shows (<code>http://127.0.0.1:…/m/…/mcp</code>). Or put the
   guard where a server's command was, in any MCP client over stdio. The policy you downloaded from <b>Rules</b>
   decides each call:</p>
