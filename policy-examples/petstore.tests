@@ -1,0 +1,13 @@
+tests for petstore
+
+test "finding pets: an operation the policy never names, allowed by default"
+  when agent calls petstore.findPetsByStatus(status: "available")
+  expect allow
+
+test "a new pet waits for a person"
+  when agent calls petstore.addPet(name: "rex")
+  expect ask "a new pet: you decide"
+
+test "no pet is deleted"
+  when agent calls petstore.deletePet(petId: 7)
+  expect deny "no pet is deleted from here"

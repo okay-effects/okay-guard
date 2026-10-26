@@ -109,6 +109,27 @@ deny github.delete_repo
 allow fs.read
 allow fs.write
   when path starts "/workspace/" and not (path ends ".env")</pre>
+  <h3>REST APIs</h3>
+  <p>An agent can call a REST API through okay-guard as well: add it in the studio by its OpenAPI (Agent → A REST API,
+  or the pet store in Servers to try). Its operations become the agent's tools, named by their
+  <code>operationId</code>, and the policy decides each call before it is made as an HTTP request.</p>
+  <pre data-file="petstore.policy"><span class="file">petstore.policy</span>-- an agent at a REST API: Swagger's pet store, added in the studio by its OpenAPI (Servers to try: petstore);
+-- its operations are the agent's tools, named by the server: petstore.findPetsByStatus, petstore.addPet, …
+policy petstore
+
+type User
+
+call petstore.addPet(name: Text)
+call petstore.deletePet(petId: Int)
+
+-- reading goes ahead: no rule for it
+default allow
+
+ask petstore.addPet
+  because "a new pet: you decide"
+
+deny petstore.deletePet
+  because "no pet is deleted from here"</pre>
   <h3>Deny everything, allow some — or allow everything, deny some</h3>
   <p>With no <code>default</code>, a policy denies what no rule allows: list what may be done. For the other way
   round, say <code>default allow</code> and list what may not: a <code>deny</code> still wins and an

@@ -1,0 +1,17 @@
+-- an agent at a REST API: Swagger's pet store, added in the studio by its OpenAPI (Servers to try: petstore);
+-- its operations are the agent's tools, named by the server: petstore.findPetsByStatus, petstore.addPet, …
+policy petstore
+
+type User
+
+call petstore.addPet(name: Text)
+call petstore.deletePet(petId: Int)
+
+-- reading goes ahead: no rule for it
+default allow
+
+ask petstore.addPet
+  because "a new pet: you decide"
+
+deny petstore.deletePet
+  because "no pet is deleted from here"

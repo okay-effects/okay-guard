@@ -13,7 +13,7 @@ deciding, a call stopped for you to decide. Try it in the browser, then run it o
 <main>
 <section class="hero">
   <h1>See and control what an AI agent does</h1>
-  <p class="lead">An agent works through MCP servers: payments, mail, files, code. <b>okay-guard</b> stands between
+  <p class="lead">An agent works through MCP servers and REST APIs: payments, mail, files, code. <b>okay-guard</b> stands between
   them. You see every call. Your policy decides what passes, what is blocked and what waits for you. You decide on
   your phone, right where the call stands.</p>
   <p class="cta"><a class="button big" href="app.html">Open the studio</a>
@@ -68,9 +68,10 @@ deciding, a call stopped for you to decide. Try it in the browser, then run it o
     <li><b>Write your policy.</b> Use <b>Make a rule</b> on any call's card, or open <b>Rules</b>. For state and facts,
     choose <b>Write it in the policy language</b> (<a href="policy.html">the language, explained</a>). The studio checks the policy and shows each error where it
     is.</li>
-    <li><b>Connect the MCP server you need.</b> Under <b>Agent</b>, add a server by its URL with <b>Add the
-    server</b>, or pick one from <b>Servers to try</b> (DeepWiki needs no key). The page calls it straight from your
-    browser.</li>
+    <li><b>Connect the MCP server or the REST API you need.</b> Under <b>Agent</b>, add an MCP server by its URL
+    (<b>Add the server</b>), or a REST API by its OpenAPI (<b>Add the API</b>): its operations become your agent's
+    tools, each call decided by your policy before it is made. Or pick one from <b>Servers to try</b>: DeepWiki,
+    Swagger's pet store; no key needed. The page calls them straight from your browser.</li>
     <li><b>Refine it.</b> Run again and watch what your policy lets through. Turn a good run into a test with <b>Make
     a test</b>, so the next change of the policy is checked against it.</li>
     <li><b>Take it home.</b> In <b>Agent</b>, choose <b>Export a copy</b>. This saves the agent, its servers, its
