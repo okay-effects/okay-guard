@@ -165,9 +165,9 @@ function $h_Lokay_guard_policy_Deciders$() {
 }
 export { $h_Lokay_guard_policy_Deciders$ as $h_Lokay_guard_policy_Deciders$ };
 $h_Lokay_guard_policy_Deciders$.prototype = $p;
-$p.aib = (function(l, invoke, caller, x$4) {
+$p.aia = (function(l, invoke, caller, x$4) {
   var this$1 = $m_Lokay_guard_policy_PolicyFiles$().To(l.dK);
-  var x1 = ((this$1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right) ? $m_Lokay_guard_policy_Deciders$().agd(this$1.K, invoke, caller, x$4) : this$1);
+  var x1 = ((this$1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right) ? $m_Lokay_guard_policy_Deciders$().agc(this$1.K, invoke, caller, x$4) : this$1);
   if ((x1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right)) {
     return new $c_Lokay_guard_policy_Deciders$$anon$1(x1.K);
   }
@@ -176,8 +176,8 @@ $p.aib = (function(l, invoke, caller, x$4) {
   }
   throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(x1);
 });
-$p.agd = (function(p, invoke, caller, x$4) {
-  var sources = $m_Lokay_policy_Source$().ahI(p.fi, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction2_$$Lambda$770e9b86e03b055b1d78d82135c9f39ea48d32d7(((tool, args) => {
+$p.agc = (function(p, invoke, caller, x$4) {
+  var sources = $m_Lokay_policy_Source$().ahH(p.fi, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction2_$$Lambda$770e9b86e03b055b1d78d82135c9f39ea48d32d7(((tool, args) => {
     var result = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_s_concurrent_impl_Promise$DefaultPromise__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_concurrent_impl_Promise$DefaultPromise());
     invoke.o0(tool, $m_Lokay_guard_policy_Bridge$().TW(args), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((x$1) => {
       matchResult2: {
@@ -194,8 +194,8 @@ $p.agd = (function(p, invoke, caller, x$4) {
     })));
     return result;
   })), x$4);
-  var missing = $m_Lokay_policy_Facts$().ahM(p.fi, sources.sQ());
-  return ((!missing.b()) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left((("its facts come from " + $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOnceOps__mkString__T__T__T__T($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_SeqOps__sorted__s_math_Ordering__O($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$().F(missing), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_Ordering$String$()), "", ", ", "")) + ": not reached here")) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right(new $c_Lokay_guard_policy_PolicyGuard(p, sources, $m_Lokay_policy_Source$().VQ, caller, 2000, 0, $m_Lokay_guard_policy_PolicyGuard$().ac8(), x$4)));
+  var missing = $m_Lokay_policy_Facts$().ahL(p.fi, sources.sQ());
+  return ((!missing.b()) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left((("its facts come from " + $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOnceOps__mkString__T__T__T__T($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_SeqOps__sorted__s_math_Ordering__O($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$().F(missing), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_Ordering$String$()), "", ", ", "")) + ": not reached here")) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right(new $c_Lokay_guard_policy_PolicyGuard(p, sources, $m_Lokay_policy_Source$().VQ, caller, 2000, 0, $m_Lokay_guard_policy_PolicyGuard$().ac7(), x$4)));
 });
 var $d_Lokay_guard_policy_Deciders$ = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_guard_policy_Deciders$, "okay.guard.policy.Deciders$", ({
   vB: 1
@@ -262,7 +262,7 @@ function $p_Lokay_guard_policy_Graduate$__kind__Lokay_effects_json_Json__s_Optio
       var this$12 = $p_Lokay_guard_policy_Graduate$__kind__Lokay_effects_json_Json__s_Option($m_Lokay_guard_policy_Graduate$(), v);
       b.h6((this$12.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), k, this$12.f()))));
     }
-    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(new $c_Lokay_guard_policy_Graduate$Kind$Fields($x_3.b0(b.dW())));
+    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(new $c_Lokay_guard_policy_Graduate$Kind$Fields($x_3.aZ(b.dW())));
   }
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
 }
@@ -300,7 +300,7 @@ function $p_Lokay_guard_policy_Graduate$__at__sci_List__Lokay_guard_policy_Gradu
   }
   if ((path instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon)) {
     var x50 = path.j;
-    return new $c_Lokay_guard_policy_Graduate$Kind$Fields($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), path.fM, $p_Lokay_guard_policy_Graduate$__at__sci_List__Lokay_guard_policy_Graduate$Kind__Lokay_guard_policy_Graduate$Kind($thiz, x50, k))]))));
+    return new $c_Lokay_guard_policy_Graduate$Kind$Fields($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), path.fM, $p_Lokay_guard_policy_Graduate$__at__sci_List__Lokay_guard_policy_Graduate$Kind__Lokay_guard_policy_Graduate$Kind($thiz, x50, k))]))));
   }
   throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(path);
 }
@@ -1167,7 +1167,7 @@ function $p_Lokay_guard_policy_Graduate$__sortOf$1__scm_LinkedHashMap__T__sci_Li
     var x4 = k.nf;
     var elem$1$1 = $p_Lokay_guard_policy_Graduate$__ident__T__T__T($thiz, tool, "tool");
     var this$5 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(elem$1$1, path);
-    var f = ((_$4) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sc_StringOps$().adS(_$4));
+    var f = ((_$4) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sc_StringOps$().adR(_$4));
     if ((this$5 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
       var $x_1 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
     } else {
@@ -1438,7 +1438,7 @@ $p.a7v = (function(p) {
     }
     var $x_2 = h$3;
   }
-  var shapes = $x_3.b0($x_2);
+  var shapes = $x_3.aZ($x_2);
   var records = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_LinkedHashMap();
   var f$6 = ((t$2$1) => {
     var this$13 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_SeqOps__sortBy__F1__s_math_Ordering__O(shapes.i(t$2$1).ag(), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$6) => _$6.x())), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_Ordering$String$());
@@ -1504,10 +1504,10 @@ $p.a7v = (function(p) {
   var it$1 = records.t();
   while (it$1.u()) {
     var x0$11 = it$1.r();
-    b.ar(new $c_Lokay_policy_Decl$Record(x0$11.x(), x0$11.y(), $m_Lokay_guard_policy_Graduate$().d5));
+    b.aq(new $c_Lokay_policy_Decl$Record(x0$11.x(), x0$11.y(), $m_Lokay_guard_policy_Graduate$().d5));
   }
   var decls = $x_5.T(b.as()).T(calls).T(rules);
-  var policyText = ("-- graduated from the studio's policy: the first rule that matches decides, else the call passes\n-- a tool not declared here is denied: declare it to allow it\n" + $m_Lokay_policy_Printer$().adj(new $c_Lokay_policy_Policy(name, decls)));
+  var policyText = ("-- graduated from the studio's policy: the first rule that matches decides, else the call passes\n-- a tool not declared here is denied: declare it to allow it\n" + $m_Lokay_policy_Printer$().adi(new $c_Lokay_policy_Policy(name, decls)));
   var this$23 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_StrictOptimizedIterableOps__zipWithIndex__O(p.oS);
   var f$7 = ((x$1$2) => {
     var c = x$1$2.x();
@@ -1531,7 +1531,7 @@ $p.a7v = (function(p) {
     }
     var $x_6 = h$7;
   }
-  return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), policyText, $x_7.adl(new $c_Lokay_policy_TestFile(name, $x_6, this.d5)));
+  return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), policyText, $x_7.adk(new $c_Lokay_policy_TestFile(name, $x_6, this.d5)));
 });
 var $d_Lokay_guard_policy_Graduate$ = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_guard_policy_Graduate$, "okay.guard.policy.Graduate$", ({
   vE: 1
@@ -1561,7 +1561,7 @@ $p.To = (function(policy) {
   var x1 = this$2.by;
   return ((x1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOnceOps__mkString__T__T__T__T(x1.az, "", "\n", "")) : this$2.by);
 });
-$p.adX = (function(policy, tests) {
+$p.adW = (function(policy, tests) {
   var this$1 = this.To(policy);
   if ((this$1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right)) {
     var b = this$1.K;
@@ -1616,8 +1616,8 @@ $h_Lokay_guard_policy_PolicyGuard.prototype = $p;
 $p.hC = (function(call, answer) {
   var qualified = ((call.u3 + ".") + call.g1);
   var tool = (((call.u3 !== "") && this.uz.fi.kC.C(qualified)) ? qualified : call.g1);
-  var c = $m_Lokay_policy_Call$().ag6(this.uz.fi, tool, new $c_Lokay_policy_Value$E($m_Lokay_policy_Types$().vk, this.a2T.i(call)), $m_Lokay_guard_policy_Bridge$().TY(call.eT));
-  var program = this.Vw.a9a($m_Lokay_policy_Facts$().afR(this.uz.fi, this.a2V, this.a2U, this.a6U, this.a6V, $m_Lokay_policy_Decide$().afd(this.uz, c, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last(), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Init(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last())), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last(), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Init(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Only()), this.QX), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last());
+  var c = $m_Lokay_policy_Call$().ag5(this.uz.fi, tool, new $c_Lokay_policy_Value$E($m_Lokay_policy_Types$().vk, this.a2T.i(call)), $m_Lokay_guard_policy_Bridge$().TY(call.eT));
+  var program = this.Vw.a9a($m_Lokay_policy_Facts$().afQ(this.uz.fi, this.a2V, this.a2U, this.a6U, this.a6V, $m_Lokay_policy_Decide$().afc(this.uz, c, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last(), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Init(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last())), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last(), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Init(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Only()), this.QX), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last());
   $m_Lokay_scala3_std_Async$().akT(program, this.QX).lo(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((x$1) => {
     matchResult1: {
       if ((x$1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Success)) {
@@ -1627,7 +1627,7 @@ $p.hC = (function(call, answer) {
         if (((x$2 === null) ? (x$2$1 === null) : (x$2 === x$2$1))) {
           this.GM.dr(call.eU, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), c, d));
         }
-        answer.i($m_Lokay_guard_policy_PolicyGuard$().ahf(d));
+        answer.i($m_Lokay_guard_policy_PolicyGuard$().ahe(d));
         break matchResult1;
       }
       if ((x$1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Failure)) {
@@ -1730,10 +1730,10 @@ function $h_Lokay_guard_policy_PolicyGuard$() {
 }
 export { $h_Lokay_guard_policy_PolicyGuard$ as $h_Lokay_guard_policy_PolicyGuard$ };
 $h_Lokay_guard_policy_PolicyGuard$.prototype = $p;
-$p.ac8 = (function() {
+$p.ac7 = (function() {
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_RTLong$().o7((+Date.now()))));
 });
-$p.ahf = (function(d) {
+$p.ahe = (function(d) {
   if (d.rs) {
     var rule = (-1);
   } else {
@@ -1761,9 +1761,9 @@ $p.ahf = (function(d) {
     }
     throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(x24);
   }
-  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_guard_Judged($x_1, this.aiQ(d));
+  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_guard_Judged($x_1, this.aiP(d));
 });
-$p.aiQ = (function(d) {
+$p.aiP = (function(d) {
   $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_effects_json_Json$Obj$();
   var $x_13 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Vector$();
   var $x_12 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$();
@@ -1848,7 +1848,7 @@ $p.aiQ = (function(d) {
   }
   var this$42 = $x_4.aO($x_1);
   var this$38 = d.p8;
-  var this$54 = this$42.aO((this$38.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "theorem", new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_effects_json_Json$Str(this$38.f().aY.g())))));
+  var this$54 = this$42.aO((this$38.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "theorem", new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_effects_json_Json$Str(this$38.f().aX.g())))));
   var this$43 = d.p8;
   if (this$43.b()) {
     var $x_14 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
@@ -1893,7 +1893,7 @@ $p.aiQ = (function(d) {
     var $x_14 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "facts", new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_effects_json_Json$Arr($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Vector$().z(this$51))));
   }
   var this$59 = this$54.aO($x_14);
-  var this$55 = d.adW();
+  var this$55 = d.adV();
   if (this$55.b()) {
     var $x_16 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
   } else {
@@ -1937,14 +1937,14 @@ function $h_Lokay_guard_policy_Replay$() {
 }
 export { $h_Lokay_guard_policy_Replay$ as $h_Lokay_guard_policy_Replay$ };
 $h_Lokay_guard_policy_Replay$.prototype = $p;
-$p.adi = (function(policy, records) {
+$p.adh = (function(policy, records) {
   var given_ExecutionContext$lzy1 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_LazyRef();
   var guard = new $c_Lokay_guard_policy_PolicyGuard(policy, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), $m_Lokay_policy_Source$().VQ, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((a) => {
     var this$4 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_Option$().a3(a.oL);
     var this$7 = ((this$4.b() || (this$4.f() !== "")) ? this$4 : $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$());
     return (this$7.b() ? "agent" : this$7.f());
   })), 2000, 0, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$bL(0, 0))), $p_Lokay_guard_policy_Replay$__given_ExecutionContext$1__sr_LazyRef__s_concurrent_ExecutionContext(this, given_ExecutionContext$lzy1));
-  var f = ((r) => (!$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_guard_Paths$().c3(r, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon("kind", $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())).C(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_effects_json_Json$Str("permit"))));
+  var f = ((r) => (!$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_guard_Paths$().c2(r, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon("kind", $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())).C(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_effects_json_Json$Str("permit"))));
   var l = records;
   block: {
     var result;
@@ -2013,7 +2013,7 @@ $p.adi = (function(policy, records) {
   var t$1 = null;
   while ((rest !== $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var x0$1 = rest.e();
-    var this$9 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_guard_Paths$().c3(x0$1, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon("decision", $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$()));
+    var this$9 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_guard_Paths$().c2(x0$1, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon("decision", $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$()));
     var pf = new $c_Lokay_guard_policy_Replay$$anon$1();
     var was = ((!this$9.b()) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_PartialFunction$Lifted(pf).a3(this$9.f()) : $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$());
     if (was.b()) {
@@ -2146,7 +2146,7 @@ $p.ajh = (function(changes) {
   while (it.u()) {
     var elem = it.r();
     var key = ((elem.uB + " \u2192 ") + elem.uA);
-    m.qd(key, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c((() => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_ListBuffer()))).ar(elem);
+    m.qd(key, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c((() => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_ListBuffer()))).aq(elem);
   }
   var result$1 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_HashMap$().i2;
   var mapIt = m.t();
@@ -2603,7 +2603,7 @@ function $p_Lokay_policy_Decide$__applies$1__sci_Map__Lokay_policy_Known__Lokay_
 }
 export { $p_Lokay_policy_Decide$__applies$1__sci_Map__Lokay_policy_Known__Lokay_policy_TRule__Z as $p_Lokay_policy_Decide$__applies$1__sci_Map__Lokay_policy_Known__Lokay_policy_TRule__Z };
 function $p_Lokay_policy_Decide$__proved$1__Lokay_policy_Compiled__Lokay_policy_Call__Lokay_policy_Known__Lokay_policy_TRule__s_util_Either($thiz, policy$5, call$5, known$5, r) {
-  return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_scala3_Cek$().Pt($m_Lokay_proof_Infer$().adN(policy$5.VM.a3C, policy$5.a3p.aeJ(r, call$5, known$5, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Only()), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Only()));
+  return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_scala3_Cek$().Pt($m_Lokay_proof_Infer$().adM(policy$5.VM.a3C, policy$5.a3p.aeI(r, call$5, known$5, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Only()), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Only()));
 }
 export { $p_Lokay_policy_Decide$__proved$1__Lokay_policy_Compiled__Lokay_policy_Call__Lokay_policy_Known__Lokay_policy_TRule__s_util_Either as $p_Lokay_policy_Decide$__proved$1__Lokay_policy_Compiled__Lokay_policy_Call__Lokay_policy_Known__Lokay_policy_TRule__s_util_Either };
 function $p_Lokay_policy_Decide$__first$1__sci_List__sci_Map__Lokay_policy_Known__Lokay_policy_Compiled__Lokay_policy_Call__Lokay_policy_Verdict__s_Option($thiz, rules$4, env$7, known$6, policy$6, call$6, v) {
@@ -2933,7 +2933,7 @@ $h_Lokay_policy_Decide$.prototype = $p;
 $p.a7w = (function(policy, call, x$3, x$4) {
   var x8 = policy.fi.ajw(call.jz);
   var env = call.T1();
-  var supplied = $m_Lokay_policy_Call$().afq(policy.fi, call);
+  var supplied = $m_Lokay_policy_Call$().afp(policy.fi, call);
   if ((!supplied.zF.b())) {
     var verdict = $s_Lokay_policy_Verdict$__Deny__Lokay_policy_Verdict();
     var rules = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -2958,7 +2958,7 @@ $p.a7w = (function(policy, call, x$3, x$4) {
     }
     return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value(new $c_Lokay_policy_Decision(verdict, rules, theorem, $x_1, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$(), false, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$(), $m_Lokay_policy_Decision$().Om()));
   } else {
-    var counts = policy.fi.aeD(call.jz);
+    var counts = policy.fi.aeC(call.jz);
     var fromCall = new $c_Lokay_policy_Known(supplied.zD, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), supplied.zE);
     var rest$1 = x8;
     var h$1 = null;
@@ -3107,7 +3107,7 @@ $p.a7w = (function(policy, call, x$3, x$4) {
       }
       var $x_2 = h$4;
     }
-    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($x_3.adz($x_2, x$3), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((fs) => {
+    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($x_3.ady($x_2, x$3), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((fs) => {
       var $x_5 = $m_Lokay_policy_States$();
       var f$3 = ((_$10) => _$10.y());
       if ((states$2 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
@@ -3126,11 +3126,11 @@ $p.a7w = (function(policy, call, x$3, x$4) {
         }
         var $x_4 = h$5;
       }
-      return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Map($x_5.aj3($x_4, x$4), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((fs$2) => ((ss) => $m_Lokay_policy_Decide$().aeH(policy, call, x8, counts, new $c_Lokay_policy_Known(fs$2.ie(supplied.zD), ss, supplied.zE))))(fs)));
+      return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Map($x_5.aj3($x_4, x$4), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((fs$2) => ((ss) => $m_Lokay_policy_Decide$().aeG(policy, call, x8, counts, new $c_Lokay_policy_Known(fs$2.ie(supplied.zD), ss, supplied.zE))))(fs)));
     })));
   }
 });
-$p.aeH = (function(policy, call, rules, counts, known) {
+$p.aeG = (function(policy, call, rules, counts, known) {
   var d = $p_Lokay_policy_Decide$__decided__Lokay_policy_Compiled__Lokay_policy_Call__sci_List__sci_List__Lokay_policy_Known__Lokay_policy_Decision(this, policy, call, rules, counts, known);
   var this$1 = d.p7;
   var rest = this$1;
@@ -3265,12 +3265,12 @@ $p.a9T = (function(policy, call, outcome, known) {
   }
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_SeqOps__distinct__O(((h$1 === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h$1));
 });
-$p.afd = (function(policy, call, x$3, x$4) {
+$p.afc = (function(policy, call, x$3, x$4) {
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap(this.a7w(policy, call, x$3, x$4), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((d) => {
     var $x_1 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_scala3_Prog$package$();
     var x = d.iF;
     var x$2 = $s_Lokay_policy_Verdict$__Allow__Lokay_policy_Verdict();
-    return $x_1.ady((((x === null) ? (x$2 === null) : (x === x$2)) ? $m_Lokay_policy_States$().al5(d.rt, x$4) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value((void 0))), d);
+    return $x_1.adx((((x === null) ? (x$2 === null) : (x === x$2)) ? $m_Lokay_policy_States$().al5(d.rt, x$4) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value((void 0))), d);
   })));
 });
 var $d_Lokay_policy_Decide$ = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_policy_Decide$, "okay.policy.Decide$", ({
@@ -3337,7 +3337,7 @@ $p.aad = (function(a, b) {
     var x13 = a.gU;
     if ((b instanceof $c_Lokay_policy_Value$D)) {
       var x10 = b.gU;
-      return new $c_Lokay_policy_Value$D(x13.aca(x10));
+      return new $c_Lokay_policy_Value$D(x13.ac9(x10));
     }
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IllegalArgumentException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IllegalArgumentException(), ((a + " + ") + b));
@@ -3354,7 +3354,7 @@ $p.a9J = (function(a, b) {
     var x30 = a.gU;
     if ((b instanceof $c_Lokay_policy_Value$D)) {
       var x27 = b.gU;
-      return new $c_Lokay_policy_Value$D(x30.ac9(x27));
+      return new $c_Lokay_policy_Value$D(x30.ac8(x27));
     }
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IllegalArgumentException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IllegalArgumentException(), ((a + " - ") + b));
@@ -3550,7 +3550,7 @@ $p.wB = (function(c, env, known) {
       var h$2 = null;
       var t$2 = null;
       while ((rest$2 !== $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
-        var it$2 = $m_Lokay_policy_Eval$().wB(x78, env.c6(x76, rest$2.e()), known).t();
+        var it$2 = $m_Lokay_policy_Eval$().wB(x78, env.c5(x76, rest$2.e()), known).t();
         while (it$2.u()) {
           var nx$2 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(it$2.r(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$());
           if ((t$2 === null)) {
@@ -3573,7 +3573,7 @@ $p.wB = (function(c, env, known) {
       var h$3 = null;
       var t$3 = null;
       while ((rest$3 !== $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
-        var it$3 = $m_Lokay_policy_Eval$().wB(x73, env.c6(x71, rest$3.e()), known).t();
+        var it$3 = $m_Lokay_policy_Eval$().wB(x73, env.c5(x71, rest$3.e()), known).t();
         while (it$3.u()) {
           var nx$3 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(it$3.r(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$());
           if ((t$3 === null)) {
@@ -3682,7 +3682,7 @@ $p.go = (function(e, env, known) {
           var x122 = x0$6.gU;
           if ((x142 instanceof $c_Lokay_policy_Value$D)) {
             var x119 = x142.gU;
-            var $x_1 = new $c_Lokay_policy_Value$D(x122.acc(x119));
+            var $x_1 = new $c_Lokay_policy_Value$D(x122.acb(x119));
             break matchResult9;
           }
         }
@@ -3948,7 +3948,7 @@ $p.ij = (function(c, env, known) {
       return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
     } else {
       var x0$12 = this$36.f();
-      var f$1 = ((e) => $m_Lokay_policy_Eval$().ij(x261, env.c6(x259, e), known));
+      var f$1 = ((e) => $m_Lokay_policy_Eval$().ij(x261, env.c5(x259, e), known));
       if ((x0$12 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
         var each = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
       } else {
@@ -3996,7 +3996,7 @@ $p.ij = (function(c, env, known) {
       return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
     } else {
       var x0$16 = this$43.f();
-      var f$2 = ((e$1) => $m_Lokay_policy_Eval$().ij(x256, env.c6(x254, e$1), known));
+      var f$2 = ((e$1) => $m_Lokay_policy_Eval$().ij(x256, env.c5(x254, e$1), known));
       if ((x0$16 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
         var each$1 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
       } else {
@@ -4409,9 +4409,9 @@ export { $h_Lokay_policy_Parser$ as $h_Lokay_policy_Parser$ };
 $h_Lokay_policy_Parser$.prototype = $p;
 $p.qg = (function(text) {
   var this$1 = $m_Lokay_policy_Lexer$().CP(text);
-  return ((this$1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right) ? new $c_Lokay_policy_Parser$Parsing(this$1.K).aiM() : this$1);
+  return ((this$1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right) ? new $c_Lokay_policy_Parser$Parsing(this$1.K).aiL() : this$1);
 });
-$p.aiG = (function(text) {
+$p.aiF = (function(text) {
   var this$1 = $m_Lokay_policy_Lexer$().CP(text);
   return ((this$1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right) ? new $c_Lokay_policy_Parser$Parsing(this$1.K).akM() : this$1);
 });
@@ -4451,7 +4451,7 @@ function $p_Lokay_policy_Parser$Parsing__fail__Lokay_policy_Pos__T__E($thiz, pos
 }
 export { $p_Lokay_policy_Parser$Parsing__fail__Lokay_policy_Pos__T__E as $p_Lokay_policy_Parser$Parsing__fail__Lokay_policy_Pos__T__E };
 function $p_Lokay_policy_Parser$Parsing__expected__T__E($thiz, what) {
-  $p_Lokay_policy_Parser$Parsing__fail__Lokay_policy_Pos__T__E($thiz, $p_Lokay_policy_Parser$Parsing__peek__Lokay_policy_Tok($thiz).bW(), ((("expected " + what) + ", found ") + $p_Lokay_policy_Parser$Parsing__peek__Lokay_policy_Tok($thiz).ak9()));
+  $p_Lokay_policy_Parser$Parsing__fail__Lokay_policy_Pos__T__E($thiz, $p_Lokay_policy_Parser$Parsing__peek__Lokay_policy_Tok($thiz).bV(), ((("expected " + what) + ", found ") + $p_Lokay_policy_Parser$Parsing__peek__Lokay_policy_Tok($thiz).ak9()));
 }
 export { $p_Lokay_policy_Parser$Parsing__expected__T__E as $p_Lokay_policy_Parser$Parsing__expected__T__E };
 function $p_Lokay_policy_Parser$Parsing__isWord__T__Z($thiz, w) {
@@ -4475,11 +4475,11 @@ function $p_Lokay_policy_Parser$Parsing__isSym__T__Z($thiz, s) {
 }
 export { $p_Lokay_policy_Parser$Parsing__isSym__T__Z as $p_Lokay_policy_Parser$Parsing__isSym__T__Z };
 function $p_Lokay_policy_Parser$Parsing__word__T__Lokay_policy_Pos($thiz, w) {
-  return ($p_Lokay_policy_Parser$Parsing__isWord__T__Z($thiz, w) ? $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz).bW() : $p_Lokay_policy_Parser$Parsing__expected__T__E($thiz, (("'" + w) + "'")));
+  return ($p_Lokay_policy_Parser$Parsing__isWord__T__Z($thiz, w) ? $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz).bV() : $p_Lokay_policy_Parser$Parsing__expected__T__E($thiz, (("'" + w) + "'")));
 }
 export { $p_Lokay_policy_Parser$Parsing__word__T__Lokay_policy_Pos as $p_Lokay_policy_Parser$Parsing__word__T__Lokay_policy_Pos };
 function $p_Lokay_policy_Parser$Parsing__sym__T__Lokay_policy_Pos($thiz, s) {
-  return ($p_Lokay_policy_Parser$Parsing__isSym__T__Z($thiz, s) ? $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz).bW() : $p_Lokay_policy_Parser$Parsing__expected__T__E($thiz, (("'" + s) + "'")));
+  return ($p_Lokay_policy_Parser$Parsing__isSym__T__Z($thiz, s) ? $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz).bV() : $p_Lokay_policy_Parser$Parsing__expected__T__E($thiz, (("'" + s) + "'")));
 }
 export { $p_Lokay_policy_Parser$Parsing__sym__T__Lokay_policy_Pos as $p_Lokay_policy_Parser$Parsing__sym__T__Lokay_policy_Pos };
 function $p_Lokay_policy_Parser$Parsing__acceptWord__T__Z($thiz, w) {
@@ -4577,7 +4577,7 @@ function $p_Lokay_policy_Parser$Parsing__decl__Lokay_policy_Decl($thiz) {
         var result = ($p_Lokay_policy_Parser$Parsing__acceptSym__T__Z($thiz, ":") ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($p_Lokay_policy_Parser$Parsing__sort__Lokay_policy_Sort($thiz)) : $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$());
         if ($p_Lokay_policy_Parser$Parsing__acceptWord__T__Z($thiz, "from")) {
           if (($p_Lokay_policy_Parser$Parsing__isWord__T__Z($thiz, "mcp") && ($p_Lokay_policy_Parser$Parsing__peekAt__I__Lokay_policy_Tok($thiz, 1) instanceof $c_Lokay_policy_Tok$Name))) {
-            var fp = $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz).bW();
+            var fp = $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz).bV();
             matchResult33: {
               var tool$2;
               var x96 = $p_Lokay_policy_Parser$Parsing__name__T__T2($thiz, "an MCP tool: server.tool");
@@ -5106,7 +5106,7 @@ function $p_Lokay_policy_Parser$Parsing__negation__Lokay_policy_Cond($thiz) {
     }
     if ((x299 === "has")) {
       var x = $p_Lokay_policy_Parser$Parsing__peekAt__I__Lokay_policy_Tok($thiz, 1);
-      var x$2 = new $c_Lokay_policy_Tok$Sym("(", $p_Lokay_policy_Parser$Parsing__peekAt__I__Lokay_policy_Tok($thiz, 1).bW());
+      var x$2 = new $c_Lokay_policy_Tok$Sym("(", $p_Lokay_policy_Parser$Parsing__peekAt__I__Lokay_policy_Tok($thiz, 1).bV());
       if (((x !== null) && x.c(x$2))) {
         $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz);
         $p_Lokay_policy_Parser$Parsing__sym__T__Lokay_policy_Pos($thiz, "(");
@@ -5134,7 +5134,7 @@ function $p_Lokay_policy_Parser$Parsing__negation__Lokay_policy_Cond($thiz) {
         break matchAlts3;
       }
       var x$3 = $p_Lokay_policy_Parser$Parsing__peekAt__I__Lokay_policy_Tok($thiz, 2);
-      var x$4 = new $c_Lokay_policy_Tok$Name("in", $p_Lokay_policy_Parser$Parsing__peekAt__I__Lokay_policy_Tok($thiz, 2).bW());
+      var x$4 = new $c_Lokay_policy_Tok$Name("in", $p_Lokay_policy_Parser$Parsing__peekAt__I__Lokay_policy_Tok($thiz, 2).bV());
       if (((x$3 !== null) && x$3.c(x$4))) {
         $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz);
         matchResult53: {
@@ -5373,7 +5373,7 @@ export { $p_Lokay_policy_Parser$Parsing__expr__Lokay_policy_Expr as $p_Lokay_pol
 function $p_Lokay_policy_Parser$Parsing__term__Lokay_policy_Expr($thiz) {
   var e = $p_Lokay_policy_Parser$Parsing__factor__Lokay_policy_Expr($thiz);
   while ($p_Lokay_policy_Parser$Parsing__isSym__T__Z($thiz, "*")) {
-    var p = $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz).bW();
+    var p = $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz).bV();
     e = new $c_Lokay_policy_Expr$Mul(e, $p_Lokay_policy_Parser$Parsing__factor__Lokay_policy_Expr($thiz), p);
   }
   return e;
@@ -5408,7 +5408,7 @@ function $p_Lokay_policy_Parser$Parsing__factor__Lokay_policy_Expr($thiz) {
       if ((x344 instanceof $c_Lokay_policy_Tok$IntNum)) {
         var x351 = x344.vj;
         $p_Lokay_policy_Parser$Parsing__next__Lokay_policy_Tok($thiz);
-        return new $c_Lokay_policy_Expr$IntLit(x351.aba(), x373);
+        return new $c_Lokay_policy_Expr$IntLit(x351.ab9(), x373);
       }
       if ((x344 instanceof $c_Lokay_policy_Tok$DecNum)) {
         var x347 = x344.vi;
@@ -5494,7 +5494,7 @@ function $h_Lokay_policy_Parser$Parsing() {
 }
 export { $h_Lokay_policy_Parser$Parsing as $h_Lokay_policy_Parser$Parsing };
 $h_Lokay_policy_Parser$Parsing.prototype = $p;
-$p.aiM = (function() {
+$p.aiL = (function() {
   try {
     $p_Lokay_policy_Parser$Parsing__word__T__Lokay_policy_Pos(this, "policy");
     matchResult28: {
@@ -5561,7 +5561,7 @@ var $d_Lokay_policy_Parser$Parsing = new $j_internal$002d767013ce0ee0f6d7a075879
 }));
 export { $d_Lokay_policy_Parser$Parsing as $d_Lokay_policy_Parser$Parsing };
 function $p_Lokay_policy_Printer$__targetWord__Lokay_policy_Target__T($thiz, t) {
-  return ((t instanceof $c_Lokay_policy_Target$Tool) ? $thiz.wK(t.rQ) : t.abj());
+  return ((t instanceof $c_Lokay_policy_Target$Tool) ? $thiz.wK(t.rQ) : t.abi());
 }
 export { $p_Lokay_policy_Printer$__targetWord__Lokay_policy_Target__T as $p_Lokay_policy_Printer$__targetWord__Lokay_policy_Target__T };
 function $p_Lokay_policy_Printer$__params__sci_List__T($thiz, ps) {
@@ -5727,7 +5727,7 @@ function $h_Lokay_policy_Printer$() {
 }
 export { $h_Lokay_policy_Printer$ as $h_Lokay_policy_Printer$ };
 $h_Lokay_policy_Printer$.prototype = $p;
-$p.adj = (function(p) {
+$p.adi = (function(p) {
   var elem$1 = ("policy " + p.rI);
   var this$1 = p.du;
   var f = ((d) => $m_Lokay_policy_Printer$().Ya(d));
@@ -5749,7 +5749,7 @@ $p.adj = (function(p) {
   }
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOnceOps__mkString__T__T__T__T(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(elem$1, $x_1), "", "\n\n", "\n");
 });
-$p.adl = (function(f) {
+$p.adk = (function(f) {
   var elem$2 = ("tests for " + f.vf);
   var this$1 = f.vg;
   var f$1 = ((d) => $m_Lokay_policy_Printer$().Ya(d));
@@ -6338,7 +6338,7 @@ function $p_Lokay_policy_Prove__holds__Lokay_policy_TCond__Lokay_policy_Known__L
     _return: {
       var these = es;
       while ((!these.b())) {
-        if ($m_Lokay_policy_Eval$().ij($thiz.mp(x89, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), x87, these.e())])))), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), known).C(true)) {
+        if ($m_Lokay_policy_Eval$().ij($thiz.mp(x89, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), x87, these.e())])))), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), known).C(true)) {
           var x81 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(these.e());
           break _return;
         }
@@ -6352,7 +6352,7 @@ function $p_Lokay_policy_Prove__holds__Lokay_policy_TCond__Lokay_policy_Known__L
     if ((x81 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some)) {
       var e$2 = x81.J;
       var v = new $c_Lokay_proof_Term$V(x87, $thiz.es.gJ(x88.jG));
-      return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().wf($thiz.es.wt(x88, $thiz.es.mK(e$2)), evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((m) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($p_Lokay_policy_Prove__holds__Lokay_policy_TCond__Lokay_policy_Known__Lokay_scala3_Place__Lokay_scala3_Prog($thiz, $thiz.mp(x89, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), x87, e$2)])))), known, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((m$2) => ((pe) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().XK(m$2, pe, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((both) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Map($m_Lokay_proof_Infer$().hd(new $c_Lokay_proof_Rule$ExI(v, new $c_Lokay_proof_Formula$And($thiz.es.wt(x88, v), $thiz.es.j9(x89)), $thiz.es.mK(e$2), both), evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((ex) => ex))))))))(m))))));
+      return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().wf($thiz.es.wt(x88, $thiz.es.mK(e$2)), evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((m) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($p_Lokay_policy_Prove__holds__Lokay_policy_TCond__Lokay_policy_Known__Lokay_scala3_Place__Lokay_scala3_Prog($thiz, $thiz.mp(x89, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), x87, e$2)])))), known, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((m$2) => ((pe) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().XK(m$2, pe, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((both) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Map($m_Lokay_proof_Infer$().hd(new $c_Lokay_proof_Rule$ExI(v, new $c_Lokay_proof_Formula$And($thiz.es.wt(x88, v), $thiz.es.j9(x89)), $thiz.es.mK(e$2), both), evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((ex) => ex))))))))(m))))));
     }
     throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(x81);
   } else {
@@ -6367,7 +6367,7 @@ function $p_Lokay_policy_Prove__every__T__Lokay_policy_TList__Lokay_policy_TCond
   var v = new $c_Lokay_proof_Term$V(x, sortX);
   var p = $thiz.es.j9(body);
   var e0 = new $c_Lokay_proof_Term$V("\u00a7e", sortX);
-  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().wf(new $c_Lokay_proof_Formula$All(e0, new $c_Lokay_proof_Formula$Imp($thiz.es.wt(l, e0), $p_Lokay_policy_Prove__oneOf$1__sci_List__Lokay_proof_Term__Lokay_proof_Formula($thiz, es, e0))), evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((c) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().a7n(c, v, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((inst) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().wf($thiz.es.wt(l, v), evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((inst$2) => ((m) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().a9e(inst$2, m, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((d) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($p_Lokay_policy_Prove__cases$1__Lokay_proof_Formula__Lokay_scala3_Place__Lokay_proof_Term$V__Lokay_proof_Sort__Lokay_policy_TCond__T__Lokay_policy_Known__Lokay_proof_Kernel$Thm__sci_List__Lokay_scala3_Prog($thiz, p, evidence$1, v, sortX, body, x, known, d, es), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((px) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().agq($thiz.es.wt(l, v), px, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((imp) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Map($m_Lokay_proof_Infer$().acJ(v, imp, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((all) => all))))))))))))))(inst)))))))));
+  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().wf(new $c_Lokay_proof_Formula$All(e0, new $c_Lokay_proof_Formula$Imp($thiz.es.wt(l, e0), $p_Lokay_policy_Prove__oneOf$1__sci_List__Lokay_proof_Term__Lokay_proof_Formula($thiz, es, e0))), evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((c) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().a7n(c, v, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((inst) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().wf($thiz.es.wt(l, v), evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((inst$2) => ((m) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().a9e(inst$2, m, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((d) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($p_Lokay_policy_Prove__cases$1__Lokay_proof_Formula__Lokay_scala3_Place__Lokay_proof_Term$V__Lokay_proof_Sort__Lokay_policy_TCond__T__Lokay_policy_Known__Lokay_proof_Kernel$Thm__sci_List__Lokay_scala3_Prog($thiz, p, evidence$1, v, sortX, body, x, known, d, es), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((px) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().agp($thiz.es.wt(l, v), px, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((imp) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Map($m_Lokay_proof_Infer$().acI(v, imp, evidence$1), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((all) => all))))))))))))))(inst)))))))));
 }
 export { $p_Lokay_policy_Prove__every__T__Lokay_policy_TList__Lokay_policy_TCond__Lokay_policy_Known__Lokay_scala3_Place__Lokay_scala3_Prog as $p_Lokay_policy_Prove__every__T__Lokay_policy_TList__Lokay_policy_TCond__Lokay_policy_Known__Lokay_scala3_Place__Lokay_scala3_Prog };
 function $p_Lokay_policy_Prove__valueOf__Lokay_proof_Fn__sci_List__Lokay_policy_Known__s_Option($thiz, fn, args, known) {
@@ -6536,7 +6536,7 @@ function $p_Lokay_policy_Prove__reversed__Lokay_proof_Term__Lokay_proof_Term__Lo
 export { $p_Lokay_policy_Prove__reversed__Lokay_proof_Term__Lokay_proof_Term__Lokay_scala3_Place__Lokay_scala3_Prog as $p_Lokay_policy_Prove__reversed__Lokay_proof_Term__Lokay_proof_Term__Lokay_scala3_Place__Lokay_scala3_Prog };
 function $p_Lokay_policy_Prove__closed__Lokay_proof_Formula__Lokay_scala3_Place__Lokay_scala3_Prog($thiz, f, evidence$1) {
   if ($m_Lokay_proof_Arithmetic$().ok(f).C(true)) {
-    return $m_Lokay_proof_Infer$().ae9(f, evidence$1);
+    return $m_Lokay_proof_Infer$().ae8(f, evidence$1);
   } else {
     if ((f instanceof $c_Lokay_proof_Formula$Eq)) {
       var x256 = f.hn;
@@ -6636,7 +6636,7 @@ function $p_Lokay_policy_Prove__oneOf$1__sci_List__Lokay_proof_Term__Lokay_proof
 export { $p_Lokay_policy_Prove__oneOf$1__sci_List__Lokay_proof_Term__Lokay_proof_Formula as $p_Lokay_policy_Prove__oneOf$1__sci_List__Lokay_proof_Term__Lokay_proof_Formula };
 function $p_Lokay_policy_Prove__carried$1__Lokay_proof_Sort__Lokay_proof_Term$V__Lokay_scala3_Place__Lokay_policy_TCond__T__Lokay_policy_Known__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__Lokay_policy_Value__Lokay_scala3_Prog($thiz, sortX$1, v$6, evidence$1$12, body$5, x$4, known$5, p$1, eq, e) {
   var r = new $c_Lokay_proof_Term$V("\u00a7r", sortX$1);
-  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().ZA(v$6, evidence$1$12), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((refl) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().TQ(eq, r, new $c_Lokay_proof_Formula$Eq(r, v$6), refl, evidence$1$12), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((back) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($p_Lokay_policy_Prove__holds__Lokay_policy_TCond__Lokay_policy_Known__Lokay_scala3_Place__Lokay_scala3_Prog($thiz, $thiz.mp(body$5, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), x$4, e)])))), known$5, evidence$1$12), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((back$2) => ((pe) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Map($m_Lokay_proof_Infer$().TQ(back$2, v$6, p$1, pe, evidence$1$12), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((px) => px)))))(back)))))))));
+  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().ZA(v$6, evidence$1$12), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((refl) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($m_Lokay_proof_Infer$().TQ(eq, r, new $c_Lokay_proof_Formula$Eq(r, v$6), refl, evidence$1$12), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((back) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap($p_Lokay_policy_Prove__holds__Lokay_policy_TCond__Lokay_policy_Known__Lokay_scala3_Place__Lokay_scala3_Prog($thiz, $thiz.mp(body$5, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), x$4, e)])))), known$5, evidence$1$12), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((back$2) => ((pe) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Map($m_Lokay_proof_Infer$().TQ(back$2, v$6, p$1, pe, evidence$1$12), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((px) => px)))))(back)))))))));
 }
 export { $p_Lokay_policy_Prove__carried$1__Lokay_proof_Sort__Lokay_proof_Term$V__Lokay_scala3_Place__Lokay_policy_TCond__T__Lokay_policy_Known__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__Lokay_policy_Value__Lokay_scala3_Prog as $p_Lokay_policy_Prove__carried$1__Lokay_proof_Sort__Lokay_proof_Term$V__Lokay_scala3_Place__Lokay_policy_TCond__T__Lokay_policy_Known__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__Lokay_policy_Value__Lokay_scala3_Prog };
 function $p_Lokay_policy_Prove__cases$1__Lokay_proof_Formula__Lokay_scala3_Place__Lokay_proof_Term$V__Lokay_proof_Sort__Lokay_policy_TCond__T__Lokay_policy_Known__Lokay_proof_Kernel$Thm__sci_List__Lokay_scala3_Prog($thiz, p$5, evidence$1$16, v$10, sortX$2, body$8, x$7, known$8, d, rest) {
@@ -6680,7 +6680,7 @@ function $p_Lokay_policy_Prove__term$1__Lokay_proof_Term__s_Option($thiz, x) {
     var x151 = x.fK;
     var this$5 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_Iterator__nextOption__s_Option(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sc_Iterator$$anon$10(x151.t(), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((x$2) => $p_Lokay_policy_Prove__term$1__Lokay_proof_Term__s_Option($thiz, x$2)))));
     if (this$5.b()) {
-      if ($thiz.es.agO(x150)) {
+      if ($thiz.es.agN(x150)) {
         _return: {
           var these = x151;
           while ((!these.b())) {
@@ -6942,13 +6942,13 @@ $p.mp = (function(c, env) {
   }
   throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(c);
 });
-$p.aeJ = (function(rule, call, known, evidence$1) {
+$p.aeI = (function(rule, call, known, evidence$1) {
   var env = call.T1();
   matchResult3: {
     var \u03b41$___1;
     var \u03b41$___2;
     var \u03b41$___3;
-    var x74 = this.es.agC(rule, call.jz, this.es.mK(env.i("caller")), this.es.mK(env.i("call")));
+    var x74 = this.es.agB(rule, call.jz, this.es.mK(env.i("caller")), this.es.mK(env.i("call")));
     if ((x74 !== null)) {
       var \u03b41$___1 = x74.be;
       var \u03b41$___2 = x74.bs;
@@ -6960,7 +6960,7 @@ $p.aeJ = (function(rule, call, known, evidence$1) {
   var name$2 = \u03b41$___1;
   var values$2 = \u03b41$___2;
   var when$2 = \u03b41$___3;
-  var axiom = $m_Lokay_proof_Infer$().adE(name$2, evidence$1);
+  var axiom = $m_Lokay_proof_Infer$().adD(name$2, evidence$1);
   var acc = axiom;
   var these = values$2;
   while ((!these.b())) {
@@ -7142,7 +7142,7 @@ function $h_Lokay_policy_Source$() {
 }
 export { $h_Lokay_policy_Source$ as $h_Lokay_policy_Source$ };
 $h_Lokay_policy_Source$.prototype = $p;
-$p.ahI = (function(checked, invoke, x$3) {
+$p.ahH = (function(checked, invoke, x$3) {
   var this$5 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOps__flatMap__F1__O(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sc_MapOps$$anon$1(checked.lO), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((sig) => {
     var this$2 = sig.IL;
     return (this$2.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), sig, this$2.f())));
@@ -7152,7 +7152,7 @@ $p.ahI = (function(checked, invoke, x$3) {
   while (it.u()) {
     var elem = it.r();
     var key = elem.y().J0;
-    m.qd(key, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c(((this$5) => (() => this$5.gl()))(this$5))).ar(elem);
+    m.qd(key, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c(((this$5) => (() => this$5.gl()))(this$5))).aq(elem);
   }
   var result = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_HashMap$().i2;
   var mapIt = m.t();
@@ -7177,7 +7177,7 @@ $p.ahI = (function(checked, invoke, x$3) {
     var self = ("mcp:" + tool);
     $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$p_sci_HashMapBuilder__ensureUnaliased__V(b);
     var h = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_Statics$().B(self);
-    var im = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sc_Hashing$().ao(h);
+    var im = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sc_Hashing$().an(h);
     b.t7(b.iQ, self, source, h, im, 0);
   }
   return b.Ps();
@@ -7195,7 +7195,7 @@ function $m_Lokay_policy_Source$() {
 }
 export { $m_Lokay_policy_Source$ as $m_Lokay_policy_Source$ };
 function $p_Lokay_policy_States$Memory__window__Lokay_policy_Window__J__J($thiz, w, t_$_lo, t_$_hi) {
-  var $x_1 = w.ahL();
+  var $x_1 = w.ahK();
   var b_$_lo = $x_1.l;
   var b_$_hi = $x_1.h;
   var $x_2 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_RTLong$().ZE(t_$_lo, t_$_hi, b_$_lo, b_$_hi);
@@ -7260,7 +7260,7 @@ $p.a94 = (function(ref) {
   }
   return sig.IT;
 });
-$p.aaJ = (function(ref, v) {
+$p.aaI = (function(ref, v) {
   var $x_5 = this.VT;
   var this$1 = this.VR.rr.i(ref.lS).AR;
   if (this$1.b()) {
@@ -7298,7 +7298,7 @@ $p.a7U = (function(c) {
     }
     throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(x208);
   }
-  this.aaJ($x_2, $x_1);
+  this.aaI($x_2, $x_1);
 });
 $p.a9a = (function(p, x$2) {
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_scala3_Prog$package$().sN(p, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Handler$Tail(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((a) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value(a))), new $c_Lokay_policy_States$Memory$$anon$9(this)), x$2);
@@ -7319,7 +7319,7 @@ function $h_Lokay_policy_Tests$() {
 export { $h_Lokay_policy_Tests$ as $h_Lokay_policy_Tests$ };
 $h_Lokay_policy_Tests$.prototype = $p;
 $p.ajB = (function(policy, tests) {
-  var f = ((_$1) => $m_Lokay_policy_Tests$().aip(policy, _$1));
+  var f = ((_$1) => $m_Lokay_policy_Tests$().aio(policy, _$1));
   if ((tests === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
   } else {
@@ -7341,7 +7341,7 @@ $p.ajA = (function(policy, text) {
   var this$1 = $m_Lokay_policy_Types$().akL(policy.fi, text);
   return ((this$1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right($m_Lokay_policy_Tests$().ajB(policy, this$1.K)) : this$1);
 });
-$p.aip = (function(policy, t) {
+$p.aio = (function(policy, t) {
   var this$1 = t.B0;
   var f = ((g) => policy.fi.lO.C(g.rN));
   var l = this$1;
@@ -7437,7 +7437,7 @@ $p.aip = (function(policy, t) {
     }
     var $x_2 = h$1;
   }
-  var facts = $x_3.b0($x_2);
+  var facts = $x_3.aZ($x_2);
   var store = new $c_Lokay_policy_States$Memory(policy.fi, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$bL(0, 0))));
   var this$10 = t.B0;
   var f$2 = ((g$3) => policy.fi.rr.C(g$3.rN));
@@ -7510,11 +7510,11 @@ $p.aip = (function(policy, t) {
     var this$11 = x0$2.AV;
     if ((this$11 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right)) {
       var b$1 = this$11.K;
-      store.aaJ(new $c_Lokay_policy_FactRef(x0$2.rN, x0$2.AU), b$1);
+      store.aaI(new $c_Lokay_policy_FactRef(x0$2.rN, x0$2.AU), b$1);
     }
     these = these.d();
   }
-  return new $c_Lokay_policy_Outcome(t, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_scala3_Cek$().Pt(store.a9a($m_Lokay_policy_Facts$().ahj(facts, $m_Lokay_policy_Decide$().a7w(policy, ($m_Lokay_policy_Call$(), new $c_Lokay_policy_Call(t.J8, t.J6, t.J5)), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last(), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Init(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Only())), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last()), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Only())));
+  return new $c_Lokay_policy_Outcome(t, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_scala3_Cek$().Pt(store.a9a($m_Lokay_policy_Facts$().ahi(facts, $m_Lokay_policy_Decide$().a7w(policy, ($m_Lokay_policy_Call$(), new $c_Lokay_policy_Call(t.J8, t.J6, t.J5)), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last(), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Init(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Only())), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Last()), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Place$Only())));
 });
 var $d_Lokay_policy_Tests$ = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_policy_Tests$, "okay.policy.Tests$", ({
   xB: 1
@@ -7551,7 +7551,7 @@ function $c_Lokay_policy_Theorize(checked) {
   while ((rest !== $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var x0 = rest.e();
     var this$5 = x0.vc;
-    var f = ((r$2) => ((t$1) => this.adF(r$2, t$1)))(x0);
+    var f = ((r$2) => ((t$1) => this.adE(r$2, t$1)))(x0);
     if ((this$5 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
       var $x_1 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
     } else {
@@ -7646,7 +7646,7 @@ function $c_Lokay_policy_Theorize(checked) {
       }
     }
   }
-  var f$2 = ((r$3) => this.aiw(r$3));
+  var f$2 = ((r$3) => this.aiv(r$3));
   if ((result === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var $x_2 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
   } else {
@@ -7726,7 +7726,7 @@ $p.mK = (function(v) {
   }
   return $x_1;
 });
-$p.agO = (function(fn) {
+$p.agN = (function(fn) {
   return ((!fn.pD.b()) && (!$m_Lokay_proof_Fns$().W1.C(fn)));
 });
 $p.alb = (function(v, tool) {
@@ -7739,10 +7739,10 @@ $p.a0o = (function(tool) {
 $p.a7P = (function(r, tool) {
   return ((((("rule " + ((1 + r.rO) | 0)) + " (line ") + r.iJ.np.iG) + ") on ") + tool);
 });
-$p.aeK = (function(tool) {
+$p.aeJ = (function(tool) {
   return this.a3B.kC.C(tool);
 });
-$p.aix = (function(v) {
+$p.aiw = (function(v) {
   var this$1 = v.hm;
   return new $c_Lokay_proof_Pred((this$1.toLowerCase() + ":*"), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(this.gJ(this.Ro), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(this.gJ(this.Rn), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($s_Lokay_proof_Sort$__Str__Lokay_proof_Sort(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$()))));
 });
@@ -7762,8 +7762,8 @@ $p.aa6 = (function(r) {
   }
   return r.jI;
 });
-$p.agC = (function(r, tool, caller, call) {
-  return (this.aeK(tool) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T3(this.a7P(r, tool), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(caller, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(call, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())), r.jI) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T3(this.aa4(r), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(caller, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(call, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(new $c_Lokay_proof_Term$S(tool), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$()))), this.aa6(r)));
+$p.agB = (function(r, tool, caller, call) {
+  return (this.aeJ(tool) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T3(this.a7P(r, tool), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(caller, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(call, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())), r.jI) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T3(this.aa4(r), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(caller, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(call, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(new $c_Lokay_proof_Term$S(tool), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$()))), this.aa6(r)));
 });
 $p.hL = (function(e) {
   if ((e instanceof $c_Lokay_policy_TExpr$Lit)) {
@@ -8046,14 +8046,14 @@ $p.j9 = (function(c) {
   }
   throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(c);
 });
-$p.adF = (function(r, tool) {
+$p.adE = (function(r, tool) {
   var head = new $c_Lokay_proof_Formula$P(this.alb(r.nu, tool), this.a0o(tool));
   var this$2 = r.jI;
   var body = (this$2.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($p_Lokay_policy_Theorize__named__T__Lokay_proof_Formula__Lokay_proof_Formula(this, tool, this.j9(this$2.f()))));
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), this.a7P(r, tool), $m_Lokay_proof_Formula$().a7m(this.a0o(tool), (body.b() ? head : new $c_Lokay_proof_Formula$Imp(body.f(), head))));
 });
-$p.aiw = (function(r) {
-  var head = new $c_Lokay_proof_Formula$P(this.aix(r.nu), this.aa5());
+$p.aiv = (function(r) {
+  var head = new $c_Lokay_proof_Formula$P(this.aiw(r.nu), this.aa5());
   var $x_3 = this.aa4(r);
   var $x_2 = $m_Lokay_proof_Formula$();
   var $x_1 = this.aa5();
@@ -8083,7 +8083,7 @@ function $h_Lokay_policy_Types$() {
 }
 export { $h_Lokay_policy_Types$ as $h_Lokay_policy_Types$ };
 $h_Lokay_policy_Types$.prototype = $p;
-$p.adY = (function(p) {
+$p.adX = (function(p) {
   return new $c_Lokay_policy_Types$Checking(p).ajF();
 });
 $p.ip = (function(c) {
@@ -8139,7 +8139,7 @@ $p.CP = (function(text) {
   var this$3 = ((x1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(x1.az, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) : this$2.by);
   if ((this$3 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right)) {
     var b = this$3.K;
-    return $m_Lokay_policy_Types$().adY(b);
+    return $m_Lokay_policy_Types$().adX(b);
   } else {
     return this$3;
   }
@@ -8148,7 +8148,7 @@ $p.a0g = (function(c, f) {
   return new $c_Lokay_policy_Types$Checking(c.ro).a0g(c, f);
 });
 $p.akL = (function(c, text) {
-  var this$2 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Either$LeftProjection($m_Lokay_policy_Parser$().aiG(text));
+  var this$2 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Either$LeftProjection($m_Lokay_policy_Parser$().aiF(text));
   var x1 = this$2.by;
   var this$3 = ((x1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(x1.az, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) : this$2.by);
   if ((this$3 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right)) {
@@ -8239,7 +8239,7 @@ function $p_Lokay_policy_Types$Checking__duplicates__sci_List__T__V($thiz, names
   while (it.u()) {
     var elem = it.r();
     var key = elem.x();
-    m.qd(key, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c((() => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_ListBuffer()))).ar(elem);
+    m.qd(key, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c((() => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_ListBuffer()))).aq(elem);
   }
   var result = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_HashMap$().i2;
   var mapIt = m.t();
@@ -8303,7 +8303,7 @@ function $p_Lokay_policy_Types$Checking__literal__Lokay_policy_Expr__Lokay_polic
       return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(new $c_Lokay_policy_Value$E(s.iH, x299));
     }
   }
-  $thiz.aV(e.bW(), ((("expected a literal of " + s) + ", found ") + $m_Lokay_policy_Printer$().dd(e)));
+  $thiz.aV(e.bV(), ((("expected a literal of " + s) + ", found ") + $m_Lokay_policy_Printer$().dd(e)));
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
 }
 export { $p_Lokay_policy_Types$Checking__literal__Lokay_policy_Expr__Lokay_policy_Sort__s_Option as $p_Lokay_policy_Types$Checking__literal__Lokay_policy_Expr__Lokay_policy_Sort__s_Option };
@@ -8358,7 +8358,7 @@ function $p_Lokay_policy_Types$Checking__scopeOf__Lokay_policy_Target__Lokay_pol
         }
         var $x_2 = h;
       }
-      var $x_1 = $x_3.b0($x_2);
+      var $x_1 = $x_3.aZ($x_2);
     }
     return $x_1;
   });
@@ -8418,7 +8418,7 @@ function $p_Lokay_policy_Types$Checking__scopeOf__Lokay_policy_Target__Lokay_pol
     var $x_5 = false;
   }
   if ($x_5) {
-    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($thiz.Rq.XV($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "caller", new $c_Lokay_policy_Sort$Entity($m_Lokay_policy_Types$().vk)), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "tool", $s_Lokay_policy_Sort$__Text__Lokay_policy_Sort())]))), args, sigs, target, tools));
+    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($thiz.Rq.XV($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "caller", new $c_Lokay_policy_Sort$Entity($m_Lokay_policy_Types$().vk)), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "tool", $s_Lokay_policy_Sort$__Text__Lokay_policy_Sort())]))), args, sigs, target, tools));
   } else {
     return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
   }
@@ -8523,7 +8523,7 @@ function $p_Lokay_policy_Types$Checking__update__Lokay_policy_Update__Lokay_poli
         return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
       } else {
         var x0$1 = value$1.f();
-        var this$2 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x0$1, sig.pg, u.vl.bW());
+        var this$2 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x0$1, sig.pg, u.vl.bV());
         if (this$2.b()) {
           return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
         } else {
@@ -8654,7 +8654,7 @@ function $p_Lokay_policy_Types$Checking__path__T__Lokay_policy_Pos__Lokay_policy
           var x373 = sort.bv;
           if ((x373 instanceof $c_Lokay_policy_Sort$ListOf)) {
             var x379 = x373.jB;
-            return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($thiz.hl.a3E.adk(new $c_Lokay_policy_TList(name$2.bv, base, x379)));
+            return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($thiz.hl.a3E.adj(new $c_Lokay_policy_TList(name$2.bv, base, x379)));
           }
           if ((x373 instanceof $c_Lokay_policy_Sort$Rec)) {
             var x376 = x373.iI;
@@ -8712,11 +8712,11 @@ function $p_Lokay_policy_Types$Checking__args__T__sci_List__sci_List__Lokay_poli
       var a = x$1.x();
       var s = x$1.y();
       if ((a instanceof $c_Lokay_policy_Expr$Apply)) {
-        $thiz.aV(a.bW(), ("a fact's argument is a name or a literal, not a fact: " + $m_Lokay_policy_Printer$().dd(a)));
+        $thiz.aV(a.bV(), ("a fact's argument is a name or a literal, not a fact: " + $m_Lokay_policy_Printer$().dd(a)));
         return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
       } else {
         var this$3 = $p_Lokay_policy_Types$Checking__expr__Lokay_policy_Expr__Lokay_policy_Types$Checking$Scope__s_Option__s_Option($thiz, a, scope, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(s));
-        return (this$3.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, this$3.f(), s, a.bW()));
+        return (this$3.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, this$3.f(), s, a.bV()));
       }
     });
     if ((this$4 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
@@ -8812,7 +8812,7 @@ function $p_Lokay_policy_Types$Checking__expr__Lokay_policy_Expr__Lokay_policy_T
         var x412 = want.J;
         if ((x412 instanceof $c_Lokay_policy_Sort$Entity)) {
           var x415 = x412.iH;
-          if ((!$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sc_StringOps$().aef(x507, 46))) {
+          if ((!$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sc_StringOps$().aee(x507, 46))) {
             return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(new $c_Lokay_policy_TExpr$Lit(new $c_Lokay_policy_Value$E(x415, x507)));
           }
         }
@@ -8851,7 +8851,7 @@ function $p_Lokay_policy_Types$Checking__expr__Lokay_policy_Expr__Lokay_policy_T
     }
   }
   if (((e instanceof $c_Lokay_policy_Expr$ListLit) || (e instanceof $c_Lokay_policy_Expr$RecLit))) {
-    $thiz.aV(e.bW(), "a list or a record is written only in a test's call");
+    $thiz.aV(e.bV(), "a list or a record is written only in a test's call");
     return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
   }
   if ((e instanceof $c_Lokay_policy_Expr$Apply)) {
@@ -8872,7 +8872,7 @@ function $p_Lokay_policy_Types$Checking__expr__Lokay_policy_Expr__Lokay_policy_T
             if (((x$2$1 === null) ? (x$3 === null) : x$2$1.c(x$3))) {
               return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(new $c_Lokay_policy_TExpr$ToDec(x0$3));
             } else {
-              $thiz.aV(x492.bW(), ("dec(...) takes an Int, given " + x0$3.cB()));
+              $thiz.aV(x492.bV(), ("dec(...) takes an Int, given " + x0$3.cB()));
               return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
             }
           }
@@ -8928,12 +8928,12 @@ function $p_Lokay_policy_Types$Checking__expr__Lokay_policy_Expr__Lokay_policy_T
           return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
         } else {
           var x0$8 = this$55.f();
-          var this$56 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x0$6, x0$8, x478.bW());
+          var this$56 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x0$6, x0$8, x478.bV());
           if (this$56.b()) {
             return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
           } else {
             var x0$9 = this$56.f();
-            var this$57 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x0$7, x0$8, x479.bW());
+            var this$57 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x0$7, x0$8, x479.bV());
             return (this$57.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(new $c_Lokay_policy_TExpr$Add(x0$9, this$57.f(), x0$8)));
           }
         }
@@ -8959,12 +8959,12 @@ function $p_Lokay_policy_Types$Checking__expr__Lokay_policy_Expr__Lokay_policy_T
           return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
         } else {
           var x0$13 = this$63.f();
-          var this$64 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x0$11, x0$13, x473.bW());
+          var this$64 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x0$11, x0$13, x473.bV());
           if (this$64.b()) {
             return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
           } else {
             var x0$14 = this$64.f();
-            var this$65 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x0$12, x0$13, x474.bW());
+            var this$65 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x0$12, x0$13, x474.bV());
             return (this$65.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(new $c_Lokay_policy_TExpr$Sub(x0$14, this$65.f(), x0$13)));
           }
         }
@@ -9332,7 +9332,7 @@ function $p_Lokay_policy_Types$Checking__cond__Lokay_policy_Cond__Lokay_policy_T
       var x0$15 = this$57.f();
       var f = ((x$2$1) => ((o) => {
         var this$60 = $p_Lokay_policy_Types$Checking__expr__Lokay_policy_Expr__Lokay_policy_Types$Checking$Scope__s_Option__s_Option($thiz, o, scope, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(x$2$1.cB()));
-        return (this$60.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, this$60.f(), x$2$1.cB(), o.bW()));
+        return (this$60.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, this$60.f(), x$2$1.cB(), o.bV()));
       }))(x0$15);
       if ((x588 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
         var ys = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -9447,12 +9447,12 @@ function $p_Lokay_policy_Types$Checking__cond__Lokay_policy_Cond__Lokay_policy_T
             $thiz.aV(x584, (("!= between " + x0$24) + "s: not yet (two names are not known to be two things)"));
             return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
           } else {
-            var this$74 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x$8, x0$24, x581.bW());
+            var this$74 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, x$8, x0$24, x581.bV());
             if (this$74.b()) {
               return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
             } else {
               var x0$25 = this$74.f();
-              var this$75 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, y, x0$24, x583.bW());
+              var this$75 = $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, y, x0$24, x583.bV());
               return (this$75.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(new $c_Lokay_policy_TCond$Compare(x0$25, x582, this$75.f())));
             }
           }
@@ -9694,7 +9694,7 @@ function $p_Lokay_policy_Types$Checking__test__Lokay_policy_Decl$Test__Lokay_pol
     }
     rest$3 = rest$3.d();
   }
-  var args$2 = $x_5.b0(((h$3 === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h$3));
+  var args$2 = $x_5.aZ(((h$3 === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h$3));
   if ((!$thiz.Rs.C($m_Lokay_policy_Types$().vk))) {
     $thiz.aV(t.uW, (("a test's caller is a " + $m_Lokay_policy_Types$().vk) + ": declare the type"));
   }
@@ -9775,12 +9775,12 @@ function $p_Lokay_policy_Types$Checking__declared$1__sci_Map__sci_List__Lokay_po
 export { $p_Lokay_policy_Types$Checking__declared$1__sci_Map__sci_List__Lokay_policy_Pos__V as $p_Lokay_policy_Types$Checking__declared$1__sci_Map__sci_List__Lokay_policy_Pos__V };
 function $p_Lokay_policy_Types$Checking__constant$1__Lokay_policy_Types$Checking$Scope__Lokay_policy_Expr__Lokay_policy_Sort__s_Option($thiz, noVars$1, e, s) {
   var this$2 = $p_Lokay_policy_Types$Checking__expr__Lokay_policy_Expr__Lokay_policy_Types$Checking$Scope__s_Option__s_Option($thiz, e, noVars$1, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(s));
-  var this$3 = (this$2.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, this$2.f(), s, e.bW()));
+  var this$3 = (this$2.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : $p_Lokay_policy_Types$Checking__fit__Lokay_policy_TExpr__Lokay_policy_Sort__Lokay_policy_Pos__s_Option($thiz, this$2.f(), s, e.bV()));
   if (this$3.b()) {
     return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
   } else {
     var x0$1 = this$3.f();
-    return ((x0$1 instanceof $c_Lokay_policy_TExpr$Lit) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(x0$1.lY) : ($thiz.aV(e.bW(), ("a literal or a name, in a test: " + $m_Lokay_policy_Printer$().dd(e))), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$()));
+    return ((x0$1 instanceof $c_Lokay_policy_TExpr$Lit) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(x0$1.lY) : ($thiz.aV(e.bV(), ("a literal or a name, in a test: " + $m_Lokay_policy_Printer$().dd(e))), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$()));
   }
 }
 export { $p_Lokay_policy_Types$Checking__constant$1__Lokay_policy_Types$Checking$Scope__Lokay_policy_Expr__Lokay_policy_Sort__s_Option as $p_Lokay_policy_Types$Checking__constant$1__Lokay_policy_Types$Checking$Scope__Lokay_policy_Expr__Lokay_policy_Sort__s_Option };
@@ -9860,7 +9860,7 @@ function $p_Lokay_policy_Types$Checking__data$1__Lokay_policy_Types$Checking$Sig
       }
       break matchAlts5;
     }
-    $thiz.aV(e.bW(), ((("expected a " + s) + ", found ") + $m_Lokay_policy_Printer$().dd(e)));
+    $thiz.aV(e.bV(), ((("expected a " + s) + ", found ") + $m_Lokay_policy_Printer$().dd(e)));
     return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
   }
   if ((e instanceof $c_Lokay_policy_Expr$Var)) {
@@ -9886,7 +9886,7 @@ function $p_Lokay_policy_Types$Checking__data$1__Lokay_policy_Types$Checking$Sig
   }
   var x$5 = $s_Lokay_policy_Sort$__Bool__Lokay_policy_Sort();
   if (((x$5 === null) ? (s === null) : x$5.c(s))) {
-    $thiz.aV(e.bW(), ("expected true or false, found " + $m_Lokay_policy_Printer$().dd(e)));
+    $thiz.aV(e.bV(), ("expected true or false, found " + $m_Lokay_policy_Printer$().dd(e)));
     return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
   }
   var this$21 = $p_Lokay_policy_Types$Checking__constant$1__Lokay_policy_Types$Checking$Scope__Lokay_policy_Expr__Lokay_policy_Sort__s_Option($thiz, noVars$4, e, s);
@@ -9991,7 +9991,7 @@ function $p_Lokay_policy_Types$Checking__fields$1__Lokay_policy_Types$Checking$S
     }
     var $x_1 = h$1;
   }
-  var written = $x_2.b0($x_1);
+  var written = $x_2.aZ($x_1);
   var f$3 = ((f$2) => {
     var x723 = written.Z(f$2.ee);
     if (($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() === x723)) {
@@ -10057,7 +10057,7 @@ function $p_Lokay_policy_Types$Checking__fields$1__Lokay_policy_Types$Checking$S
       }
       rest$2 = rest$2.d();
     }
-    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($x_4.b0(((h$3 === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h$3)));
+    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($x_4.aZ(((h$3 === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h$3)));
   } else {
     return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$();
   }
@@ -10078,7 +10078,7 @@ function $c_Lokay_policy_Types$Checking(p) {
   this.Rq = new $c_Lokay_policy_Types$Checking$Scope$(this);
   this.hl = new $c_Lokay_policy_Types$Checking$Named$(this);
   this.B7 = ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_scm_ArrayBuffer$(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_scm_ArrayBuffer__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_ArrayBuffer()));
-  var this$3 = p.du.c4(new $c_Lokay_policy_Policy$$anon$9());
+  var this$3 = p.du.c3(new $c_Lokay_policy_Policy$$anon$9());
   var f = ((_$6) => _$6.rx);
   var $x_2 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Set$();
   if ((this$3 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
@@ -10098,7 +10098,7 @@ function $c_Lokay_policy_Types$Checking(p) {
     var $x_1 = h;
   }
   this.Rs = $x_2.eE($x_1);
-  var this$5 = p.du.c4(new $c_Lokay_policy_Policy$$anon$10());
+  var this$5 = p.du.c3(new $c_Lokay_policy_Policy$$anon$10());
   var f$1 = ((_$7) => _$7.pb);
   var $x_4 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Set$();
   if ((this$5 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
@@ -10118,7 +10118,7 @@ function $c_Lokay_policy_Types$Checking(p) {
     var $x_3 = h$1;
   }
   this.VV = $x_4.eE($x_3);
-  var this$11 = p.du.c4(new $c_Lokay_policy_Policy$$anon$10());
+  var this$11 = p.du.c3(new $c_Lokay_policy_Policy$$anon$10());
   var f$4 = ((r) => {
     var self = r.pb;
     var this$9 = r.rw;
@@ -10158,7 +10158,7 @@ function $c_Lokay_policy_Types$Checking(p) {
     }
     var $x_6 = h$3;
   }
-  this.VW = $x_7.b0($x_6);
+  this.VW = $x_7.aZ($x_6);
 }
 export { $c_Lokay_policy_Types$Checking as $c_Lokay_policy_Types$Checking };
 $p = $c_Lokay_policy_Types$Checking.prototype = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$h_O();
@@ -10172,7 +10172,7 @@ $p.aV = (function(pos, message) {
   this.B7.bT(new $c_Lokay_policy_Problem(pos, message));
 });
 $p.ajF = (function() {
-  var this$3 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$9());
+  var this$3 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$9());
   var f = ((t) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), t.rx, t.Ap));
   if ((this$3 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var this$7 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -10190,7 +10190,7 @@ $p.ajF = (function() {
     }
     var this$7 = h;
   }
-  var this$6 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$10());
+  var this$6 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$10());
   var f$1 = ((r) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), r.pb, r.Af));
   if ((this$6 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var $x_1 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -10209,7 +10209,7 @@ $p.ajF = (function() {
     var $x_1 = h$1;
   }
   $p_Lokay_policy_Types$Checking__duplicates__sci_List__T__V(this, this$7.T($x_1), "type");
-  var this$10 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$9());
+  var this$10 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$9());
   var f$2 = ((t$2$1) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), t$2$1.rx, t$2$1.Ap));
   if ((this$10 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var this$14 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -10227,7 +10227,7 @@ $p.ajF = (function() {
     }
     var this$14 = h$2;
   }
-  var this$13 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$10());
+  var this$13 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$10());
   var f$3 = ((r$2) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), r$2.pb, r$2.Af));
   if ((this$13 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var $x_2 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -10263,7 +10263,7 @@ $p.ajF = (function() {
   if ((!this$16.b())) {
     this.aV(this$16.f().y(), (("`" + $m_Lokay_policy_Types$().B6) + "` is the call's own type"));
   }
-  var this$18 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$10());
+  var this$18 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$10());
   var these$1 = this$18;
   while ((!these$1.b())) {
     var x0$10 = these$1.e();
@@ -10295,7 +10295,7 @@ $p.ajF = (function() {
     }
     these$1 = these$1.d();
   }
-  var this$24 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$11());
+  var this$24 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$11());
   var f$7 = ((f$6) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), f$6.pa, f$6.uM));
   if ((this$24 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var this$28 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -10313,7 +10313,7 @@ $p.ajF = (function() {
     }
     var this$28 = h$5;
   }
-  var this$27 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$12());
+  var this$27 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$12());
   var f$8 = ((s) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), s.pc, s.uU));
   if ((this$27 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var $x_4 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -10332,7 +10332,7 @@ $p.ajF = (function() {
     var $x_4 = h$6;
   }
   $p_Lokay_policy_Types$Checking__duplicates__sci_List__T__V(this, this$28.T($x_4), "fact or state");
-  var this$31 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$13());
+  var this$31 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$13());
   var f$9 = ((c) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), c.p9, c.A8));
   if ((this$31 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var $x_5 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -10351,7 +10351,7 @@ $p.ajF = (function() {
     var $x_5 = h$7;
   }
   $p_Lokay_policy_Types$Checking__duplicates__sci_List__T__V(this, $x_5, "call");
-  var this$67 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$11());
+  var this$67 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$11());
   var f$16 = ((f$2$1) => {
     var this$33 = f$2$1.no;
     var these$3 = this$33;
@@ -10411,7 +10411,7 @@ $p.ajF = (function() {
         }
         var $x_7 = h$9;
       }
-      var scope = $x_9.XV($x_8.b0($x_7), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), this.Rr.XW($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$()), $s_Lokay_policy_Target$__Any__Lokay_policy_Target(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$());
+      var scope = $x_9.XV($x_8.aZ($x_7), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), this.Rr.XW($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$()), $s_Lokay_policy_Target$__Any__Lokay_policy_Target(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$());
       var this$50 = x0$24.AG;
       var f$12 = ((x$1$1) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), x$1$1.x(), $p_Lokay_policy_Types$Checking__expr__Lokay_policy_Expr__Lokay_policy_Types$Checking$Scope__s_Option__s_Option(this, x$1$1.y(), scope, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$())));
       if ((this$50 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
@@ -10525,9 +10525,9 @@ $p.ajF = (function() {
     }
     var $x_14 = h$14;
   }
-  var facts = $x_15.b0($x_14);
+  var facts = $x_15.aZ($x_14);
   var $x_19 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$();
-  var this$71 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$12());
+  var this$71 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$12());
   var rest$15 = this$71;
   var h$15 = null;
   var t$16 = null;
@@ -10586,8 +10586,8 @@ $p.ajF = (function() {
     }
     rest$15 = rest$15.d();
   }
-  var states = $x_19.b0(((h$15 === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h$15));
-  var this$91 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$13());
+  var states = $x_19.aZ(((h$15 === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h$15));
+  var this$91 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$13());
   var f$20 = ((c$2) => {
     var this$81 = c$2.nn;
     var these$6 = this$81;
@@ -10671,9 +10671,9 @@ $p.ajF = (function() {
     }
     var $x_23 = h$19;
   }
-  var calls = $x_24.b0($x_23);
+  var calls = $x_24.aZ($x_23);
   var sigs = this.Rr.XW(facts, states, calls, this.VW);
-  var this$96 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_StrictOptimizedIterableOps__zipWithIndex__O(this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$14()));
+  var this$96 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_StrictOptimizedIterableOps__zipWithIndex__O(this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$14()));
   var rest$20 = this$96;
   var h$20 = null;
   var t$21 = null;
@@ -10692,7 +10692,7 @@ $p.ajF = (function() {
     rest$20 = rest$20.d();
   }
   var rules = ((h$20 === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h$20);
-  var this$98 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$15());
+  var this$98 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$15());
   var rest$21 = this$98;
   var h$21 = null;
   var t$22 = null;
@@ -10710,14 +10710,14 @@ $p.ajF = (function() {
     rest$21 = rest$21.d();
   }
   var counts = ((h$21 === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h$21);
-  var this$100 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$16());
+  var this$100 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$16());
   var this$101 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$p_sc_StrictOptimizedLinearSeqOps__loop$2__I__sc_LinearSeq__sc_LinearSeq(this$100, 1, this$100);
   var these$8 = this$101;
   while ((!these$8.b())) {
     this.aV(these$8.e().IF, "a second default: a policy has one");
     these$8 = these$8.d();
   }
-  var this$104 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$17());
+  var this$104 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$17());
   var f$21 = ((w) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), w.uX, w.IG));
   if ((this$104 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var $x_25 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -10736,7 +10736,7 @@ $p.ajF = (function() {
     var $x_25 = h$22;
   }
   $p_Lokay_policy_Types$Checking__duplicates__sci_List__T__V(this, $x_25, "webhook");
-  var this$108 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$17());
+  var this$108 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$17());
   var f$22 = ((w$2) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), w$2.uX, w$2.Aq));
   var $x_27 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$();
   if ((this$108 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
@@ -10755,15 +10755,15 @@ $p.ajF = (function() {
     }
     var $x_26 = h$23;
   }
-  var hooks = $x_27.b0($x_26);
-  var this$112 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$14());
+  var hooks = $x_27.aZ($x_26);
+  var this$112 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$14());
   var these$9 = this$112;
   while ((!these$9.b())) {
     var x0$59 = these$9.e();
     $p_Lokay_policy_Types$Checking__declared$1__sci_Map__sci_List__Lokay_policy_Pos__V(this, hooks, x0$59.uQ, x0$59.np);
     these$9 = these$9.d();
   }
-  var this$114 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$18());
+  var this$114 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$18());
   var rest$24 = this$114;
   var h$24 = null;
   var t$25 = null;
@@ -10798,7 +10798,7 @@ $p.ajF = (function() {
     rest$24 = rest$24.d();
   }
   var notices = ((h$24 === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h$24);
-  var this$121 = this.fj.du.c4(new $c_Lokay_policy_Policy$$anon$16()).ha();
+  var this$121 = this.fj.du.c3(new $c_Lokay_policy_Policy$$anon$16()).ha();
   var default$1 = (this$121.b() ? $s_Lokay_policy_Verdict$__Deny__Lokay_policy_Verdict() : this$121.f().Aa);
   return ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_SeqOps__isEmpty__Z(this.B7) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right(new $c_Lokay_policy_Checked(this.fj, this.Rs, this.VW, facts, states, calls, rules, counts, default$1, hooks, notices)) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_SeqOps__sortBy__F1__s_math_Ordering__O($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$().F(this.B7), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((q) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), q.pf.iG, q.pf.pe))), new $c_s_math_Ordering$Tuple2Ordering($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_Ordering$Int$(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_Ordering$Int$()))));
 });
@@ -10893,7 +10893,7 @@ function $p_Lokay_proof_Arithmetic$__apply__Lokay_proof_Fn__sci_List__s_Option($
     if ((vs.aA(1) === 0)) {
       var x494 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_LinearSeqOps__apply__I__O(vs, 0);
       if ((x494 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_math_BigInt)) {
-        return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(x494.aba());
+        return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(x494.ab9());
       }
     }
   }
@@ -11100,7 +11100,7 @@ function $p_Lokay_proof_Arithmetic$__floorDiv__s_math_BigInt__s_math_BigInt__s_m
   matchResult116: {
     var \u03b41$___1;
     var \u03b41$___2;
-    var x517 = a.ac6(b);
+    var x517 = a.ac5(b);
     if ((x517 !== null)) {
       var \u03b41$___1 = x517.x();
       var \u03b41$___2 = x517.y();
@@ -11426,7 +11426,7 @@ function $p_Lokay_proof_Certificate$__node__Lokay_proof_Rule__sci_List__Lokay_pr
   } else if (false) {
     var fields = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "f", $m_Lokay_proof_Codec$().eD(r.SH())), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$());
   } else if (false) {
-    var fields = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "t", $m_Lokay_proof_Codec$().lq(r.acf())), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$());
+    var fields = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "t", $m_Lokay_proof_Codec$().lq(r.ace())), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$());
   } else if (false) {
     var x154 = r.XC();
     var f = ((x$1) => new $c_Lokay_proof_Json$Str(x$1.y().ad.oj()));
@@ -11491,7 +11491,7 @@ function $p_Lokay_proof_Certificate$__visit$1__scm_LinkedHashMap__scm_ArrayBuffe
       }
       var prem = h;
     }
-    var id = steps$1.c1;
+    var id = steps$1.c0;
     steps$1.bT($p_Lokay_proof_Certificate$__node__Lokay_proof_Rule__sci_List__Lokay_proof_Json($thiz, t.Ry, prem));
     $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$p_scm_LinkedHashMap__put0__O__O__Z__s_Some(ids$1, t, id, false);
     return id;
@@ -11509,7 +11509,7 @@ function $p_Lokay_proof_Certificate$__visit$1__scm_LinkedHashMap__scm_ArrayBuffe
   } else {
     var originalHash = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_Statics$().B(t);
     var hash = (originalHash ^ ((originalHash >>> 16) | 0));
-    var x1$1 = ids$1.c2.a[(hash & ((ids$1.c2.a.length - 1) | 0))];
+    var x1$1 = ids$1.c1.a[(hash & ((ids$1.c1.a.length - 1) | 0))];
     var nd = ((x1$1 === null) ? null : x1$1.D4(t, hash));
     var $x_1 = ((nd === null) ? f$1() : nd.fS);
   }
@@ -11527,7 +11527,7 @@ function $h_Lokay_proof_Certificate$() {
 }
 export { $h_Lokay_proof_Certificate$ as $h_Lokay_proof_Certificate$ };
 $h_Lokay_proof_Certificate$.prototype = $p;
-$p.aic = (function(t) {
+$p.aib = (function(t) {
   var ids = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_LinkedHashMap();
   $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_scm_ArrayBuffer$();
   var steps = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_scm_ArrayBuffer__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_ArrayBuffer());
@@ -11535,7 +11535,7 @@ $p.aic = (function(t) {
   var $x_5 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "version", new $c_Lokay_proof_Json$Num("1"));
   var $x_4 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "theory", new $c_Lokay_proof_Json$Str(t.Bf.Be.RE));
   var $x_3 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "axioms", this.a7Q(t.Bf.Be));
-  var $x_2 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "digest", new $c_Lokay_proof_Json$Str(this.aeS(t.Bf.Be)));
+  var $x_2 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "digest", new $c_Lokay_proof_Json$Str(this.aeR(t.Bf.Be)));
   var this$18 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_SeqOps__sortBy__F1__s_math_Ordering__O($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$().F(t.bR), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((f) => $m_Lokay_proof_Codec$().eD(f).Dw())), $m_Lokay_proof_Logic$().RA);
   var f$3 = ((f$2) => $m_Lokay_proof_Codec$().eD(f$2));
   if ((this$18 === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
@@ -11554,7 +11554,7 @@ $p.aic = (function(t) {
     }
     var $x_1 = h;
   }
-  return new $c_Lokay_proof_Json$Obj(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($x_5, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($x_4, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($x_3, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($x_2, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "hypotheses", new $c_Lokay_proof_Json$Arr($x_1)), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "conclusion", $m_Lokay_proof_Codec$().eD(t.aY)), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "steps", new $c_Lokay_proof_Json$Arr($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$().F(steps))), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())))))))).Dw();
+  return new $c_Lokay_proof_Json$Obj(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($x_5, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($x_4, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($x_3, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($x_2, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "hypotheses", new $c_Lokay_proof_Json$Arr($x_1)), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "conclusion", $m_Lokay_proof_Codec$().eD(t.aX)), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "steps", new $c_Lokay_proof_Json$Arr($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$().F(steps))), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())))))))).Dw();
 });
 $p.a7Q = (function(th) {
   var this$6 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_SeqOps__sortBy__F1__s_math_Ordering__O($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$().F(th.RD), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$1) => _$1.x())), $m_Lokay_proof_Logic$().RA);
@@ -11577,7 +11577,7 @@ $p.a7Q = (function(th) {
   }
   return new $c_Lokay_proof_Json$Arr($x_1);
 });
-$p.aeS = (function(th) {
+$p.aeR = (function(th) {
   var h = new $c_sr_LongRef((-2078137563), (-873292572));
   var xs = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_T__getBytes__Ljava_nio_charset_Charset__AB(this.a7Q(th).Dw(), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_nio_charset_UTF\uff3f8$());
   var f = ((v1) => {
@@ -12025,7 +12025,7 @@ export { $p_Lokay_proof_Kernel__zero__Lokay_proof_Sort__Lokay_proof_Term as $p_L
 function $p_Lokay_proof_Kernel__linComb__Lokay_proof_Rule__sci_List__s_util_Either($thiz, r, ps) {
   var f = ((x$1) => {
     var t = x$1.x();
-    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T3(t, x$1.y().ad, $m_Lokay_proof_Linear$().OI(t.aY));
+    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T3(t, x$1.y().ad, $m_Lokay_proof_Linear$().OI(t.aX));
   });
   if ((ps === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
     var read = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -12045,7 +12045,7 @@ function $p_Lokay_proof_Kernel__linComb__Lokay_proof_Rule__sci_List__s_util_Eith
   }
   var x376 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOnceOps__collectFirst__s_PartialFunction__s_Option(read, new $c_Lokay_proof_Kernel$$anon$1());
   if ((x376 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some)) {
-    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("not a linear comparison over Int or Dec: " + x376.J.aY));
+    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("not a linear comparison over Int or Dec: " + x376.J.aX));
   }
   if (($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() === x376)) {
     var f$2 = ((x$1$2) => {
@@ -12060,7 +12060,7 @@ function $p_Lokay_proof_Kernel__linComb__Lokay_proof_Rule__sci_List__s_util_Eith
           }
         }
       }
-      $m_s_sys_package$().afk("unreachable");
+      $m_s_sys_package$().afj("unreachable");
     });
     if ((read === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
       var rows = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$();
@@ -12198,11 +12198,11 @@ function $p_Lokay_proof_Kernel__body$proxy2$1__Lokay_proof_Formula__Lokay_proof_
 }
 export { $p_Lokay_proof_Kernel__body$proxy2$1__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy2$1__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy3$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, a$1, b$1, r$3) {
-  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, a$1.bR.dP(b$1.bR), new $c_Lokay_proof_Formula$And(a$1.aY, b$1.aY), r$3);
+  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, a$1.bR.dP(b$1.bR), new $c_Lokay_proof_Formula$And(a$1.aX, b$1.aX), r$3);
 }
 export { $p_Lokay_proof_Kernel__body$proxy3$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy3$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy4$1__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, t$1, r$4) {
-  var x127 = t$1.aY;
+  var x127 = t$1.aX;
   if ((x127 instanceof $c_Lokay_proof_Formula$And)) {
     var x130 = x127.gW;
     return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$1.bR, x130, r$4);
@@ -12211,7 +12211,7 @@ function $p_Lokay_proof_Kernel__body$proxy4$1__Lokay_proof_Kernel$Thm__Lokay_pro
 }
 export { $p_Lokay_proof_Kernel__body$proxy4$1__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy4$1__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy5$1__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, t$2, r$5) {
-  var x132 = t$2.aY;
+  var x132 = t$2.aX;
   if ((x132 instanceof $c_Lokay_proof_Formula$And)) {
     var x136 = x132.gX;
     return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$2.bR, x136, r$5);
@@ -12224,7 +12224,7 @@ function $ps_Lokay_proof_Kernel__why$proxy3$1__Lokay_proof_Formula__T(right$1) {
 }
 export { $ps_Lokay_proof_Kernel__why$proxy3$1__Lokay_proof_Formula__T as $ps_Lokay_proof_Kernel__why$proxy3$1__Lokay_proof_Formula__T };
 function $p_Lokay_proof_Kernel__body$proxy6$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$3, right$2, r$6) {
-  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$3.bR, new $c_Lokay_proof_Formula$Or(t$3.aY, right$2), r$6);
+  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$3.bR, new $c_Lokay_proof_Formula$Or(t$3.aX, right$2), r$6);
 }
 export { $p_Lokay_proof_Kernel__body$proxy6$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy6$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either };
 function $ps_Lokay_proof_Kernel__why$proxy4$1__Lokay_proof_Formula__T(left$1) {
@@ -12232,23 +12232,23 @@ function $ps_Lokay_proof_Kernel__why$proxy4$1__Lokay_proof_Formula__T(left$1) {
 }
 export { $ps_Lokay_proof_Kernel__why$proxy4$1__Lokay_proof_Formula__T as $ps_Lokay_proof_Kernel__why$proxy4$1__Lokay_proof_Formula__T };
 function $p_Lokay_proof_Kernel__body$proxy7$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$4, left$2, r$7) {
-  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$4.bR, new $c_Lokay_proof_Formula$Or(left$2, t$4.aY), r$7);
+  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$4.bR, new $c_Lokay_proof_Formula$Or(left$2, t$4.aX), r$7);
 }
 export { $p_Lokay_proof_Kernel__body$proxy7$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy7$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either };
 function $ps_Lokay_proof_Kernel__why$proxy5$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__T(l$2, rt$2) {
-  return ((("two cases, two conclusions: " + l$2.aY) + "; ") + rt$2.aY);
+  return ((("two cases, two conclusions: " + l$2.aX) + "; ") + rt$2.aX);
 }
 export { $ps_Lokay_proof_Kernel__why$proxy5$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__T as $ps_Lokay_proof_Kernel__why$proxy5$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__T };
 function $p_Lokay_proof_Kernel__body$proxy8$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$6, l$3, a$2, rt$3, b$2, r$9) {
-  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$6.bR.dP(l$3.bR.h9(a$2)).dP(rt$3.bR.h9(b$2)), l$3.aY, r$9);
+  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$6.bR.dP(l$3.bR.h9(a$2)).dP(rt$3.bR.h9(b$2)), l$3.aX, r$9);
 }
 export { $p_Lokay_proof_Kernel__body$proxy8$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy8$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy9$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, t$5, l$1, rt$1, r$8) {
-  var x137 = t$5.aY;
+  var x137 = t$5.aX;
   if ((x137 instanceof $c_Lokay_proof_Formula$Or)) {
     var x140 = x137.gY;
     var x141 = x137.gZ;
-    return ($m_Lokay_proof_Logic$().ld(l$1.aY, rt$1.aY) ? $p_Lokay_proof_Kernel__body$proxy8$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$5, l$1, x140, rt$1, x141, r$8) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy5$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__T(l$1, rt$1)));
+    return ($m_Lokay_proof_Logic$().ld(l$1.aX, rt$1.aX) ? $p_Lokay_proof_Kernel__body$proxy8$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$5, l$1, x140, rt$1, x141, r$8) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy5$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__T(l$1, rt$1)));
   }
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("not a disjunction: " + x137));
 }
@@ -12258,11 +12258,11 @@ function $ps_Lokay_proof_Kernel__why$proxy6$1__Lokay_proof_Formula__T(f$7) {
 }
 export { $ps_Lokay_proof_Kernel__why$proxy6$1__Lokay_proof_Formula__T as $ps_Lokay_proof_Kernel__why$proxy6$1__Lokay_proof_Formula__T };
 function $p_Lokay_proof_Kernel__body$proxy10$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$7, f$8, r$10) {
-  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$7.bR.h9(f$8), new $c_Lokay_proof_Formula$Imp(f$8, t$7.aY), r$10);
+  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$7.bR.h9(f$8), new $c_Lokay_proof_Formula$Imp(f$8, t$7.aX), r$10);
 }
 export { $p_Lokay_proof_Kernel__body$proxy10$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy10$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either };
 function $ps_Lokay_proof_Kernel__why$proxy7$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__T(a$4, p$1) {
-  return ((("the premise " + a$4.aY) + " is not ") + p$1);
+  return ((("the premise " + a$4.aX) + " is not ") + p$1);
 }
 export { $ps_Lokay_proof_Kernel__why$proxy7$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__T as $ps_Lokay_proof_Kernel__why$proxy7$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__T };
 function $p_Lokay_proof_Kernel__body$proxy11$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, i$2, a$5, q$1, r$12) {
@@ -12270,17 +12270,17 @@ function $p_Lokay_proof_Kernel__body$proxy11$1__Lokay_proof_Kernel$Thm__Lokay_pr
 }
 export { $p_Lokay_proof_Kernel__body$proxy11$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy11$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy12$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, i$1, a$3, r$11) {
-  var x142 = i$1.aY;
+  var x142 = i$1.aX;
   if ((x142 instanceof $c_Lokay_proof_Formula$Imp)) {
     var x145 = x142.hZ;
     var x146 = x142.i0;
-    return ($m_Lokay_proof_Logic$().ld(x145, a$3.aY) ? $p_Lokay_proof_Kernel__body$proxy11$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, i$1, a$3, x146, r$11) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy7$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__T(a$3, x145)));
+    return ($m_Lokay_proof_Logic$().ld(x145, a$3.aX) ? $p_Lokay_proof_Kernel__body$proxy11$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, i$1, a$3, x146, r$11) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy7$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__T(a$3, x145)));
   }
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("not an implication: " + x142));
 }
 export { $p_Lokay_proof_Kernel__body$proxy12$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy12$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $ps_Lokay_proof_Kernel__why$proxy8$1__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__T(f$9, t$8) {
-  return ((("not False from " + f$9) + ": ") + t$8.aY);
+  return ((("not False from " + f$9) + ": ") + t$8.aX);
 }
 export { $ps_Lokay_proof_Kernel__why$proxy8$1__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__T as $ps_Lokay_proof_Kernel__why$proxy8$1__Lokay_proof_Formula__Lokay_proof_Kernel$Thm__T };
 function $p_Lokay_proof_Kernel__body$proxy13$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$9, f$10, r$13) {
@@ -12288,7 +12288,7 @@ function $p_Lokay_proof_Kernel__body$proxy13$1__Lokay_proof_Kernel$Thm__Lokay_pr
 }
 export { $p_Lokay_proof_Kernel__body$proxy13$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy13$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either };
 function $ps_Lokay_proof_Kernel__why$proxy9$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__T(t$11, p$2) {
-  return ((t$11.aY + " is not ") + p$2);
+  return ((t$11.aX + " is not ") + p$2);
 }
 export { $ps_Lokay_proof_Kernel__why$proxy9$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__T as $ps_Lokay_proof_Kernel__why$proxy9$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__T };
 function $p_Lokay_proof_Kernel__body$proxy14$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, n$4, t$12, r$15) {
@@ -12296,16 +12296,16 @@ function $p_Lokay_proof_Kernel__body$proxy14$1__Lokay_proof_Kernel$Thm__Lokay_pr
 }
 export { $p_Lokay_proof_Kernel__body$proxy14$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy14$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy15$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, n$3, t$10, r$14) {
-  var x147 = n$3.aY;
+  var x147 = n$3.aX;
   if ((x147 instanceof $c_Lokay_proof_Formula$Not)) {
     var x150 = x147.g6;
-    return ($m_Lokay_proof_Logic$().ld(x150, t$10.aY) ? $p_Lokay_proof_Kernel__body$proxy14$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, n$3, t$10, r$14) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy9$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__T(t$10, x150)));
+    return ($m_Lokay_proof_Logic$().ld(x150, t$10.aX) ? $p_Lokay_proof_Kernel__body$proxy14$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, n$3, t$10, r$14) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy9$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__T(t$10, x150)));
   }
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("not a negation: " + x147));
 }
 export { $p_Lokay_proof_Kernel__body$proxy15$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy15$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy16$1__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, t$13, r$16) {
-  var x151 = t$13.aY;
+  var x151 = t$13.aX;
   if ((x151 instanceof $c_Lokay_proof_Formula$Not)) {
     var x154 = x151.g6;
     if ((x154 instanceof $c_Lokay_proof_Formula$Not)) {
@@ -12317,7 +12317,7 @@ function $p_Lokay_proof_Kernel__body$proxy16$1__Lokay_proof_Kernel$Thm__Lokay_pr
 }
 export { $p_Lokay_proof_Kernel__body$proxy16$1__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy16$1__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $ps_Lokay_proof_Kernel__why$proxy10$1__Lokay_proof_Kernel$Thm__T(t$14) {
-  return ("not False: " + t$14.aY);
+  return ("not False: " + t$14.aX);
 }
 export { $ps_Lokay_proof_Kernel__why$proxy10$1__Lokay_proof_Kernel$Thm__T as $ps_Lokay_proof_Kernel__why$proxy10$1__Lokay_proof_Kernel$Thm__T };
 function $ps_Lokay_proof_Kernel__why$proxy11$1__Lokay_proof_Term$V__T(x$3) {
@@ -12325,7 +12325,7 @@ function $ps_Lokay_proof_Kernel__why$proxy11$1__Lokay_proof_Term$V__T(x$3) {
 }
 export { $ps_Lokay_proof_Kernel__why$proxy11$1__Lokay_proof_Term$V__T as $ps_Lokay_proof_Kernel__why$proxy11$1__Lokay_proof_Term$V__T };
 function $p_Lokay_proof_Kernel__body$proxy18$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Rule__s_util_Either($thiz, t$17, x$4, r$19) {
-  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$17.bR, new $c_Lokay_proof_Formula$All(x$4, t$17.aY), r$19);
+  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$17.bR, new $c_Lokay_proof_Formula$All(x$4, t$17.aX), r$19);
 }
 export { $p_Lokay_proof_Kernel__body$proxy18$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy18$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy19$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Rule__s_util_Either($thiz, t$16, x$1, r$18) {
@@ -12341,7 +12341,7 @@ function $p_Lokay_proof_Kernel__body$proxy20$1__Lokay_proof_Kernel$Thm__Lokay_pr
 }
 export { $p_Lokay_proof_Kernel__body$proxy20$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy20$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy21$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either($thiz, t$18, by$1, r$20) {
-  var x158 = t$18.aY;
+  var x158 = t$18.aX;
   if ((x158 instanceof $c_Lokay_proof_Formula$All)) {
     var x161 = x158.m5;
     var x162 = x158.kI;
@@ -12355,7 +12355,7 @@ function $ps_Lokay_proof_Kernel__why$proxy14$1__Lokay_proof_Formula__Lokay_proof
 }
 export { $ps_Lokay_proof_Kernel__why$proxy14$1__Lokay_proof_Formula__Lokay_proof_Term__T as $ps_Lokay_proof_Kernel__why$proxy14$1__Lokay_proof_Formula__Lokay_proof_Term__T };
 function $ps_Lokay_proof_Kernel__why$proxy13$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__T(t$21, f$15, x$8, by$6) {
-  return ((t$21.aY + " is not ") + $m_Lokay_proof_Logic$().dY(f$15, x$8, by$6));
+  return ((t$21.aX + " is not ") + $m_Lokay_proof_Logic$().dY(f$15, x$8, by$6));
 }
 export { $ps_Lokay_proof_Kernel__why$proxy13$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__T as $ps_Lokay_proof_Kernel__why$proxy13$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__T };
 function $p_Lokay_proof_Kernel__body$proxy22$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$22, x$9, f$16, r$23) {
@@ -12363,7 +12363,7 @@ function $p_Lokay_proof_Kernel__body$proxy22$1__Lokay_proof_Kernel$Thm__Lokay_pr
 }
 export { $p_Lokay_proof_Kernel__body$proxy22$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy22$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy23$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either($thiz, t$20, f$14, x$7, by$5, r$22) {
-  return ($m_Lokay_proof_Logic$().ld(t$20.aY, $m_Lokay_proof_Logic$().dY(f$14, x$7, by$5)) ? $p_Lokay_proof_Kernel__body$proxy22$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$20, x$7, f$14, r$22) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy13$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__T(t$20, f$14, x$7, by$5)));
+  return ($m_Lokay_proof_Logic$().ld(t$20.aX, $m_Lokay_proof_Logic$().dY(f$14, x$7, by$5)) ? $p_Lokay_proof_Kernel__body$proxy22$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$20, x$7, f$14, r$22) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy13$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__T(t$20, f$14, x$7, by$5)));
 }
 export { $p_Lokay_proof_Kernel__body$proxy23$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy23$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either };
 function $ps_Lokay_proof_Kernel__why$proxy15$1__Lokay_proof_Term$V__T(y$4) {
@@ -12371,11 +12371,11 @@ function $ps_Lokay_proof_Kernel__why$proxy15$1__Lokay_proof_Term$V__T(y$4) {
 }
 export { $ps_Lokay_proof_Kernel__why$proxy15$1__Lokay_proof_Term$V__T as $ps_Lokay_proof_Kernel__why$proxy15$1__Lokay_proof_Term$V__T };
 function $p_Lokay_proof_Kernel__body$proxy24$1__Lokay_proof_Kernel$Thm__sci_Set__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, e$2, rest$1, t$24, r$25) {
-  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, e$2.bR.dP(rest$1), t$24.aY, r$25);
+  return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, e$2.bR.dP(rest$1), t$24.aX, r$25);
 }
 export { $p_Lokay_proof_Kernel__body$proxy24$1__Lokay_proof_Kernel$Thm__sci_Set__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy24$1__Lokay_proof_Kernel$Thm__sci_Set__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy25$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, e$1, y$1, t$23, r$24) {
-  var x163 = e$1.aY;
+  var x163 = e$1.aX;
   if ((x163 instanceof $c_Lokay_proof_Formula$Ex)) {
     var x166 = x163.m6;
     var x167 = x163.kJ;
@@ -12383,7 +12383,7 @@ function $p_Lokay_proof_Kernel__body$proxy25$1__Lokay_proof_Kernel$Thm__Lokay_pr
     var rest = t$23.bR.h9(inst);
     var x$2 = y$1.fL;
     var x$3 = x166.fL;
-    if (((((((x$2 === null) ? (x$3 === null) : x$2.c(x$3)) && (!t$23.aY.aa().C(y$1))) && (!e$1.aY.aa().C(y$1))) && (!rest.ig(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$6) => _$6.aa().C(y$1)))))) && (!e$1.bR.ig(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$7) => _$7.aa().C(y$1))))))) {
+    if (((((((x$2 === null) ? (x$3 === null) : x$2.c(x$3)) && (!t$23.aX.aa().C(y$1))) && (!e$1.aX.aa().C(y$1))) && (!rest.ig(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$6) => _$6.aa().C(y$1)))))) && (!e$1.bR.ig(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$7) => _$7.aa().C(y$1))))))) {
       return $p_Lokay_proof_Kernel__body$proxy24$1__Lokay_proof_Kernel$Thm__sci_Set__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, e$1, rest, t$23, r$24);
     } else {
       return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy15$1__Lokay_proof_Term$V__T(y$1));
@@ -12409,7 +12409,7 @@ function $ps_Lokay_proof_Kernel__why$proxy18$1__Lokay_proof_Term__Lokay_proof_Te
 }
 export { $ps_Lokay_proof_Kernel__why$proxy18$1__Lokay_proof_Term__Lokay_proof_Term$V__T as $ps_Lokay_proof_Kernel__why$proxy18$1__Lokay_proof_Term__Lokay_proof_Term$V__T };
 function $ps_Lokay_proof_Kernel__why$proxy17$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__T(t$29, f$20, x$13, s$3) {
-  return ((t$29.aY + " is not ") + $m_Lokay_proof_Logic$().dY(f$20, x$13, s$3));
+  return ((t$29.aX + " is not ") + $m_Lokay_proof_Logic$().dY(f$20, x$13, s$3));
 }
 export { $ps_Lokay_proof_Kernel__why$proxy17$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__T as $ps_Lokay_proof_Kernel__why$proxy17$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__T };
 function $p_Lokay_proof_Kernel__body$proxy27$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either($thiz, eq$3, t$30, f$21, x$14, u$2, r$29) {
@@ -12417,11 +12417,11 @@ function $p_Lokay_proof_Kernel__body$proxy27$1__Lokay_proof_Kernel$Thm__Lokay_pr
 }
 export { $p_Lokay_proof_Kernel__body$proxy27$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy27$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy28$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Kernel$Thm__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either($thiz, t$28, f$19, x$12, s$2, eq$2, u$1, r$28) {
-  return ($m_Lokay_proof_Logic$().ld(t$28.aY, $m_Lokay_proof_Logic$().dY(f$19, x$12, s$2)) ? $p_Lokay_proof_Kernel__body$proxy27$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either($thiz, eq$2, t$28, f$19, x$12, u$1, r$28) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy17$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__T(t$28, f$19, x$12, s$2)));
+  return ($m_Lokay_proof_Logic$().ld(t$28.aX, $m_Lokay_proof_Logic$().dY(f$19, x$12, s$2)) ? $p_Lokay_proof_Kernel__body$proxy27$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either($thiz, eq$2, t$28, f$19, x$12, u$1, r$28) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy17$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__T(t$28, f$19, x$12, s$2)));
 }
 export { $p_Lokay_proof_Kernel__body$proxy28$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Kernel$Thm__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy28$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Term__Lokay_proof_Kernel$Thm__Lokay_proof_Term__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy29$1__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, eq$1, x$10, t$27, f$18, r$27) {
-  var x168 = eq$1.aY;
+  var x168 = eq$1.aX;
   if ((x168 instanceof $c_Lokay_proof_Formula$Eq)) {
     var x171 = x168.hn;
     var x172 = x168.ho;
@@ -12435,11 +12435,11 @@ function $ps_Lokay_proof_Kernel__why$proxy22$1__T() {
 }
 export { $ps_Lokay_proof_Kernel__why$proxy22$1__T as $ps_Lokay_proof_Kernel__why$proxy22$1__T };
 function $ps_Lokay_proof_Kernel__why$proxy21$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__T(base$2, f$23, x$16) {
-  return ((("the base " + base$2.aY) + " is not ") + $m_Lokay_proof_Logic$().dY(f$23, x$16, new $c_Lokay_proof_Term$I($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_BigInt$().gf(0))));
+  return ((("the base " + base$2.aX) + " is not ") + $m_Lokay_proof_Logic$().dY(f$23, x$16, new $c_Lokay_proof_Term$I($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_BigInt$().gf(0))));
 }
 export { $ps_Lokay_proof_Kernel__why$proxy21$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__T as $ps_Lokay_proof_Kernel__why$proxy21$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__T };
 function $ps_Lokay_proof_Kernel__why$proxy20$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula$All__T(step$3, want$1) {
-  return ((("the step " + step$3.aY) + " is not ") + want$1);
+  return ((("the step " + step$3.aX) + " is not ") + want$1);
 }
 export { $ps_Lokay_proof_Kernel__why$proxy20$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula$All__T as $ps_Lokay_proof_Kernel__why$proxy20$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula$All__T };
 function $p_Lokay_proof_Kernel__body$proxy30$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, base$4, step$4, x$18, f$25, r$32) {
@@ -12449,11 +12449,11 @@ export { $p_Lokay_proof_Kernel__body$proxy30$1__Lokay_proof_Kernel$Thm__Lokay_pr
 function $p_Lokay_proof_Kernel__body$proxy31$1__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, f$24, x$17, step$2, base$3, r$31) {
   var next = $m_Lokay_proof_Logic$().dY(f$24, x$17, new $c_Lokay_proof_Term$Ap($m_Lokay_proof_Fns$().Bd, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(x$17, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(new $c_Lokay_proof_Term$I($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_BigInt$().gf(1)), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$()))));
   var want = new $c_Lokay_proof_Formula$All(x$17, new $c_Lokay_proof_Formula$Imp(new $c_Lokay_proof_Formula$And(new $c_Lokay_proof_Formula$Le(new $c_Lokay_proof_Term$I($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_BigInt$().gf(0)), x$17), f$24), next));
-  return ($m_Lokay_proof_Logic$().ld(step$2.aY, want) ? $p_Lokay_proof_Kernel__body$proxy30$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, base$3, step$2, x$17, f$24, r$31) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy20$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula$All__T(step$2, want)));
+  return ($m_Lokay_proof_Logic$().ld(step$2.aX, want) ? $p_Lokay_proof_Kernel__body$proxy30$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Term$V__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, base$3, step$2, x$17, f$24, r$31) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy20$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula$All__T(step$2, want)));
 }
 export { $p_Lokay_proof_Kernel__body$proxy31$1__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy31$1__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy32$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, base$1, f$22, x$15, step$1, r$30) {
-  return ($m_Lokay_proof_Logic$().ld(base$1.aY, $m_Lokay_proof_Logic$().dY(f$22, x$15, new $c_Lokay_proof_Term$I($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_BigInt$().gf(0)))) ? $p_Lokay_proof_Kernel__body$proxy31$1__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, f$22, x$15, step$1, base$1, r$30) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy21$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__T(base$1, f$22, x$15)));
+  return ($m_Lokay_proof_Logic$().ld(base$1.aX, $m_Lokay_proof_Logic$().dY(f$22, x$15, new $c_Lokay_proof_Term$I($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_BigInt$().gf(0)))) ? $p_Lokay_proof_Kernel__body$proxy31$1__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, f$22, x$15, step$1, base$1, r$30) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy21$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__T(base$1, f$22, x$15)));
 }
 export { $p_Lokay_proof_Kernel__body$proxy32$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy32$1__Lokay_proof_Kernel$Thm__Lokay_proof_Formula__Lokay_proof_Term$V__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $ps_Lokay_proof_Kernel__why$proxy24$1__Lokay_proof_Formula__T(f$26) {
@@ -12512,8 +12512,8 @@ function $p_Lokay_proof_Kernel__body$proxy34$1__Lokay_proof_Formula__Lokay_proof
 }
 export { $p_Lokay_proof_Kernel__body$proxy34$1__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy34$1__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy35$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, a$6, b$3, r$35) {
-  var _1 = $m_Lokay_proof_Linear$().OI(a$6.aY);
-  var _2 = $m_Lokay_proof_Linear$().OI(b$3.aY);
+  var _1 = $m_Lokay_proof_Linear$().OI(a$6.aX);
+  var _2 = $m_Lokay_proof_Linear$().OI(b$3.aX);
   if ((_1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some)) {
     var x195 = _1.J;
     if ((x195 !== null)) {
@@ -12553,12 +12553,12 @@ function $p_Lokay_proof_Kernel__body$proxy35$1__Lokay_proof_Kernel$Thm__Lokay_pr
       }
     }
   }
-  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(((("not two comparisons of one sort, Int or Dec: " + a$6.aY) + "; ") + b$3.aY));
+  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(((("not two comparisons of one sort, Int or Dec: " + a$6.aX) + "; ") + b$3.aX));
 }
 export { $p_Lokay_proof_Kernel__body$proxy35$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy35$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy36$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, le$1, ge$1, r$36) {
-  var _1 = le$1.aY;
-  var _2 = ge$1.aY;
+  var _1 = le$1.aX;
+  var _2 = ge$1.aX;
   if ((_1 instanceof $c_Lokay_proof_Formula$Le)) {
     var x216 = _1.hp;
     var x217 = _1.hq;
@@ -12591,7 +12591,7 @@ function $p_Lokay_proof_Kernel__body$proxy36$1__Lokay_proof_Kernel$Thm__Lokay_pr
 }
 export { $p_Lokay_proof_Kernel__body$proxy36$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy36$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 function $p_Lokay_proof_Kernel__body$proxy37$1__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either($thiz, t$31, r$37) {
-  var x218 = $m_Lokay_proof_Linear$().OI(t$31.aY);
+  var x218 = $m_Lokay_proof_Linear$().OI(t$31.aX);
   if ((x218 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some)) {
     var x220 = x218.J;
     if ((x220 !== null)) {
@@ -12605,16 +12605,16 @@ function $p_Lokay_proof_Kernel__body$proxy37$1__Lokay_proof_Kernel$Thm__Lokay_pr
       } else {
         var $x_1 = false;
       }
-      if (($x_1 && ((!d.fk.b()) && $m_Lokay_proof_Linear$().agE(d)))) {
-        var g = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_Ljava_math_BigDecimal__Ljava_math_BigInteger__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Ljava_math_BigDecimal(), $m_Lokay_proof_Linear$().ag8(d));
+      if (($x_1 && ((!d.fk.b()) && $m_Lokay_proof_Linear$().agD(d)))) {
+        var g = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_Ljava_math_BigDecimal__Ljava_math_BigInteger__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Ljava_math_BigDecimal(), $m_Lokay_proof_Linear$().ag7(d));
         var c = d.fl.a8u(g, 0, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_math_RoundingMode$().DK);
         $m_Lokay_proof_Lin$();
-        var scaled = new $c_Lokay_proof_Lin($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0(new $c_sc_MapView$MapValues(new $c_sc_MapView$Id(d.fk), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$8) => _$8.aeT(g))))), c);
+        var scaled = new $c_Lokay_proof_Lin($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ(new $c_sc_MapView$MapValues(new $c_sc_MapView$Id(d.fk), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$8) => _$8.aeS(g))))), c);
         return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either($thiz, t$31.bR, new $c_Lokay_proof_Formula$Le(new $c_Lokay_proof_Term$I($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_math_BigInt$().gf(0)), $m_Lokay_proof_Linear$().PA(scaled, $s_Lokay_proof_Sort$__Int__Lokay_proof_Sort())), r$37);
       }
     }
   }
-  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("not 0 \u2264 F over Int, F of integer coefficients and an atom: " + t$31.aY));
+  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("not 0 \u2264 F over Int, F of integer coefficients and an atom: " + t$31.aX));
 }
 export { $p_Lokay_proof_Kernel__body$proxy37$1__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either as $p_Lokay_proof_Kernel__body$proxy37$1__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either };
 /** @constructor */
@@ -12630,10 +12630,10 @@ function $h_Lokay_proof_Kernel() {
 }
 export { $h_Lokay_proof_Kernel as $h_Lokay_proof_Kernel };
 $h_Lokay_proof_Kernel.prototype = $p;
-$p.aiA = (function(t) {
+$p.aiz = (function(t) {
   return (t.Bf === this);
 });
-$p.aeP = (function(r) {
+$p.aeO = (function(r) {
   if ((r instanceof $c_Lokay_proof_Rule$Assume)) {
     var x333 = r.Bo;
     return ($m_Lokay_proof_Logic$().iv(x333) ? $p_Lokay_proof_Kernel__body$proxy1$1__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either(this, x333, r) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left($ps_Lokay_proof_Kernel__why$proxy1$1__Lokay_proof_Formula__T(x333)));
@@ -12696,7 +12696,7 @@ $p.aeP = (function(r) {
     var x292 = r.SH();
     var x293 = r.sB();
     if (($p_Lokay_proof_Kernel__ours__sci_Seq__Z(this, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($d_Lokay_proof_Kernel$Thm.r().C)([x293]))) && $m_Lokay_proof_Logic$().iv(x292))) {
-      var x$3 = x293.aY;
+      var x$3 = x293.aX;
       var x$4 = $m_Lokay_proof_Formula$False$();
       var $x_1 = ((x$3 !== null) && x$3.c(x$4));
     } else {
@@ -12721,7 +12721,7 @@ $p.aeP = (function(r) {
     var x281 = r.Bw;
     var x282 = r.Bv;
     if ($p_Lokay_proof_Kernel__ours__sci_Seq__Z(this, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($d_Lokay_proof_Kernel$Thm.r().C)([x281])))) {
-      var x$5 = x281.aY;
+      var x$5 = x281.aX;
       var x$6 = $m_Lokay_proof_Formula$False$();
       var $x_2 = ((x$5 !== null) && x$5.c(x$6));
     } else {
@@ -12822,7 +12822,7 @@ $p.aeP = (function(r) {
     return ($p_Lokay_proof_Kernel__ours__sci_Seq__Z(this, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($d_Lokay_proof_Kernel$Thm.r().C)([x237, x238]))) ? $p_Lokay_proof_Kernel__body$proxy35$1__Lokay_proof_Kernel$Thm__Lokay_proof_Kernel$Thm__Lokay_proof_Rule__s_util_Either(this, x237, x238, r) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left("a theorem of another kernel (another theory) used here"));
   }
   if (false) {
-    var x234 = r.acf();
+    var x234 = r.ace();
     var x202 = $m_Lokay_proof_Logic$().gK(x234);
     if ((x202 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some)) {
       var s = x202.J;
@@ -12834,7 +12834,7 @@ $p.aeP = (function(r) {
         var $x_5 = ((s === null) ? (x$16 === null) : s.c(x$16));
       }
       if ($x_5) {
-        var x199 = $m_Lokay_proof_Linear$().ahm(x234);
+        var x199 = $m_Lokay_proof_Linear$().ahl(x234);
         if ((x199 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some)) {
           var f$11 = x199.J;
           return $p_Lokay_proof_Kernel__thm__sci_Set__Lokay_proof_Formula__Lokay_proof_Rule__s_util_Either(this, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Set$EmptySet$(), new $c_Lokay_proof_Formula$Le($p_Lokay_proof_Kernel__zero__Lokay_proof_Sort__Lokay_proof_Term(this, s), $m_Lokay_proof_Linear$().PA($m_Lokay_proof_Linear$().a0h(f$11, f$11, s), s)), r);
@@ -12866,11 +12866,11 @@ export { $d_Lokay_proof_Kernel as $d_Lokay_proof_Kernel };
 function $c_Lokay_proof_Kernel$Thm(kernel, hyps, concl, by) {
   this.Bf = null;
   this.bR = null;
-  this.aY = null;
+  this.aX = null;
   this.Ry = null;
   this.Bf = kernel;
   this.bR = hyps;
-  this.aY = concl;
+  this.aX = concl;
   this.Ry = by;
 }
 export { $c_Lokay_proof_Kernel$Thm as $c_Lokay_proof_Kernel$Thm };
@@ -12882,7 +12882,7 @@ function $h_Lokay_proof_Kernel$Thm() {
 export { $h_Lokay_proof_Kernel$Thm as $h_Lokay_proof_Kernel$Thm };
 $h_Lokay_proof_Kernel$Thm.prototype = $p;
 $p.g = (function() {
-  return (((this.bR.b() ? "" : ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOnceOps__mkString__T__T__T__T(this.bR, "", ", ", "") + " ")) + "\u22a2 ") + this.aY);
+  return (((this.bR.b() ? "" : ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOnceOps__mkString__T__T__T__T(this.bR, "", ", ", "") + " ")) + "\u22a2 ") + this.aX);
 });
 var $d_Lokay_proof_Kernel$Thm = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_proof_Kernel$Thm, "okay.proof.Kernel$Thm", ({
   y9: 1
@@ -12979,7 +12979,7 @@ function $p_Lokay_proof_Linear$__form__Lokay_proof_Term__Lokay_proof_Sort__Lokay
       }
     }
   }
-  return $m_Lokay_proof_Lin$().adC($p_Lokay_proof_Linear$__canonical__Lokay_proof_Term__Lokay_proof_Term($thiz, t));
+  return $m_Lokay_proof_Lin$().adB($p_Lokay_proof_Linear$__canonical__Lokay_proof_Term__Lokay_proof_Term($thiz, t));
 }
 export { $p_Lokay_proof_Linear$__form__Lokay_proof_Term__Lokay_proof_Sort__Lokay_proof_Lin as $p_Lokay_proof_Linear$__form__Lokay_proof_Term__Lokay_proof_Sort__Lokay_proof_Lin };
 function $p_Lokay_proof_Linear$__canonical__Lokay_proof_Term__Lokay_proof_Term($thiz, t) {
@@ -13053,7 +13053,7 @@ function $h_Lokay_proof_Linear$() {
 }
 export { $h_Lokay_proof_Linear$ as $h_Lokay_proof_Linear$ };
 $h_Lokay_proof_Linear$.prototype = $p;
-$p.ahm = (function(t) {
+$p.ahl = (function(t) {
   var this$1 = $m_Lokay_proof_Logic$().gK(t);
   var this$2 = ((this$1.b() || $p_Lokay_proof_Linear$__numeric__Lokay_proof_Sort__Z($m_Lokay_proof_Linear$(), this$1.f())) ? this$1 : $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$());
   return (this$2.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($p_Lokay_proof_Linear$__form__Lokay_proof_Term__Lokay_proof_Sort__Lokay_proof_Lin($m_Lokay_proof_Linear$(), t, this$2.f())));
@@ -13077,7 +13077,7 @@ $p.a0h = (function(x, y, s) {
               if ((x$1$3 !== null)) {
                 var n$1 = x$1$3.x();
                 var b$1 = x$1$3.y();
-                coeffs.bv = $m_Lokay_proof_Lin$().Pf(coeffs.bv, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), $m_Lokay_proof_Linear$().ahN($m_Lokay_proof_Linear$().T5(m$1).T($m_Lokay_proof_Linear$().T5(n$1)), s), a$1.wu(b$1))]))), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_math_BigDecimal$().qs);
+                coeffs.bv = $m_Lokay_proof_Lin$().Pf(coeffs.bv, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), $m_Lokay_proof_Linear$().ahM($m_Lokay_proof_Linear$().T5(m$1).T($m_Lokay_proof_Linear$().T5(n$1)), s), a$1.wu(b$1))]))), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_math_BigDecimal$().qs);
                 break matchResult9;
               }
               throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(x$1$3);
@@ -13117,7 +13117,7 @@ $p.T5 = (function(m) {
   }
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(m, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$());
 });
-$p.ahN = (function(atoms, s) {
+$p.ahM = (function(atoms, s) {
   var mul = ($p_Lokay_proof_Linear$__isInt__Lokay_proof_Sort__Z(this, s) ? $m_Lokay_proof_Fns$().vo : $m_Lokay_proof_Fns$().vn);
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_SeqOps__sorted__s_math_Ordering__O(atoms, $m_Lokay_proof_Logic$().Wa).of(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction2_$$Lambda$770e9b86e03b055b1d78d82135c9f39ea48d32d7(((a, b) => new $c_Lokay_proof_Term$Ap(mul, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(a, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(b, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$()))))));
 });
@@ -13189,7 +13189,7 @@ $p.PA = (function(l, s) {
   }
   return $x_1;
 });
-$p.agE = (function(l) {
+$p.agD = (function(l) {
   if ($p_Lokay_proof_Linear$__int$1__Ljava_math_BigDecimal__Z(this, l.fl)) {
     var this$2 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sc_MapOps$$anon$1(l.fk);
     var res = true;
@@ -13202,7 +13202,7 @@ $p.agE = (function(l) {
     return false;
   }
 });
-$p.ag8 = (function(l) {
+$p.ag7 = (function(l) {
   var this$2 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sc_MapOps$$anon$1(l.fk);
   var z = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_math_BigInteger$().lw;
   var result = z;
@@ -13822,7 +13822,7 @@ function $h_Lokay_proof_Theory$() {
 export { $h_Lokay_proof_Theory$ as $h_Lokay_proof_Theory$ };
 $h_Lokay_proof_Theory$.prototype = $p;
 $p.a7u = (function(name, axioms) {
-  var m = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0(axioms);
+  var m = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ(axioms);
   if ((m.a8() === axioms.A())) {
     var $x_1 = true;
   } else {
@@ -13831,7 +13831,7 @@ $p.a7u = (function(name, axioms) {
     while (it.u()) {
       var elem = it.r();
       var key = elem.x();
-      m$1.qd(key, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c(((this$2) => (() => this$2.gl()))(axioms))).ar(elem);
+      m$1.qd(key, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c(((this$2) => (() => this$2.gl()))(axioms))).aq(elem);
     }
     var result = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_HashMap$().i2;
     var mapIt = m$1.t();
@@ -13903,7 +13903,7 @@ function $h_Lokay_scala3_std_Async$Run() {
 }
 export { $h_Lokay_scala3_std_Async$Run as $h_Lokay_scala3_std_Async$Run };
 $h_Lokay_scala3_std_Async$Run.prototype = $p;
-$p.adR = (function(done) {
+$p.adQ = (function(done) {
   if ((!this.C2)) {
     this.C2 = true;
     this.JA.OY($m_Lokay_scala3_std_Async$().C1).a6();
@@ -13953,9 +13953,9 @@ function $h_Lokay_scala3_std_Timers$() {
 }
 export { $h_Lokay_scala3_std_Timers$ as $h_Lokay_scala3_std_Timers$ };
 $h_Lokay_scala3_std_Timers$.prototype = $p;
-$p.acG = (function(ms_$_lo, ms_$_hi, f) {
+$p.acF = (function(ms_$_lo, ms_$_hi, f) {
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d(((handle) => (() => {
-    $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sjs_js_timers_package$().ae4(handle);
+    $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sjs_js_timers_package$().ae3(handle);
   }))($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sjs_js_timers_package$().lp(((4.294967296E9 * ms_$_hi) + (ms_$_lo >>> 0.0)), f)));
 });
 var $d_Lokay_scala3_std_Timers$ = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_scala3_std_Timers$, "okay.scala3.std.Timers$", ({
@@ -14000,7 +14000,7 @@ function $h_s_sys_package$() {
 }
 export { $h_s_sys_package$ as $h_s_sys_package$ };
 $h_s_sys_package$.prototype = $p;
-$p.afk = (function(message) {
+$p.afj = (function(message) {
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_RuntimeException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_RuntimeException(), message);
 });
 var $d_s_sys_package$ = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_s_sys_package$, "scala.sys.package$", ({
@@ -14116,7 +14116,7 @@ $p.bl = (function(op, k) {
       var elem = it.r();
       var this$3 = this.VN.lO.Z(elem.lS);
       var key = (this$3.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : this$3.f().AE);
-      m.qd(key, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c(((this$2) => (() => this$2.gl()))(this$2))).ar(elem);
+      m.qd(key, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sr_AbstractFunction0_$$Lambda$07eded5776954a9c145e92c329afd52873ad179c(((this$2) => (() => this$2.gl()))(this$2))).aq(elem);
     }
     var result = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_HashMap$().i2;
     var mapIt = m.t();
@@ -14130,10 +14130,10 @@ $p.bl = (function(op, k) {
       result = result.jh(k$1, v.as());
     }
     var groups = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$().F(result);
-    var all = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Map($m_Lokay_scala3_std_Async$().aiE(groups, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((x$1) => {
+    var all = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Map($m_Lokay_scala3_std_Async$().aiD(groups, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((x$1) => {
       var source = x$1.x();
       var rs = x$1.y();
-      return $m_Lokay_policy_Facts$().aim(this.a3s, this.a3t, this.a6W, this.a6X, this.Ri, this.VN, source, rs);
+      return $m_Lokay_policy_Facts$().ail(this.a3s, this.a3t, this.a6W, this.a6X, this.Ri, this.VN, source, rs);
     })), this.Ri), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$6) => {
       var z = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$();
       var acc = z;
@@ -14200,7 +14200,7 @@ $p.i = (function(op) {
       }
       rest = rest.d();
     }
-    return $x_1.b0(((h === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h));
+    return $x_1.aZ(((h === null) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : h));
   }
   throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(op);
 });
@@ -14255,7 +14255,7 @@ $p.a7N = (function(refs) {
   var invoke$2 = this.a3x;
   var tool$2 = this.a3z;
   var x$3$2 = this.a3A;
-  return $m_Lokay_scala3_std_Async$().ag5(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_concurrent_Future$().akX(refs, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((r) => {
+  return $m_Lokay_scala3_std_Async$().ag4(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_concurrent_Future$().akX(refs, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((r) => {
     var x89 = sigs$2.li(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((r$2) => ((_$15) => (_$15.x().IM === r$2.lS)))(r)));
     if (($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() === x89)) {
       return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_concurrent_Future$().TS($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$());
@@ -14343,7 +14343,7 @@ $p.i = (function(op) {
       }
       var $x_1 = h;
     }
-    return $x_2.b0($x_1);
+    return $x_2.aZ($x_1);
   }
   if ((op instanceof $c_Lokay_policy_States$Update)) {
     var x212 = op.IV;
@@ -14384,7 +14384,7 @@ $p.g = (function() {
 $p.bl = (function(op, kx) {
   if ((op instanceof $c_Lokay_proof_Infer$Step)) {
     var x20 = op.Jj;
-    var x9 = this.a4o.aeP(x20);
+    var x9 = this.a4o.aeO(x20);
     if ((x9 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right)) {
       var t = x9.K;
       return kx.i(t);
@@ -14719,7 +14719,7 @@ function $h_Lokay_policy_Call$() {
 }
 export { $h_Lokay_policy_Call$ as $h_Lokay_policy_Call$ };
 $h_Lokay_policy_Call$.prototype = $p;
-$p.afq = (function(checked, call) {
+$p.afp = (function(checked, call) {
   var out = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_scm_Map$().aT();
   var lists = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_scm_Map$().aT();
   var bad = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_ListBuffer();
@@ -14734,12 +14734,12 @@ $p.afq = (function(checked, call) {
     }
     throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(x67);
   }
-  return new $c_Lokay_policy_Call$Facts($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0(out), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0(lists), bad.ag());
+  return new $c_Lokay_policy_Call$Facts($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ(out), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ(lists), bad.ag());
 });
-$p.ag6 = (function(checked, tool, caller, args) {
+$p.ag5 = (function(checked, tool, caller, args) {
   var this$1 = checked.kC.Z(tool);
   var params = (this$1.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$() : this$1.f().nm);
-  var fields = ((args instanceof $c_Lokay_proof_Json$Obj) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0(args.pH.c4(new $c_Lokay_policy_Call$$anon$2(params, checked))) : $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$());
+  var fields = ((args instanceof $c_Lokay_proof_Json$Obj) ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ(args.pH.c3(new $c_Lokay_policy_Call$$anon$2(params, checked))) : $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$());
   $m_Lokay_policy_Call$();
   return new $c_Lokay_policy_Call(tool, caller, fields);
 });
@@ -14773,7 +14773,7 @@ $p.Zq = (function(checked$6, s, j) {
     }
     if ((j instanceof $c_Lokay_proof_Json$Str)) {
       var x148 = j.jJ;
-      if (((x148 !== "") && (!($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sc_StringParsers$().ae0(x148) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_jl_Double$().Zu(x148)) : $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$()).b()))) {
+      if (((x148 !== "") && (!($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sc_StringParsers$().adZ(x148) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_jl_Double$().Zu(x148)) : $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$()).b()))) {
         return new $c_Lokay_policy_Data$Leaf(new $c_Lokay_policy_Value$D($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_package$().bS().o6(x148)));
       }
     }
@@ -14824,7 +14824,7 @@ $p.Zq = (function(checked$6, s, j) {
     if ((j instanceof $c_Lokay_proof_Json$Obj)) {
       var x106 = j.pH;
       var of = checked$6.rp.i(x109);
-      return new $c_Lokay_policy_Data$Rec($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0(x106.c4(new $c_Lokay_policy_Call$$anon$1(of, checked$6))));
+      return new $c_Lokay_policy_Data$Rec($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ(x106.c3(new $c_Lokay_policy_Call$$anon$1(of, checked$6))));
     }
   }
   return new $c_Lokay_policy_Data$Lst(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(new $c_Lokay_policy_Data$Leaf(new $c_Lokay_policy_Value$T(j.Dw())), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$()));
@@ -15000,16 +15000,16 @@ function $h_Lokay_policy_Facts$() {
 }
 export { $h_Lokay_policy_Facts$ as $h_Lokay_policy_Facts$ };
 $h_Lokay_policy_Facts$.prototype = $p;
-$p.adz = (function(refs, x$2) {
+$p.ady = (function(refs, x$2) {
   return (refs.b() ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$()) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Perform(x$2, new $c_Lokay_policy_Facts$Ask(refs)));
 });
-$p.ahM = (function(checked, registered) {
+$p.ahL = (function(checked, registered) {
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Set$().eE($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOps__flatMap__F1__O(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sc_MapOps$$anon$1(checked.lO), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$2) => _$2.AE)))).Pr(registered);
 });
-$p.afR = (function(checked, sources, local, timeoutMs_$_lo, timeoutMs_$_hi, p, x$6, x$7, x$8) {
+$p.afQ = (function(checked, sources, local, timeoutMs_$_lo, timeoutMs_$_hi, p, x$6, x$7, x$8) {
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_scala3_Prog$package$().sN(p, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Handler$General(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((a) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value(a))), new $c_Lokay_policy_Facts$$anon$1(checked, x$8, x$7, local, sources, timeoutMs_$_lo, timeoutMs_$_hi)), x$6);
 });
-$p.afE = (function(checked, ref, a) {
+$p.afD = (function(checked, ref, a) {
   var _1 = checked.lO.Z(ref.lS);
   if ((_1 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some)) {
     var x76 = _1.J;
@@ -15053,10 +15053,10 @@ $p.afE = (function(checked, ref, a) {
   }
   return false;
 });
-$p.ahj = (function(known, p, x$3) {
+$p.ahi = (function(known, p, x$3) {
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_scala3_Prog$package$().sN(p, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Handler$Tail(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((a) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value(a))), new $c_Lokay_policy_Facts$$anon$2(known)), x$3);
 });
-$p.aim = (function(local$1, sources$1, timeoutMs$1_$_lo, timeoutMs$1_$_hi, x$8$1, checked$1, source, refs) {
+$p.ail = (function(local$1, sources$1, timeoutMs$1_$_lo, timeoutMs$1_$_hi, x$8$1, checked$1, source, refs) {
   if (source.b()) {
     var $x_1 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some(local$1);
   } else {
@@ -15078,7 +15078,7 @@ $p.aim = (function(local$1, sources$1, timeoutMs$1_$_lo, timeoutMs$1_$_hi, x$8$1
               cb$2.i(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right(m.cy(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((x$1$2) => {
                 var r = x$1$2.x();
                 var a$1 = x$1$2.y();
-                return (refs.C(r) && $m_Lokay_policy_Facts$().afE(checked$1, r, a$1));
+                return (refs.C(r) && $m_Lokay_policy_Facts$().afD(checked$1, r, a$1));
               })))));
               break matchResult13;
             }
@@ -15404,7 +15404,7 @@ function $h_Lokay_policy_Types$Checking$Named$Lst$() {
 }
 export { $h_Lokay_policy_Types$Checking$Named$Lst$ as $h_Lokay_policy_Types$Checking$Named$Lst$ };
 $h_Lokay_policy_Types$Checking$Named$Lst$.prototype = $p;
-$p.adk = (function(l) {
+$p.adj = (function(l) {
   return new $c_Lokay_policy_Types$Checking$Named$Lst(this.a3G, l);
 });
 $p.g = (function() {
@@ -15634,33 +15634,33 @@ function $h_Lokay_proof_Infer$() {
 export { $h_Lokay_proof_Infer$ as $h_Lokay_proof_Infer$ };
 $h_Lokay_proof_Infer$.prototype = $p;
 $p.hd = (function(rule, evidence$1) {
-  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Perform(evidence$1, new $c_Lokay_proof_Infer$Step(rule)), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((t) => ((t.Ry === rule) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value(t) : $m_Lokay_proof_Infer$().TD(("an answer to a step that was not made from it: " + t.aY), evidence$1)))));
+  return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$FlatMap(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Perform(evidence$1, new $c_Lokay_proof_Infer$Step(rule)), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((t) => ((t.Ry === rule) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value(t) : $m_Lokay_proof_Infer$().TD(("an answer to a step that was not made from it: " + t.aX), evidence$1)))));
 });
 $p.TD = (function(reason, evidence$1) {
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Perform(evidence$1, new $c_Lokay_proof_Infer$Refuse(reason));
 });
-$p.adN = (function(k, p, x$3) {
-  return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_scala3_Prog$package$().sN(p, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Handler$General(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((t) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value((k.aiA(t) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right(t) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("a theorem of another kernel: " + t.aY)))))), new $c_Lokay_proof_Infer$$anon$1(k)), x$3);
+$p.adM = (function(k, p, x$3) {
+  return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_scala3_Prog$package$().sN(p, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Handler$General(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((t) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Value((k.aiz(t) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right(t) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("a theorem of another kernel: " + t.aX)))))), new $c_Lokay_proof_Infer$$anon$1(k)), x$3);
 });
 $p.wf = (function(f, evidence$1) {
   return this.hd(new $c_Lokay_proof_Rule$Assume(f), evidence$1);
 });
-$p.adE = (function(name, evidence$1) {
+$p.adD = (function(name, evidence$1) {
   return this.hd(new $c_Lokay_proof_Rule$Axiom(name), evidence$1);
 });
-$p.ae9 = (function(f, evidence$1) {
+$p.ae8 = (function(f, evidence$1) {
   return this.hd(new $c_Lokay_proof_Rule$Compute(f), evidence$1);
 });
 $p.XK = (function(a, b, evidence$1) {
   return this.hd(new $c_Lokay_proof_Rule$AndI(a, b), evidence$1);
 });
-$p.agq = (function(f, t, evidence$1) {
+$p.agp = (function(f, t, evidence$1) {
   return this.hd(new $c_Lokay_proof_Rule$ImpI(f, t), evidence$1);
 });
 $p.a9e = (function(imp, arg, evidence$1) {
   return this.hd(new $c_Lokay_proof_Rule$ImpE(imp, arg), evidence$1);
 });
-$p.acJ = (function(x, t, evidence$1) {
+$p.acI = (function(x, t, evidence$1) {
   return this.hd(new $c_Lokay_proof_Rule$AllI(x, t), evidence$1);
 });
 $p.a7n = (function(t, by, evidence$1) {
@@ -15692,50 +15692,50 @@ function $s_Lokay_proof_Json$__Null__Lokay_proof_Json() {
 }
 export { $s_Lokay_proof_Json$__Null__Lokay_proof_Json as $s_Lokay_proof_Json$__Null__Lokay_proof_Json };
 function $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V($thiz, i$1, s$7) {
-  while (((i$1.an < s$7.length) && ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_T__indexOf__I__I(" \n\r\t", s$7.charCodeAt(i$1.an)) >= 0))) {
-    i$1.an = ((1 + i$1.an) | 0);
+  while (((i$1.am < s$7.length) && ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_T__indexOf__I__I(" \n\r\t", s$7.charCodeAt(i$1.am)) >= 0))) {
+    i$1.am = ((1 + i$1.am) | 0);
   }
 }
 export { $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V as $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V };
 function $p_Lokay_proof_Json$__fail$1__sr_IntRef__T__E($thiz, i$2, what) {
-  throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IllegalArgumentException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IllegalArgumentException(), ((what + " at ") + i$2.an));
+  throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IllegalArgumentException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IllegalArgumentException(), ((what + " at ") + i$2.am));
 }
 export { $p_Lokay_proof_Json$__fail$1__sr_IntRef__T__E as $p_Lokay_proof_Json$__fail$1__sr_IntRef__T__E };
 function $p_Lokay_proof_Json$__value$1__sr_IntRef__T__Lokay_proof_Json($thiz, i$3, s$8) {
   $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V($thiz, i$3, s$8);
-  if ((i$3.an >= s$8.length)) {
+  if ((i$3.am >= s$8.length)) {
     $p_Lokay_proof_Json$__fail$1__sr_IntRef__T__E($thiz, i$3, "end of text");
   }
-  var i = i$3.an;
+  var i = i$3.am;
   var x776 = s$8.charCodeAt(i);
   switch (x776) {
     case 123: {
-      i$3.an = ((1 + i$3.an) | 0);
+      i$3.am = ((1 + i$3.am) | 0);
       $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V($thiz, i$3, s$8);
       var fs = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_ListBuffer();
-      if ((s$8.charCodeAt(i$3.an) === 125)) {
-        i$3.an = ((1 + i$3.an) | 0);
+      if ((s$8.charCodeAt(i$3.am) === 125)) {
+        i$3.am = ((1 + i$3.am) | 0);
       } else {
         var more = true;
         while (more) {
           $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V($thiz, i$3, s$8);
           var k = $p_Lokay_proof_Json$__string$1__T__sr_IntRef__T($thiz, s$8, i$3);
           $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V($thiz, i$3, s$8);
-          if ((s$8.charCodeAt(i$3.an) !== 58)) {
+          if ((s$8.charCodeAt(i$3.am) !== 58)) {
             $p_Lokay_proof_Json$__fail$1__sr_IntRef__T__E($thiz, i$3, "':' expected");
           }
-          i$3.an = ((1 + i$3.an) | 0);
+          i$3.am = ((1 + i$3.am) | 0);
           fs.j2($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), k, $p_Lokay_proof_Json$__value$1__sr_IntRef__T__Lokay_proof_Json($thiz, i$3, s$8)));
           $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V($thiz, i$3, s$8);
           matchResult54: {
-            var i$4 = i$3.an;
+            var i$4 = i$3.am;
             var x774 = s$8.charCodeAt(i$4);
             if ((x774 === 44)) {
-              i$3.an = ((1 + i$3.an) | 0);
+              i$3.am = ((1 + i$3.am) | 0);
               break matchResult54;
             }
             if ((x774 === 125)) {
-              i$3.an = ((1 + i$3.an) | 0);
+              i$3.am = ((1 + i$3.am) | 0);
               more = false;
               break matchResult54;
             }
@@ -15747,25 +15747,25 @@ function $p_Lokay_proof_Json$__value$1__sr_IntRef__T__Lokay_proof_Json($thiz, i$
       break;
     }
     case 91: {
-      i$3.an = ((1 + i$3.an) | 0);
+      i$3.am = ((1 + i$3.am) | 0);
       $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V($thiz, i$3, s$8);
       var xs = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_ListBuffer();
-      if ((s$8.charCodeAt(i$3.an) === 93)) {
-        i$3.an = ((1 + i$3.an) | 0);
+      if ((s$8.charCodeAt(i$3.am) === 93)) {
+        i$3.am = ((1 + i$3.am) | 0);
       } else {
         var more$2 = true;
         while (more$2) {
           xs.j2($p_Lokay_proof_Json$__value$1__sr_IntRef__T__Lokay_proof_Json($thiz, i$3, s$8));
           $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V($thiz, i$3, s$8);
           matchResult55: {
-            var i$6 = i$3.an;
+            var i$6 = i$3.am;
             var x775 = s$8.charCodeAt(i$6);
             if ((x775 === 44)) {
-              i$3.an = ((1 + i$3.an) | 0);
+              i$3.am = ((1 + i$3.am) | 0);
               break matchResult55;
             }
             if ((x775 === 93)) {
-              i$3.an = ((1 + i$3.an) | 0);
+              i$3.am = ((1 + i$3.am) | 0);
               more$2 = false;
               break matchResult55;
             }
@@ -15782,41 +15782,41 @@ function $p_Lokay_proof_Json$__value$1__sr_IntRef__T__Lokay_proof_Json($thiz, i$
     }
     default: {
       if ((x776 === 116)) {
-        var toffset = i$3.an;
+        var toffset = i$3.am;
         var $x_1 = ((!((toffset >>> 0) > (s$8.length >>> 0))) && (!(!s$8.startsWith("true", toffset))));
       } else {
         var $x_1 = false;
       }
       if ($x_1) {
-        i$3.an = ((4 + i$3.an) | 0);
+        i$3.am = ((4 + i$3.am) | 0);
         return new $c_Lokay_proof_Json$Bool(true);
       }
       if ((x776 === 102)) {
-        var toffset$1 = i$3.an;
+        var toffset$1 = i$3.am;
         var $x_2 = ((!((toffset$1 >>> 0) > (s$8.length >>> 0))) && (!(!s$8.startsWith("false", toffset$1))));
       } else {
         var $x_2 = false;
       }
       if ($x_2) {
-        i$3.an = ((5 + i$3.an) | 0);
+        i$3.am = ((5 + i$3.am) | 0);
         return new $c_Lokay_proof_Json$Bool(false);
       }
       if ((x776 === 110)) {
-        var toffset$2 = i$3.an;
+        var toffset$2 = i$3.am;
         var $x_3 = ((!((toffset$2 >>> 0) > (s$8.length >>> 0))) && (!(!s$8.startsWith("null", toffset$2))));
       } else {
         var $x_3 = false;
       }
       if ($x_3) {
-        i$3.an = ((4 + i$3.an) | 0);
+        i$3.am = ((4 + i$3.am) | 0);
         return $s_Lokay_proof_Json$__Null__Lokay_proof_Json();
       }
       if (((x776 === 45) || $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_jl_UnicodeData$().Dd(x776))) {
-        var start = i$3.an;
-        while (((i$3.an < s$8.length) && ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_T__indexOf__I__I("+-.eE0123456789", s$8.charCodeAt(i$3.an)) >= 0))) {
-          i$3.an = ((1 + i$3.an) | 0);
+        var start = i$3.am;
+        while (((i$3.am < s$8.length) && ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_T__indexOf__I__I("+-.eE0123456789", s$8.charCodeAt(i$3.am)) >= 0))) {
+          i$3.am = ((1 + i$3.am) | 0);
         }
-        var endIndex = i$3.an;
+        var endIndex = i$3.am;
         return new $c_Lokay_proof_Json$Num(s$8.substring(start, endIndex));
       }
       $p_Lokay_proof_Json$__fail$1__sr_IntRef__T__E($thiz, i$3, "a value expected");
@@ -15825,15 +15825,15 @@ function $p_Lokay_proof_Json$__value$1__sr_IntRef__T__Lokay_proof_Json($thiz, i$
 }
 export { $p_Lokay_proof_Json$__value$1__sr_IntRef__T__Lokay_proof_Json as $p_Lokay_proof_Json$__value$1__sr_IntRef__T__Lokay_proof_Json };
 function $p_Lokay_proof_Json$__string$1__T__sr_IntRef__T($thiz, s$9, i$4) {
-  if ((s$9.charCodeAt(i$4.an) !== 34)) {
+  if ((s$9.charCodeAt(i$4.am) !== 34)) {
     $p_Lokay_proof_Json$__fail$1__sr_IntRef__T__E($thiz, i$4, "'\"' expected");
   }
-  i$4.an = ((1 + i$4.an) | 0);
+  i$4.am = ((1 + i$4.am) | 0);
   var b = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_scm_StringBuilder__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_scm_StringBuilder());
-  while ((s$9.charCodeAt(i$4.an) !== 34)) {
-    if ((s$9.charCodeAt(i$4.an) === 92)) {
-      i$4.an = ((1 + i$4.an) | 0);
-      var i$3 = i$4.an;
+  while ((s$9.charCodeAt(i$4.am) !== 34)) {
+    if ((s$9.charCodeAt(i$4.am) === 92)) {
+      i$4.am = ((1 + i$4.am) | 0);
+      var i$3 = i$4.am;
       var x777 = s$9.charCodeAt(i$3);
       switch (x777) {
         case 110: {
@@ -15858,10 +15858,10 @@ function $p_Lokay_proof_Json$__string$1__T__sr_IntRef__T($thiz, s$9, i$4) {
         }
         case 117: {
           var $x_1 = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_jl_Integer$();
-          var beginIndex = ((1 + i$4.an) | 0);
-          var endIndex = ((5 + i$4.an) | 0);
+          var beginIndex = ((1 + i$4.am) | 0);
+          var endIndex = ((5 + i$4.am) | 0);
           b.ez((65535 & $x_1.hF(s$9.substring(beginIndex, endIndex), 16, 134217728)));
-          i$4.an = ((4 + i$4.an) | 0);
+          i$4.am = ((4 + i$4.am) | 0);
           break;
         }
         default: {
@@ -15869,11 +15869,11 @@ function $p_Lokay_proof_Json$__string$1__T__sr_IntRef__T($thiz, s$9, i$4) {
         }
       }
     } else {
-      b.ez(s$9.charCodeAt(i$4.an));
+      b.ez(s$9.charCodeAt(i$4.am));
     }
-    i$4.an = ((1 + i$4.an) | 0);
+    i$4.am = ((1 + i$4.am) | 0);
   }
-  i$4.an = ((1 + i$4.an) | 0);
+  i$4.am = ((1 + i$4.am) | 0);
   return b.dA.G;
 }
 export { $p_Lokay_proof_Json$__string$1__T__sr_IntRef__T as $p_Lokay_proof_Json$__string$1__T__sr_IntRef__T };
@@ -15895,7 +15895,7 @@ $p.qg = (function(s) {
   try {
     var j = $p_Lokay_proof_Json$__value$1__sr_IntRef__T__Lokay_proof_Json(this, i, s);
     $p_Lokay_proof_Json$__ws$1__sr_IntRef__T__V(this, i, s);
-    return ((i.an !== s.length) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("text after the JSON value at " + i.an)) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right(j));
+    return ((i.am !== s.length) ? new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(("text after the JSON value at " + i.am)) : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right(j));
   } catch (e) {
     if ((e instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IllegalArgumentException)) {
       return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(e.eN());
@@ -15938,9 +15938,9 @@ $p.OK = (function(c) {
   $m_Lokay_proof_Lin$();
   return new $c_Lokay_proof_Lin($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$EmptyMap$(), c);
 });
-$p.adC = (function(t) {
+$p.adB = (function(t) {
   $m_Lokay_proof_Lin$();
-  return new $c_Lokay_proof_Lin($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), t, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_math_BigDecimal$().qs)]))), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_math_BigDecimal$().DJ);
+  return new $c_Lokay_proof_Lin($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), t, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_math_BigDecimal$().qs)]))), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_math_BigDecimal$().DJ);
 });
 $p.Pf = (function(a, b, k) {
   var f = ((x$1, x$2) => {
@@ -15951,7 +15951,7 @@ $p.Pf = (function(a, b, k) {
       var t = x7.x();
       var c = x7.y();
       var v = m.d1(t, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_math_BigDecimal$().DJ))).CL(c.wu(k));
-      return ((v.fZ() === 0) ? m.hI(t) : m.c6(t, v));
+      return ((v.fZ() === 0) ? m.hI(t) : m.c5(t, v));
     }
     throw new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_MatchError(x5);
   });
@@ -16183,7 +16183,7 @@ $p.XY = (function(register, x$2) {
 $p.SR = (function(register, x$2) {
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_Lokay_scala3_Prog$Perform(x$2, new $c_Lokay_scala3_std_Async$Suspend(register));
 });
-$p.ag5 = (function(f, x$2) {
+$p.ag4 = (function(f, x$2) {
   return this.XY(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((cb) => {
     f.a6().lo(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((cb$2) => ((x$1) => {
       matchResult4: {
@@ -16203,7 +16203,7 @@ $p.ag5 = (function(f, x$2) {
   })), x$2);
 });
 $p.aka = (function(ms_$_lo, ms_$_hi, x$2) {
-  return this.SR(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((cb) => $m_Lokay_scala3_std_Timers$().acG(ms_$_lo, ms_$_hi, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d(((cb$2) => (() => {
+  return this.SR(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((cb) => $m_Lokay_scala3_std_Timers$().acF(ms_$_lo, ms_$_hi, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d(((cb$2) => (() => {
     cb$2.i(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right((void 0)));
   }))(cb))))), x$2);
 });
@@ -16215,10 +16215,10 @@ $p.DA = (function(p, ec) {
   var run = new $c_Lokay_scala3_std_Async$Run();
   $p_Lokay_scala3_std_Async$__drive__Lokay_scala3_Prog__s_concurrent_Promise__Lokay_scala3_std_Async$Run__s_concurrent_ExecutionContext__V(this, $p_Lokay_scala3_std_Async$__coroutine__Lokay_scala3_Prog__Lokay_scala3_Prog(this, p), done, run, ec);
   return new $c_Lokay_scala3_std_Running(done, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => {
-    run.adR(done);
+    run.adQ(done);
   })));
 });
-$p.aiE = (function(xs, f, x$3) {
+$p.aiD = (function(xs, f, x$3) {
   return this.SR(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((cb) => {
     var f$1 = ((x) => $m_Lokay_scala3_std_Async$().DA(f.i(x), x$3));
     if ((xs === $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())) {
@@ -16294,7 +16294,7 @@ $p.aj1 = (function(p, q, x$3) {
   return this.SR(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((cb) => {
     var ra = $m_Lokay_scala3_std_Async$().DA(p, x$3);
     var rb = $m_Lokay_scala3_std_Async$().DA(q, x$3);
-    $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_concurrent_Future$().afD(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(ra.s1.mC(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$17) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(_$17))), x$3), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(rb.s1.mC(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$18) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right(_$18))), x$3), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())), x$3).lo(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((cb$2) => ((r) => {
+    $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_concurrent_Future$().afC(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(ra.s1.mC(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$17) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Left(_$17))), x$3), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon(rb.s1.mC(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$18) => new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right(_$18))), x$3), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())), x$3).lo(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((cb$2) => ((r) => {
       ra.CS();
       rb.CS();
       matchResult7: {
@@ -16638,7 +16638,7 @@ function $s_Lokay_guard_web_LangImpl$__load__Lokay_guard_web_LangImpl$__T__s_uti
 }
 export { $s_Lokay_guard_web_LangImpl$__load__Lokay_guard_web_LangImpl$__T__s_util_Either as $s_Lokay_guard_web_LangImpl$__load__Lokay_guard_web_LangImpl$__T__s_util_Either };
 function $s_Lokay_guard_web_LangImpl$__check__Lokay_guard_web_LangImpl$__T__T__s_util_Either(this$1, text, tests) {
-  var this$2 = $m_Lokay_guard_policy_PolicyFiles$().adX(text, tests);
+  var this$2 = $m_Lokay_guard_policy_PolicyFiles$().adW(text, tests);
   if ((this$2 instanceof $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right)) {
     var b = this$2.K;
     var f = ((o) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), o.Tz(), o.g()));
@@ -16670,7 +16670,7 @@ function $s_Lokay_guard_web_LangImpl$__replay__Lokay_guard_web_LangImpl$__T__T__
     var b = this$2.K;
     var rs = $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$().F(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sc_Iterator$$anon$10(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sc_Iterator$$anon$6(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sc_StringOps$$anon$1(records, true), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$3) => ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_T__trim__T(_$3) !== ""))), false), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((l) => $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_effects_json_Descent$().fy(l, 1000).dZ()))));
     var $x_2 = $m_Lokay_guard_policy_Replay$();
-    var f$1 = ((r) => (!$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_guard_Paths$().c3(r, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon("decision", $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())).b()));
+    var f$1 = ((r) => (!$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Lokay_guard_Paths$().c2(r, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sci_$colon$colon("decision", $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Nil$())).b()));
     var l$1 = rs;
     block: {
       var $x_1;
@@ -16734,7 +16734,7 @@ function $s_Lokay_guard_web_LangImpl$__replay__Lokay_guard_web_LangImpl$__T__T__
         }
       }
     }
-    var changes = $x_2.adi(b, $x_1);
+    var changes = $x_2.adh(b, $x_1);
     var _1 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sc_StringOps$$anon$1($m_Lokay_guard_policy_Replay$().ajh(changes), true).k5();
     var f$2 = ((_$4) => _$4.a7V());
     var l$2 = changes;
@@ -16869,7 +16869,7 @@ function $s_Lokay_guard_web_LangImpl$__cards__Lokay_guard_web_LangImpl$__T__s_ut
       }
       var this$14 = h$1;
     }
-    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_StrictOptimizedIterableOps__flatten__F1__O($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(starts, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$p_sc_StrictOptimizedLinearSeqOps__loop$2__I__sc_LinearSeq__sc_LinearSeq(this$14, 1, this$14).al(((1 + lines.A()) | 0))).c4(new $c_Lokay_guard_web_LangImpl$$anon$3(lines)), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_$less$colon$less$().e2));
+    return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_util_Right($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_StrictOptimizedIterableOps__flatten__F1__O($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(starts, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$p_sc_StrictOptimizedLinearSeqOps__loop$2__I__sc_LinearSeq__sc_LinearSeq(this$14, 1, this$14).al(((1 + lines.A()) | 0))).c3(new $c_Lokay_guard_web_LangImpl$$anon$3(lines)), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_$less$colon$less$().e2));
   } else {
     return this$4;
   }
@@ -17001,7 +17001,7 @@ function $a_Lokay_guard_web_LangImpl$() {
         return $s_Lokay_guard_web_LangImpl$__check__Lokay_guard_web_LangImpl$__T__T__s_util_Either(this, arg, arg$2);
       }
       "decider"(arg, arg$2, arg$3) {
-        return $m_Lokay_guard_policy_Deciders$().aib(arg, arg$2, arg$3, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_concurrent_ExecutionContext$parasitic$());
+        return $m_Lokay_guard_policy_Deciders$().aia(arg, arg$2, arg$3, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_concurrent_ExecutionContext$parasitic$());
       }
       "replay"(arg, arg$2) {
         return $s_Lokay_guard_web_LangImpl$__replay__Lokay_guard_web_LangImpl$__T__T__s_util_Either(this, arg, arg$2);
@@ -17221,7 +17221,7 @@ $p.n = (function(n) {
   }
 });
 $p.T1 = (function() {
-  return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "caller", this.Ip), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "tool", new $c_Lokay_policy_Value$T(this.jz)), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "call", $m_Lokay_policy_Call$().VL)])));
+  return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sr_ScalaRunTime$().p(new ($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$d_T2.r().C)([$j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "caller", this.Ip), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "tool", new $c_Lokay_policy_Value$T(this.jz)), $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_T2__O__O__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_T2(), "call", $m_Lokay_policy_Call$().VL)])));
 });
 function $isArrayOf_Lokay_policy_Call(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && obj.$classData.B.n.iC)));
@@ -17748,7 +17748,7 @@ $p.ajy = (function() {
   }
   return this.a3n;
 });
-$p.aeE = (function() {
+$p.aeD = (function() {
   if ((!this.a3m)) {
     this.a3l = this.kC.k4().V(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((t) => {
       var this$4 = this.zG;
@@ -17903,8 +17903,8 @@ $p.ajw = (function(tool) {
     }
   })));
 });
-$p.aeD = (function(tool) {
-  return this.aeE().d1(tool, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => {
+$p.aeC = (function(tool) {
+  return this.aeD().d1(tool, new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction0_$$Lambda$2bf0f8dc580d6edeb2d6a336c52a1bab3049702d((() => {
     var this$2 = this.zG;
     var f = ((c) => (this.Ty(c.AS.ru) && this.Y9(c.AS.ru, tool)));
     var l = this$2;
@@ -18163,10 +18163,10 @@ $p.n = (function(n) {
     }
   }
 });
-$p.adW = (function() {
+$p.adV = (function() {
   if ((!this.a3r)) {
     var this$1 = this.p8;
-    this.a3q = (this$1.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($m_Lokay_proof_Certificate$().aic(this$1.f())));
+    this.a3q = (this$1.b() ? $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_s_None$() : new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Some($m_Lokay_proof_Certificate$().aib(this$1.f())));
     this.a3r = true;
   }
   return this.a3q;
@@ -20697,7 +20697,7 @@ $p.n = (function(n) {
   }
 });
 $p.a7S = (function(x, s) {
-  return this.aei(this.nw.c6(x, s), this.nv, this.hY, this.Ba, this.pB);
+  return this.aeh(this.nw.c5(x, s), this.nv, this.hY, this.Ba, this.pB);
 });
 $p.a9K = (function(name, pos) {
   var this$4 = this.pB;
@@ -20782,12 +20782,12 @@ $p.a9K = (function(name, pos) {
     }
   }
   if ((!result.b())) {
-    this.B9.aV(pos, ((((("`" + name) + "` is not an argument of every tool this rule decides (") + this.Ba.abj()) + "): only of ") + $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOnceOps__mkString__T__T__T__T(result, "", ", ", "")));
+    this.B9.aV(pos, ((((("`" + name) + "` is not an argument of every tool this rule decides (") + this.Ba.abi()) + "): only of ") + $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_sc_IterableOnceOps__mkString__T__T__T__T(result, "", ", ", "")));
   } else {
     this.B9.aV(pos, ("an unknown name " + name));
   }
 });
-$p.aei = (function(env, args, sigs, target, tools) {
+$p.aeh = (function(env, args, sigs, target, tools) {
   return new $c_Lokay_policy_Types$Checking$Scope(this.B9, env, args, sigs, target, tools);
 });
 function $isArrayOf_Lokay_policy_Types$Checking$Scope(obj, depth) {
@@ -21245,7 +21245,7 @@ $p.XA = (function(o) {
   return new $c_Lokay_proof_Lin($m_Lokay_proof_Lin$().Pf(this.fk, o.fk, $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_Ljava_math_BigDecimal$().qs.Ts()), this.fl.TR(o.fl));
 });
 $p.SG = (function(c) {
-  return ((c.fZ() === 0) ? $m_Lokay_proof_Lin$().W9 : ($m_Lokay_proof_Lin$(), new $c_Lokay_proof_Lin($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().b0(new $c_sc_MapView$MapValues(new $c_sc_MapView$Id(this.fk), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$1) => _$1.wu(c))))), this.fl.wu(c))));
+  return ((c.fZ() === 0) ? $m_Lokay_proof_Lin$().W9 : ($m_Lokay_proof_Lin$(), new $c_Lokay_proof_Lin($j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$m_sci_Map$().aZ(new $c_sc_MapView$MapValues(new $c_sc_MapView$Id(this.fk), new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_sjsr_AnonFunction1_$$Lambda$412915ce24663401f4bc24349a746e1dbd693dc1(((_$1) => _$1.wu(c))))), this.fl.wu(c))));
 });
 function $isArrayOf_Lokay_proof_Lin(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && obj.$classData.B.n.kJ)));
@@ -21385,17 +21385,17 @@ function $h_Lokay_guard_policy_Graduate$$anon$2() {
 }
 export { $h_Lokay_guard_policy_Graduate$$anon$2 as $h_Lokay_guard_policy_Graduate$$anon$2 };
 $h_Lokay_guard_policy_Graduate$$anon$2.prototype = $p;
-$p.agK = (function(x) {
+$p.agJ = (function(x) {
   return ((x instanceof $c_Lokay_guard_policy_Graduate$Kind$Fields) || false);
 });
-$p.adt = (function(x, default$1) {
+$p.ads = (function(x, default$1) {
   return ((x instanceof $c_Lokay_guard_policy_Graduate$Kind$Fields) ? x.nf : default$1.i(x));
 });
 $p.W = (function(x) {
-  return this.agK(x);
+  return this.agJ(x);
 });
 $p.S = (function(x, default$1) {
-  return this.adt(x, default$1);
+  return this.ads(x, default$1);
 });
 var $d_Lokay_guard_policy_Graduate$$anon$2 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_guard_policy_Graduate$$anon$2, "okay.guard.policy.Graduate$$anon$2", ({
   vF: 1,
@@ -21470,7 +21470,7 @@ $p.cf = (function(x) {
   }
   return false;
 });
-$p.cc = (function(x, default$1) {
+$p.cb = (function(x, default$1) {
   if ((x !== null)) {
     var x11 = x.y();
     if (((x.x() === "pos") && (x11 instanceof $c_Lokay_policy_Pos))) {
@@ -21483,7 +21483,7 @@ $p.W = (function(x) {
   return this.cf(x);
 });
 $p.S = (function(x, default$1) {
-  return this.cc(x, default$1);
+  return this.cb(x, default$1);
 });
 var $d_Lokay_guard_web_LangImpl$$anon$2 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_guard_web_LangImpl$$anon$2, "okay.guard.web.LangImpl$$anon$2", ({
   wb: 1,
@@ -21518,7 +21518,7 @@ $p.cf = (function(x) {
   }
   return false;
 });
-$p.cc = (function(x, default$1) {
+$p.cb = (function(x, default$1) {
   if ((x !== null)) {
     var x25 = x.x();
     if ((x25 !== null)) {
@@ -21567,7 +21567,7 @@ $p.W = (function(x) {
   return this.cf(x);
 });
 $p.S = (function(x, default$1) {
-  return this.cc(x, default$1);
+  return this.cb(x, default$1);
 });
 var $d_Lokay_guard_web_LangImpl$$anon$3 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_guard_web_LangImpl$$anon$3, "okay.guard.web.LangImpl$$anon$3", ({
   wc: 1,
@@ -21633,7 +21633,7 @@ $p.cf = (function(x) {
   }
   return false;
 });
-$p.cc = (function(x, default$1) {
+$p.cb = (function(x, default$1) {
   if ((x !== null)) {
     var k = x.x();
     var v = x.y();
@@ -21678,7 +21678,7 @@ $p.W = (function(x) {
   return this.cf(x);
 });
 $p.S = (function(x, default$1) {
-  return this.cc(x, default$1);
+  return this.cb(x, default$1);
 });
 var $d_Lokay_policy_Call$$anon$1 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_policy_Call$$anon$1, "okay.policy.Call$$anon$1", ({
   wQ: 1,
@@ -21730,7 +21730,7 @@ $p.cf = (function(x) {
   }
   return false;
 });
-$p.cc = (function(x, default$1) {
+$p.cb = (function(x, default$1) {
   if ((x !== null)) {
     var k = x.x();
     var v = x.y();
@@ -21775,7 +21775,7 @@ $p.W = (function(x) {
   return this.cf(x);
 });
 $p.S = (function(x, default$1) {
-  return this.cc(x, default$1);
+  return this.cb(x, default$1);
 });
 var $d_Lokay_policy_Call$$anon$2 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_policy_Call$$anon$2, "okay.policy.Call$$anon$2", ({
   wR: 1,
@@ -22374,10 +22374,10 @@ function $h_Lokay_policy_Source$$anon$8() {
 }
 export { $h_Lokay_policy_Source$$anon$8 as $h_Lokay_policy_Source$$anon$8 };
 $h_Lokay_policy_Source$$anon$8.prototype = $p;
-$p.agL = (function(x) {
+$p.agK = (function(x) {
   return ((x instanceof $c_Lokay_proof_Json$Str) || false);
 });
-$p.adu = (function(x, default$1) {
+$p.adt = (function(x, default$1) {
   if ((x instanceof $c_Lokay_proof_Json$Str)) {
     var x115 = x.jJ;
     var this$2 = $m_Lokay_proof_Json$().qg(x115);
@@ -22387,10 +22387,10 @@ $p.adu = (function(x, default$1) {
   }
 });
 $p.W = (function(x) {
-  return this.agL(x);
+  return this.agK(x);
 });
 $p.S = (function(x, default$1) {
-  return this.adu(x, default$1);
+  return this.adt(x, default$1);
 });
 var $d_Lokay_policy_Source$$anon$8 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_policy_Source$$anon$8, "okay.policy.Source$$anon$8", ({
   xv: 1,
@@ -22496,7 +22496,7 @@ $h_Lokay_policy_Target.prototype = $p;
 $p.w = (function() {
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Product$$anon$1(this);
 });
-$p.abj = (function() {
+$p.abi = (function() {
   if ((this instanceof $c_Lokay_policy_Target$Tool)) {
     return this.rQ;
   }
@@ -22636,7 +22636,7 @@ $h_Lokay_policy_Window.prototype = $p;
 $p.w = (function() {
   return new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_s_Product$$anon$1(this);
 });
-$p.ahL = (function() {
+$p.ahK = (function() {
   var x = $s_Lokay_policy_Window$__Minute__Lokay_policy_Window();
   if (((x !== null) && (x === this))) {
     return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$bL(60000, 0);
@@ -23701,14 +23701,14 @@ $h_Lokay_proof_Json$$anon$6.prototype = $p;
 $p.cf = (function(x) {
   return (((x !== null) && (this.W7 === x.x())) && (x.y(), true));
 });
-$p.cc = (function(x, default$1) {
+$p.cb = (function(x, default$1) {
   return (((x !== null) && (this.W7 === x.x())) ? x.y() : default$1.i(x));
 });
 $p.W = (function(x) {
   return this.cf(x);
 });
 $p.S = (function(x, default$1) {
-  return this.cc(x, default$1);
+  return this.cb(x, default$1);
 });
 var $d_Lokay_proof_Json$$anon$6 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_proof_Json$$anon$6, "okay.proof.Json$$anon$6", ({
   y4: 1,
@@ -23773,7 +23773,7 @@ function $h_Lokay_proof_Kernel$$anon$2() {
 }
 export { $h_Lokay_proof_Kernel$$anon$2 as $h_Lokay_proof_Kernel$$anon$2 };
 $h_Lokay_proof_Kernel$$anon$2.prototype = $p;
-$p.agM = (function(x) {
+$p.agL = (function(x) {
   if ((x !== null)) {
     var x358 = x.ma;
     var k = x.nB;
@@ -23789,14 +23789,14 @@ $p.agM = (function(x) {
   }
   return false;
 });
-$p.adv = (function(x, default$1) {
+$p.adu = (function(x, default$1) {
   if ((x !== null)) {
     var x368 = x.pM;
     var x369 = x.ma;
     var k = x.nB;
     var x$3 = $s_Lokay_proof_Linear$Kind$__Equal__Lokay_proof_Linear$Kind();
     if (((!((k === null) ? (x$3 === null) : (k === x$3))) && (x369.fZ() < 0))) {
-      return ((("a negative coefficient " + x369) + " for ") + x368.aY);
+      return ((("a negative coefficient " + x369) + " for ") + x368.aX);
     }
     var x$4 = this.W8;
     var x$5 = $s_Lokay_proof_Sort$__Int__Lokay_proof_Sort();
@@ -23807,10 +23807,10 @@ $p.adv = (function(x, default$1) {
   return default$1.i(x);
 });
 $p.W = (function(x) {
-  return this.agM(x);
+  return this.agL(x);
 });
 $p.S = (function(x, default$1) {
-  return this.adv(x, default$1);
+  return this.adu(x, default$1);
 });
 var $d_Lokay_proof_Kernel$$anon$2 = new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$TypeData().i($c_Lokay_proof_Kernel$$anon$2, "okay.proof.Kernel$$anon$2", ({
   y8: 1,
@@ -27388,7 +27388,7 @@ $p.n = (function(n) {
     }
   }
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.At;
 });
 function $isArrayOf_Lokay_policy_Expr$Add(obj, depth) {
@@ -27493,7 +27493,7 @@ $p.n = (function(n) {
     }
   }
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.rA;
 });
 function $isArrayOf_Lokay_policy_Expr$Apply(obj, depth) {
@@ -27571,7 +27571,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.IH;
 });
 function $isArrayOf_Lokay_policy_Expr$DecLit(obj, depth) {
@@ -27649,7 +27649,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.II;
 });
 function $isArrayOf_Lokay_policy_Expr$IntLit(obj, depth) {
@@ -27727,7 +27727,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.IJ;
 });
 function $isArrayOf_Lokay_policy_Expr$ListLit(obj, depth) {
@@ -27834,7 +27834,7 @@ $p.n = (function(n) {
     }
   }
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.Ax;
 });
 function $isArrayOf_Lokay_policy_Expr$Mul(obj, depth) {
@@ -27912,7 +27912,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.Az;
 });
 function $isArrayOf_Lokay_policy_Expr$RecLit(obj, depth) {
@@ -28019,7 +28019,7 @@ $p.n = (function(n) {
     }
   }
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.AC;
 });
 function $isArrayOf_Lokay_policy_Expr$Sub(obj, depth) {
@@ -28095,7 +28095,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.IK;
 });
 function $isArrayOf_Lokay_policy_Expr$TextLit(obj, depth) {
@@ -28171,7 +28171,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.rD;
 });
 function $isArrayOf_Lokay_policy_Expr$Var(obj, depth) {
@@ -30521,7 +30521,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.B3;
 });
 function $isArrayOf_Lokay_policy_Tok$DecNum(obj, depth) {
@@ -30585,7 +30585,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.Jb;
 });
 function $isArrayOf_Lokay_policy_Tok$End(obj, depth) {
@@ -30663,7 +30663,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.B4;
 });
 function $isArrayOf_Lokay_policy_Tok$IntNum(obj, depth) {
@@ -30739,7 +30739,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.m0;
 });
 function $isArrayOf_Lokay_policy_Tok$Name(obj, depth) {
@@ -30815,7 +30815,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.B5;
 });
 function $isArrayOf_Lokay_policy_Tok$Str(obj, depth) {
@@ -30891,7 +30891,7 @@ $p.n = (function(n) {
   }
   throw $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$ct_jl_IndexOutOfBoundsException__T__(new $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$c_jl_IndexOutOfBoundsException(), ("" + n));
 });
-$p.bW = (function() {
+$p.bV = (function() {
   return this.pz;
 });
 function $isArrayOf_Lokay_policy_Tok$Sym(obj, depth) {
@@ -33354,7 +33354,7 @@ $p.hE = (function(x, y) {
 $p.il = (function(other) {
   return $j_internal$002d767013ce0ee0f6d7a07587912eba3104cfaabc15.$f_s_math_Ordering__isReverseOf__s_math_Ordering__Z(this, other);
 });
-$p.ae6 = (function(x, y) {
+$p.ae5 = (function(x, y) {
   var compare1 = this.Od.cd(x.x(), y.x());
   if ((compare1 !== 0)) {
     return compare1;
@@ -33410,7 +33410,7 @@ $p.h = (function() {
   return this$1.P(h, 2);
 });
 $p.cd = (function(x, y) {
-  return this.ae6(x, y);
+  return this.ae5(x, y);
 });
 function $isArrayOf_s_math_Ordering$Tuple2Ordering(obj, depth) {
   return (!(!(((obj && obj.$classData) && (obj.$classData.D === depth)) && obj.$classData.B.n.nE)));
